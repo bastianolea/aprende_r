@@ -158,5 +158,12 @@ h1.title, .title.h1 {
 }
 
 .contenedor_panel_icono {
- min-height: 140px;
+ min-height: 150px;
+}
+
+/* para ventanas pequeñas */
+@media (max-width:570px) { 
+  .contenedor_panel_icono {
+    min-height: 0;
+  }
 }
