@@ -148,6 +148,14 @@ h1.title, .title.h1 {
   color: #9F69C9;
 }
 
+.icono_texto {
+  margin: auto;
+  font-size: 100%;
+  padding: 8px;
+  display: inline-block;
+  margin-right: 0px;
+}
+
 .centrado {
   text-align: center;
 }
@@ -167,3 +175,26 @@ h1.title, .title.h1 {
     min-height: 0;
   }
 }
+
+.circulo {
+  background-color: var(--texto);
+  width: 24px; height: 24px;
+  line-height: 24px;
+  padding-bottom: 2px;
+  color: var(--fondo) !important; 
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.filtro {
+  /*filter: hue-rotate(100deg);*/
+  filter: brightness(2.5);
+  opacity: 1;*/
+}
+

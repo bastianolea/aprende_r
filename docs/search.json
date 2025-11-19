@@ -143,8 +143,8 @@
     "objectID": "index.html#basico",
     "href": "index.html#basico",
     "title": "Aprende R",
-    "section": "Primeros pasos en R",
-    "text": "Primeros pasos en R\n\n\n\n\nChao\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/instalar_r/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"
+    "section": "Primeros pasos",
+    "text": "Primeros pasos\n\n\n\n\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/\nhttps://bastianolea.rbind.io/blog/r_introduccion/proyectos/\n\nTidyverse\nhttps://bastianolea.rbind.io/blog/stringr_texto/"
   },
   {
     "objectID": "index.html#intermedio",
@@ -159,5 +159,12 @@
     "title": "Aprende R",
     "section": "Avanzado",
     "text": "Avanzado\n\nShiny avanzado\nhttps://bastianolea.rbind.io/tags/shiny/"
+  },
+  {
+    "objectID": "index.html#obtener-r",
+    "href": "index.html#obtener-r",
+    "title": "Aprende R",
+    "section": "Obtener R",
+    "text": "Obtener R\n\n\n\n\n\n\n\n\n1\nDescargar R\n\nPrimero hay que instalar el lenguaje, que es el motor que te permitirá analizar datos.\n\nPara más información lee esta guía\n\n\n\n\n\n\n\nDescargar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nDescargar una IDE\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\n\n\n\nPositron\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpcionalmente, puedes usar R en la nube mediante servicios como\nPosit Cloud,\nque te permite usar RStudio en un navagador gratis."
   }
 ]

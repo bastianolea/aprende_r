@@ -64,22 +64,83 @@ https://bastianolea.rbind.io/blog/2025-11-13/
 
 ----
 
-## Primeros pasos en R {#basico}
+## Obtener R 
 
-```{r}
+```{r descargar_r}
 card(
-  p("Chao")
+  layout_columns(
+    div(
+      
+      div(style = "margin-bottom: 6px;",
+      div("1", class = "circulo"),
+      strong("Descargar R", class = "subtitulo_panel")
+      ),
+      
+      markdown("Primero hay que instalar el lenguaje, que es el motor que te permitirá analizar datos."),
+      
+      markdown("Para más información [lee esta guía](https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/)")
+      
+    ),
+    
+    div(
+      card(id = "interna",
+           strong("Descargar", class = "subtitulo_panel"),
+           
+           # icon("download", class = "icono_mediano",
+           #      style = "color: #B39CCD;")
+           div(class = "filtro",
+           img(src = "img/logo_r.png",
+               style = "width: 100%;")
+           )
+      )
+    )
+  )
 )
 ```
 
 
-https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/
+```{r descargar_ide}
+card(
+  
+  layout_columns(col_widths = c(4, 8),
+                 div(
+                   div(style = "margin-bottom: 6px;",
+                   div("2", class = "circulo"),
+                   strong("Descargar una IDE", class = "subtitulo_panel")
+                   ),
+                   # icon("download", class = "icono_mediano"),
+                 ),
+                 
+                 layout_columns(
+                   card(id = "interna",
+                        strong("RStudio", class = "subtitulo_panel"),
+                   ),
+                   
+                   card(id = "interna",
+                        strong("Positron", class = "subtitulo_panel"),
+                   )
+                 )
+  )
+)
+```
 
-https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
 
-https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/
 
-## Reforzando lo básico
+```{r}
+p(
+  icon("cloud", class = "icono_texto"),
+  "Opcionalmente, puedes usar R en la nube mediante servicios como", 
+  a(href = "https://posit.cloud", "Posit Cloud,"),
+  "que te permite usar RStudio en un navagador gratis."
+  )
+```
+
+
+
+----
+
+
+## Primeros pasos {#basico}
 
 ```{r}
 card(
@@ -96,6 +157,9 @@ card(
 )
 ```
 
+https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
+
+https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/
 
 https://bastianolea.rbind.io/blog/r_introduccion/proyectos/
 
