@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Aprende R"
+  navbar:
+    background: "#23102A"
+    foreground: "#9F69C8"
+    search: false
+    pinned: true
+    collapse: true
+    tools-collapse: true
+    left:
+      - href: index.qmd
+        text: "Aprende R"
+      - text: "Blog"
+        href: https://bastianolea.rbind.io/blog/
+      - text: "Apps"
+        href: https://bastianolea.github.io/shiny_apps/
+      - text: "Sobre mi"
+        href: https://bastianolea.rbind.io/
+    tools:
+      - icon: globe
+        href: https://bastianolea.rbind.io
+      - icon: twitter
+        href: https://bsky.app/profile/bastianolea.rbind.io
+      - icon: github
+        href: https://github.com/bastianolea?tab=repositories
+      - icon: linkedin
+        href: https://www.linkedin.com/in/bastianolea/
+      - icon: envelope-fill
+        href: https://bastianolea.rbind.io/contacto/
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: false
+    page-layout: full
+    link-external-icon: false
+    
+
+
+

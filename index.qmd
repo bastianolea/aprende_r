@@ -1,0 +1,119 @@
+---
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(shiny)
+library(bslib)
+```
+
+```{r}
+layout_columns(
+    card(
+      p("Hola")
+    ),
+    card(
+      p("Chao")
+    )
+  )
+```
+
+
+¿Estás recién pensando en aprender R?
+
+¿Nunca has programado pero quieres empezar ya?
+
+¿Sabes un poco de R, pero necesitas reforzar?
+
+¿Ya sabes programar en R y quieres mejorar?
+
+
+## Por qué R
+https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/
+
+## Primeros pasos
+https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/
+
+https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
+
+https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/
+
+## Reforzando lo básico
+https://bastianolea.rbind.io/blog/r_introduccion/proyectos/
+
+## Empezar a trabajar con datos
+https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/
+
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/
+
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/
+
+
+https://bastianolea.rbind.io/blog/left_join/
+
+
+### Tidyverse
+
+https://bastianolea.rbind.io/blog/stringr_texto/
+
+
+## Estadísticas
+https://bastianolea.rbind.io/blog/correlaciones/
+
+----
+
+
+## Nuevas posibilidades con R
+
+### Visualización de datos
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/
+
+https://bastianolea.rbind.io/tags/visualización-de-datos/
+
+
+### Mapas y análisis geoespacial
+https://bastianolea.rbind.io/blog/mapas_sf/
+
+https://bastianolea.rbind.io/blog/tutorial_mapa_chile/
+
+https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/
+
+https://bastianolea.rbind.io/tags/mapas/
+
+
+### Reportes
+https://bastianolea.rbind.io/blog/quarto_reportes/
+
+https://bastianolea.rbind.io/blog/quarto_params/
+
+https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/
+
+https://bastianolea.rbind.io/tags/quarto/
+
+
+### Aplicaciones
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/
+
+https://bastianolea.rbind.io/tags/shiny/
+
+
+### Web scraping
+https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/
+
+## Publica, comparte y expándete
+
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/
+
+https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/
+
+
+----
+
+## Avanzado
+
+#### Shiny avanzado
+
+https://bastianolea.rbind.io/tags/shiny/

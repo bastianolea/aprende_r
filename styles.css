@@ -1,0 +1,68 @@
+:root {
+  --fondo: #23102A;
+  --texto: #B39CCD;
+  --enlaces: #9F69C8;
+  --destacado: #31193f;
+  --destacado-2: #47215E;
+  --destacado-3: #724BE7;
+}
+
+/* css styles */
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-size: 110%;
+}
+
+a {
+  color: var(--enlaces);
+}
+
+a:hover {
+  color: #724be7;
+  text-decoration: none !important; 
+}
+
+h1 {
+   color: var(--texto);
+}
+
+h2 {
+  border-bottom-color: var(--destacado);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--texto) !important; 
+}
+.navbar-brand:hover, .nav-link:hover, .quarto-navigation-tool:hover, .navbar-brand:focus {
+  color: var(--texto) !important; 
+}
+
+.icono:hover {
+  filter: brightness(130%); transition: 0.4s
+}
+
+.icono_claro:hover {
+  filter: brightness(90%) saturate(140%); transition: 0.4s
+}
+
+h1.title, .title.h1 { 
+  margin: 24px; margin-top: 24px; margin-left: 30px; color: var(--enlaces); 
+}
+
+.quarto-title-meta-heading { display: none; }
+
+.quarto-title-meta-contents {
+  margin-left: 30px; margin-top: 6px; margin-bottom: 12px; color: var(--texto);
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+.card-body {
+  background-color: var(--destacado);
+  color: var(--texto);
+  border-radius: 5px;
+  border: solid 1px #391D4A;
+}
