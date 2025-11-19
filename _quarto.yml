@@ -39,7 +39,7 @@ format:
       - brand
     css: styles.css
     toc: false
-    page-layout: full
+    page-layout: article
     link-external-icon: false
     
 

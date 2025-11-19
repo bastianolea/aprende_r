@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Aprende R",
     "section": "",
-    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\nHola\n\n\n\n\n\n\n\nChao\n¿Estás pensando si aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
+    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\n¿Estás pensando si aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
   },
   {
     "objectID": "index.html#por-qué-r",
@@ -137,14 +137,14 @@
     "href": "index.html#introduccion",
     "title": "Aprende R",
     "section": "Por qué R",
-    "text": "Por qué R\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\nhttps://bastianolea.rbind.io/blog/2025-11-13/\n\n\n\n\n\n\nGratuito\n\n\n\n\n\n\n\nAmigable\n\n\n\n\n\n\n\nReproducible"
+    "text": "Por qué R\nPorque R es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!\n\n\n\n\n\n\n\nGratuito\nR es un lenguaje abierto y gratuito, parte de la comunidad del software libre, así que nunca tendrás que pagar nada!\n\n\n\n\n\n\n\n\n\nAmigable\nR fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.\n\n\n\n\n\n\n\n\n\nReproducible\nLa gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros.\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\nhttps://bastianolea.rbind.io/blog/2025-11-13/"
   },
   {
     "objectID": "index.html#basico",
     "href": "index.html#basico",
     "title": "Aprende R",
-    "section": "Primeros pasos",
-    "text": "Primeros pasos\n\n\n\n\nChao\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/instalar_r/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"
+    "section": "Primeros pasos en R",
+    "text": "Primeros pasos en R\n\n\n\n\nChao\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/instalar_r/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"
   },
   {
     "objectID": "index.html#intermedio",

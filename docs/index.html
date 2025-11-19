@@ -69,13 +69,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bslib-component-js-0.9.0/web-components.min.js" type="module"></script>
 <link href="site_libs/bslib-component-css-0.9.0/components.css" rel="stylesheet">
 <link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="site_libs/bslib-tag-require-0.9.0/tag-require.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,40 +122,17 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 <p>Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.</p>
-<hr>
-<div class="cell">
-<div class="cell-output-display">
-<bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<p>Hola</p>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
-</div>
-</div>
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<p>Chao</p>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
-</div>
-</div>
-</bslib-layout-columns>
-</div>
-</div>
 <p>¿Estás pensando si <a href="#introduccion">aprender a programar para analizar datos?</a></p>
 <p>¿Nunca has programado, pero <a href="#basico">quieres empezar ya?</a></p>
 <p>¿Sabes un poco de R, pero <a href="#intermedio">necesitas mejorar?</a></p>
@@ -161,15 +140,18 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="introduccion" class="level2">
 <h2 class="anchored" data-anchor-id="introduccion">Por qué R</h2>
-<p>https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/</p>
-<p>https://bastianolea.rbind.io/blog/2025-11-13/</p>
+<p>Porque R es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!</p>
 <div class="cell">
 <div class="cell-output-display">
+<div class="centrado" style="margin-top: 12px">
 <bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container">
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<p>Gratuito</p>
+<strong class="subtitulo_panel">Gratuito</strong>
+<div class="contenedor_panel_icono"><p>R es un lenguaje abierto y gratuito, parte de la comunidad del <em>software libre</em>, así que nunca tendrás que pagar nada!</p>
+</div>
+<i class="fas fa-cloud-arrow-down icono_mediano" role="presentation" aria-label="cloud-arrow-down icon"></i>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
 </div>
@@ -177,7 +159,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container">
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<p>Amigable</p>
+<strong class="subtitulo_panel">Amigable</strong>
+<div class="contenedor_panel_icono"><p>R fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.</p>
+</div>
+<i class="fa-solid fa-heart icono_mediano" role="presentation" aria-label="fa-solid fa-heart icon"></i>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
 </div>
@@ -185,7 +170,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container">
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<p>Reproducible</p>
+<strong class="subtitulo_panel">Reproducible</strong>
+<div class="contenedor_panel_icono"><p>La gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros.</p>
+</div>
+<i class="fas fa-repeat icono_mediano" role="presentation" aria-label="repeat icon"></i>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
 </div>
@@ -193,9 +181,13 @@ ul.task-list li input[type="checkbox"] {
 </bslib-layout-columns>
 </div>
 </div>
+</div>
+<p>https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/</p>
+<p>https://bastianolea.rbind.io/blog/2025-11-13/</p>
+<hr>
 </section>
 <section id="basico" class="level2">
-<h2 class="anchored" data-anchor-id="basico">Primeros pasos</h2>
+<h2 class="anchored" data-anchor-id="basico">Primeros pasos en R</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">

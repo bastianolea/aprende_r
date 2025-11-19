@@ -7,11 +7,14 @@
   --destacado-3: #724BE7;
 }
 
-/* css styles */
 body {
   background-color: var(--fondo);
   color: var(--texto);
   font-size: 110%;
+}
+
+p {
+  line-height: 1.2;
 }
 
 a {
@@ -129,4 +132,31 @@ h1.title, .title.h1 {
 .redonda {
   width: 50%; max-width: 200px; border-radius: 50%;
   opacity: 90%;
+}
+
+.icono {
+  margin: auto;
+  font-size: 34px;
+  padding: 8px;
+}
+
+.icono_mediano {
+  margin: auto;
+  font-size: 34px;
+  padding: 8px;
+  padding-top: 0;
+  color: #9F69C9;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.subtitulo_panel {
+  margin-bottom: -8px;
+  font-size: 110%;
+}
+
+.contenedor_panel_icono {
+ min-height: 140px;
 }
