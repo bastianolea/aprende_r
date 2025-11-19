@@ -12,13 +12,13 @@ library(bslib)
 
 ```{r}
 layout_columns(
-    card(
-      p("Hola")
-    ),
-    card(
-      p("Chao")
-    )
+  card(
+    p("Hola")
+  ),
+  card(
+    p("Chao")
   )
+)
 ```
 
 
@@ -34,7 +34,30 @@ layout_columns(
 ## Por qué R
 https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/
 
+```{r}
+layout_columns(
+  card(
+    p("Gratuito")
+  ),
+  card(
+    p("Amigable")
+  ),
+  card(
+    p("Reproducible")
+  )
+)
+```
+
+
 ## Primeros pasos
+
+```{r}
+card(
+  p("Chao")
+)
+```
+
+
 https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/
 
 https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
@@ -42,6 +65,23 @@ https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
 https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/
 
 ## Reforzando lo básico
+
+```{r}
+card(
+  layout_columns(
+    col_widths = c(4, 8), 
+    
+    div(
+    ),
+    
+    card(id = "interna",
+         p("Chao")
+    )
+  )
+)
+```
+
+
 https://bastianolea.rbind.io/blog/r_introduccion/proyectos/
 
 ## Empezar a trabajar con datos
@@ -67,6 +107,29 @@ https://bastianolea.rbind.io/blog/correlaciones/
 
 
 ## Nuevas posibilidades con R
+
+```{r}
+card(
+  layout_columns(
+    card(id = "interna",
+         p("Chao")
+    ),
+    
+    card(id = "interna",
+         p("Chao")
+    ),
+    
+    card(id = "interna",
+         p("Chao")
+    ),
+    
+    card(id = "interna",
+         p("Chao")
+    ),
+  )
+)
+```
+
 
 ### Visualización de datos
 https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/
@@ -117,3 +180,15 @@ https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/
 #### Shiny avanzado
 
 https://bastianolea.rbind.io/tags/shiny/
+
+
+----
+
+## Sobre
+
+```{r}
+div(style = "text-align: center;",
+    img(src = "awawa.png", alt = "awawa", 
+        style = "max-width: 50%; border-radius: 50%;")
+)
+```

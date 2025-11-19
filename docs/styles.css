@@ -28,6 +28,9 @@ h1 {
 }
 
 h2 {
+  border: none;
+  margin-top: 32px !important;
+  margin-bottom: 6px !important;
   border-bottom-color: var(--destacado);
 }
 
@@ -61,8 +64,13 @@ h1.title, .title.h1 {
   border: none;
 }
 .card-body {
-  background-color: var(--destacado);
+  background-color: #31193f;
+  border: solid 1px #442A54;
   color: var(--texto);
   border-radius: 5px;
-  border: solid 1px #391D4A;
+}
+
+#interna .card-body {
+  background-color: #432257;
+  border: solid 1px #542D6A;
 }
