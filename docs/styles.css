@@ -34,6 +34,13 @@ h2 {
   border-bottom-color: var(--destacado);
 }
 
+hr {
+  border-color: #442A54;
+  opacity: 1;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
 .navbar-nav .nav-link.active {
   color: var(--texto) !important; 
 }
@@ -73,4 +80,53 @@ h1.title, .title.h1 {
 #interna .card-body {
   background-color: #432257;
   border: solid 1px #542D6A;
+}
+
+.card-body h3, h4 {
+  margin-top: 0px;
+}
+
+.contenedor_libro {
+  width: 132px !important; 
+  margin: auto;
+
+}
+
+.libro {
+  max-width: 128px; display: block; 
+  margin-left: auto; margin-right: auto;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  opacity: 90%;
+}
+
+.libro_titulo {
+  text-align: center; 
+  font-weight: bold; 
+  color: var(--texto);
+  text-decoration: none !important;
+  font-size: 85%;
+  line-height: 1;
+  margin-bottom: -10px;
+}
+
+
+.sin_scroll {
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+.sin_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.contenedor_redonda {
+  text-align: center; padding: 12px; margin-bottom: 18px;
+}
+
+.redonda {
+  width: 50%; max-width: 200px; border-radius: 50%;
+  opacity: 90%;
 }

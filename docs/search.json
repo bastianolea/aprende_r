@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Aprende R",
     "section": "",
-    "text": "Hola\n\n\n\n\n\n\n\nChao\n¿Estás recién pensando en aprender R?\n¿Nunca has programado pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas reforzar?\n¿Ya sabes programar en R y quieres mejorar?"
+    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\nHola\n\n\n\n\n\n\n\nChao\n¿Estás pensando si aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
   },
   {
     "objectID": "index.html#por-qué-r",
     "href": "index.html#por-qué-r",
     "title": "Aprende R",
     "section": "Por qué R",
-    "text": "Por qué R\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\n\n\n\n\n\n\nGratuito\n\n\n\n\n\n\n\nAmigable\n\n\n\n\n\n\n\nReproducible"
+    "text": "Por qué R\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\nhttps://bastianolea.rbind.io/blog/2025-11-13/\n\n\n\n\n\n\nGratuito\n\n\n\n\n\n\n\nAmigable\n\n\n\n\n\n\n\nReproducible"
   },
   {
     "objectID": "index.html#primeros-pasos",
@@ -25,7 +25,7 @@
     "href": "index.html#reforzando-lo-básico",
     "title": "Aprende R",
     "section": "Reforzando lo básico",
-    "text": "Reforzando lo básico\n\n\n\n\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/proyectos/"
+    "text": "Reforzando lo básico\n\n\n\n\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/proyectos/\n\nTidyverse\nhttps://bastianolea.rbind.io/blog/stringr_texto/"
   },
   {
     "objectID": "index.html#empezar-a-trabajar-con-datos",
@@ -39,14 +39,14 @@
     "href": "index.html#estadísticas",
     "title": "Aprende R",
     "section": "Estadísticas",
-    "text": "Estadísticas\nhttps://bastianolea.rbind.io/blog/correlaciones/"
+    "text": "Estadísticas\nhttps://bastianolea.rbind.io/blog/correlaciones/\n\n\n\n\n\n\n\n\n\n\n\nR para ciencia de datos\n\n\n\n\n\n\n\n\n\nFundamentos de ciencia de datos con R\n\n\n\n\n\n\n\n\n\nGran libro de R"
   },
   {
     "objectID": "index.html#nuevas-posibilidades-con-r",
     "href": "index.html#nuevas-posibilidades-con-r",
     "title": "Aprende R",
     "section": "Nuevas posibilidades con R",
-    "text": "Nuevas posibilidades con R\n\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\n\n\n\n\nVisualización de datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/\nhttps://bastianolea.rbind.io/tags/visualización-de-datos/\n\n\nMapas y análisis geoespacial\nhttps://bastianolea.rbind.io/blog/mapas_sf/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_chile/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_urbano/\nhttps://bastianolea.rbind.io/tags/mapas/\n\n\nReportes\nhttps://bastianolea.rbind.io/blog/quarto_reportes/\nhttps://bastianolea.rbind.io/blog/quarto_params/\nhttps://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/\nhttps://bastianolea.rbind.io/tags/quarto/\n\n\nAplicaciones\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/\nhttps://bastianolea.rbind.io/tags/shiny/\n\n\nWeb scraping\nhttps://bastianolea.rbind.io/blog/r_introduccion/web_scraping/"
+    "text": "Nuevas posibilidades con R"
   },
   {
     "objectID": "index.html#publica-comparte-y-expándete",
@@ -59,8 +59,8 @@
     "objectID": "index.html#avanzado",
     "href": "index.html#avanzado",
     "title": "Aprende R",
-    "section": "Avanzado",
-    "text": "Avanzado\n\nShiny avanzado\nhttps://bastianolea.rbind.io/tags/shiny/"
+    "section": "Nuevas posibilidades con R",
+    "text": "Nuevas posibilidades con R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualización de datos\nChao\n\n\n\n\n\n\n\nMapas y análisis geoespacial\nChao\n\n\n\n\n\n\n\nReportes\nChao\n\n\n\n\n\n\n\nAplicaciones\nChao\n\n\n\n\n\n\n\nWeb scraping\nChao\n\n\n\n\n\n\n\nPublicar y compartir\nChao\n\n\n\n\n\n\n\n\n\n\n\nVisualización de datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/\nhttps://bastianolea.rbind.io/tags/visualización-de-datos/\n\n\nMapas y análisis geoespacial\nhttps://bastianolea.rbind.io/blog/mapas_sf/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_chile/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_urbano/\nhttps://bastianolea.rbind.io/tags/mapas/\n\n\nReportes\nhttps://bastianolea.rbind.io/blog/quarto_reportes/\nhttps://bastianolea.rbind.io/blog/quarto_params/\nhttps://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/\nhttps://bastianolea.rbind.io/tags/quarto/\n\n\nAplicaciones\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/\nhttps://bastianolea.rbind.io/tags/shiny/\n\n\nWeb scraping\nhttps://bastianolea.rbind.io/blog/r_introduccion/web_scraping/"
   },
   {
     "objectID": "about.html",
@@ -117,5 +117,47 @@
     "title": "Aprende R",
     "section": "Sobre",
     "text": "Sobre"
+  },
+  {
+    "objectID": "index.html#sobre-1",
+    "href": "index.html#sobre-1",
+    "title": "Aprende R",
+    "section": "Sobre",
+    "text": "Sobre"
+  },
+  {
+    "objectID": "index.html#fig-elephant",
+    "href": "index.html#fig-elephant",
+    "title": "Aprende R",
+    "section": "Empezar a trabajar con datos",
+    "text": "Empezar a trabajar con datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/\nhttps://bastianolea.rbind.io/blog/left_join/\n\nTidyverse\nhttps://bastianolea.rbind.io/blog/stringr_texto/"
+  },
+  {
+    "objectID": "index.html#introduccion",
+    "href": "index.html#introduccion",
+    "title": "Aprende R",
+    "section": "Por qué R",
+    "text": "Por qué R\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\nhttps://bastianolea.rbind.io/blog/2025-11-13/\n\n\n\n\n\n\nGratuito\n\n\n\n\n\n\n\nAmigable\n\n\n\n\n\n\n\nReproducible"
+  },
+  {
+    "objectID": "index.html#basico",
+    "href": "index.html#basico",
+    "title": "Aprende R",
+    "section": "Primeros pasos",
+    "text": "Primeros pasos\n\n\n\n\nChao\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/instalar_r/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"
+  },
+  {
+    "objectID": "index.html#intermedio",
+    "href": "index.html#intermedio",
+    "title": "Aprende R",
+    "section": "Empezar a trabajar con datos",
+    "text": "Empezar a trabajar con datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/\nhttps://bastianolea.rbind.io/blog/left_join/"
+  },
+  {
+    "objectID": "index.html#avanzado-1",
+    "href": "index.html#avanzado-1",
+    "title": "Aprende R",
+    "section": "Avanzado",
+    "text": "Avanzado\n\nShiny avanzado\nhttps://bastianolea.rbind.io/tags/shiny/"
   }
 ]

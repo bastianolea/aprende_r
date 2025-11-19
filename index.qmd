@@ -5,6 +5,10 @@ execute:
   warning: false
 ---
 
+Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.
+
+----
+
 ```{r}
 library(shiny)
 library(bslib)
@@ -22,17 +26,20 @@ layout_columns(
 ```
 
 
-¿Estás recién pensando en aprender R?
+¿Estás pensando si [aprender a programar para analizar datos?](#introduccion)
 
-¿Nunca has programado pero quieres empezar ya?
+¿Nunca has programado, pero [quieres empezar ya?](#basico)
 
-¿Sabes un poco de R, pero necesitas reforzar?
+¿Sabes un poco de R, pero [necesitas mejorar?](#intermedio)
 
-¿Ya sabes programar en R y quieres mejorar?
+¿Ya sabes R y [quieres ir más allá?](#avanzado)
 
+----
 
-## Por qué R
+## Por qué R {#introduccion}
 https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/
+
+https://bastianolea.rbind.io/blog/2025-11-13/
 
 ```{r}
 layout_columns(
@@ -49,7 +56,7 @@ layout_columns(
 ```
 
 
-## Primeros pasos
+## Primeros pasos {#basico}
 
 ```{r}
 card(
@@ -84,7 +91,14 @@ card(
 
 https://bastianolea.rbind.io/blog/r_introduccion/proyectos/
 
-## Empezar a trabajar con datos
+### Tidyverse
+
+https://bastianolea.rbind.io/blog/stringr_texto/
+
+
+
+
+## Empezar a trabajar con datos {#intermedio}
 https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/
 
 https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/
@@ -95,35 +109,89 @@ https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/
 https://bastianolea.rbind.io/blog/left_join/
 
 
-### Tidyverse
-
-https://bastianolea.rbind.io/blog/stringr_texto/
-
 
 ## Estadísticas
 https://bastianolea.rbind.io/blog/correlaciones/
 
 ----
 
+```{r}
 
-## Nuevas posibilidades con R
+div(
+    
+    layout_columns(
+      
+      div(class = "contenedor_libro",
+          img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
+            a(href = "https://es.r4ds.hadley.nz"),
+          p("R para ciencia de datos", class = "libro_titulo") |> 
+            a(href = "https://cdr-book.github.io", class = "libro_titulo")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "Fundamentos de ciencia de datos con R", src = "img/fundamentos.jpg", class = "libro") |> 
+            a(href = "https://cdr-book.github.io"),
+          p("Fundamentos de ciencia de datos con R", class = "libro_titulo") |> 
+            a(href = "https://cdr-book.github.io", class = "libro_titulo")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "Gran libro de R", src = "img/bigbookofR.png", class = "libro") |> 
+            a(href = "https://www.bigbookofr.com/chapters/español"),
+          p("Gran libro de R", class = "libro_titulo") |> 
+            a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo")
+      )
+    )
+)
+```
+
+
+----
+
+## Nuevas posibilidades con R {#avanzado}
+
+
+```{r}
+div(
+  div(class = "contenedor_redonda",
+      img(src = "img/awawa.png", alt = "awawa", 
+          class = "redonda")
+  )
+)
+```
+
 
 ```{r}
 card(
   layout_columns(
     card(id = "interna",
+         
+         h3("Visualización de datos"),
          p("Chao")
     ),
     
     card(id = "interna",
+         h3("Mapas y análisis geoespacial"),
          p("Chao")
     ),
     
     card(id = "interna",
+         h3("Reportes"),
          p("Chao")
     ),
     
     card(id = "interna",
+         h3("Aplicaciones"),
+         p("Chao")
+    ),
+    
+    card(id = "interna",
+         h3("Web scraping"),
+         p("Chao")
+    ),
+    
+    card(id = "interna",
+         h3("Publicar y compartir"),
          p("Chao")
     ),
   )
@@ -185,10 +253,3 @@ https://bastianolea.rbind.io/tags/shiny/
 ----
 
 ## Sobre
-
-```{r}
-div(style = "text-align: center;",
-    img(src = "awawa.png", alt = "awawa", 
-        style = "max-width: 50%; border-radius: 50%;")
-)
-```
