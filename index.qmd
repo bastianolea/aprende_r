@@ -13,7 +13,7 @@ library(shiny)
 library(bslib)
 ```
 
-¿Estás pensando si [aprender a programar para analizar datos?](#introduccion)
+¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
 
 ¿Nunca has programado, pero [quieres empezar ya?](#basico)
 
@@ -25,7 +25,7 @@ library(bslib)
 
 ## Por qué R {#introduccion}
 
-Porque R es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!
+R es un lenguaje **diseñado para el análisis de datos**, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!
 
 ```{r}
 div(class = "centrado", style = "margin-top: 12px",
@@ -58,13 +58,23 @@ div(class = "centrado", style = "margin-top: 12px",
 ```
 
 
-https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/ -->
 
-https://bastianolea.rbind.io/blog/2025-11-13/
+<!-- https://bastianolea.rbind.io/blog/2025-11-13/ -->
 
 ----
 
 ## Obtener R 
+
+```{r}
+div(style = "margin-bottom: 12px;",
+    p(style = "display: inline-block;",
+      "Para empezar a analizar datos con R necesitas", 
+      span("1", class = "circulo_texto"), "instalar R (el lenguaje) y", 
+      span("2", class = "circulo_texto"), "instalar RStudio (el programa).")
+)
+```
+
 
 ```{r descargar_r}
 card(
@@ -72,28 +82,34 @@ card(
     div(
       
       div(style = "margin-bottom: 6px;",
-      div("1", class = "circulo"),
-      strong("Descargar R", class = "subtitulo_panel")
+          div("1", class = "circulo"),
+          strong("Descargar R", class = "subtitulo_panel")
       ),
       
-      markdown("Primero hay que instalar el lenguaje, que es el motor que te permitirá analizar datos."),
+      markdown("Primero hay que instalar el lenguaje R, que es el programa que permitirá que tu computador entienda el lenguaje R."),
       
-      markdown("Para más información [lee esta guía](https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/)")
+      markdown("R se descarga desde el sitio oficial del [Proyecto R](https://cran.r-project.org)."),
       
+      markdown("Para más información [lee esta guía](https://bastianolea.rbind.io/blog/r_introduccion/instalar_r/).")
     ),
     
-    div(
-      card(id = "interna",
-           strong("Descargar", class = "subtitulo_panel"),
-           
-           # icon("download", class = "icono_mediano",
-           #      style = "color: #B39CCD;")
-           div(class = "filtro",
-           img(src = "img/logo_r.png",
-               style = "width: 100%;")
+    
+    card(id = "interna",
+         
+         # imagen
+         a(href = "https://cran.r-project.org", style = "text-decoration: none;",
+           div(style = "margin: auto; text-align: center;",
+               img(src = "img/logo_r.png", class = "imagen_descargar")
            )
-      )
+         ),
+         
+         # texto
+         a(href = "https://cran.r-project.org", class = "texto_descargar", style = "margin-left: 16px;",
+           strong("Descargar", class = "subtitulo_panel"), icon("download", class = "icono_texto")
+         )
+         
     )
+    
   )
 )
 ```
@@ -105,19 +121,51 @@ card(
   layout_columns(col_widths = c(4, 8),
                  div(
                    div(style = "margin-bottom: 6px;",
-                   div("2", class = "circulo"),
-                   strong("Descargar una IDE", class = "subtitulo_panel")
+                       div("2", class = "circulo"),
+                       strong("Descargar una IDE", class = "subtitulo_panel")
                    ),
-                   # icon("download", class = "icono_mediano"),
+                   
+                   # texto lateral
+                   markdown("Una vez que tengas R instalado, necesitas un programa que te ayude a usarlo."),
+                   markdown("A esto se le denomina IDE o _entorno de desarrollo_, 
+                            y las 2 más populares son [RStudio](https://posit.co/download/rstudio-desktop/) y [Positron](https://posit.co/products/ide/positron/).")
+                   
                  ),
                  
                  layout_columns(
                    card(id = "interna",
-                        strong("RStudio", class = "subtitulo_panel"),
+                        # título
+                        strong("RStudio", class = "subtitulo_panel", style = "text-align: center;"),
+                        
+                        # imagen
+                        a(href = "https://posit.co/download/rstudio-desktop/", style = "text-decoration: none;",
+                          div(style = "margin: auto; text-align: center;",
+                              img(src = "img/logo_rstudio.png", class = "imagen_descargar")
+                          )
+                        ),
+                        
+                        # texto
+                        a(href = "https://posit.co/download/rstudio-desktop/", class = "texto_descargar", 
+                          span("Descargar", class = "subtitulo_panel"), icon("download", class = "icono_texto")
+                        )
+                        
                    ),
                    
                    card(id = "interna",
-                        strong("Positron", class = "subtitulo_panel"),
+                        # título
+                        strong("Positron", class = "subtitulo_panel", style = "text-align: center;"),
+                        
+                        # imagen
+                        a(href = "https://posit.co/products/ide/positron/", style = "text-decoration: none;",
+                          div(style = "margin: auto; text-align: center;",
+                              img(src = "img/logo_positron.png", class = "imagen_descargar")
+                          )
+                        ),
+                        
+                        # texto
+                        a(href = "https://posit.co/products/ide/positron/", class = "texto_descargar",
+                          span("Descargar", class = "subtitulo_panel"), icon("download", class = "icono_texto")
+                        )
                    )
                  )
   )
@@ -132,86 +180,137 @@ p(
   "Opcionalmente, puedes usar R en la nube mediante servicios como", 
   a(href = "https://posit.cloud", "Posit Cloud,"),
   "que te permite usar RStudio en un navagador gratis."
-  )
-```
-
-
-
-----
-
-
-## Primeros pasos {#basico}
-
-```{r}
-card(
-  layout_columns(
-    col_widths = c(4, 8), 
-    
-    div(
-    ),
-    
-    card(id = "interna",
-         p("Chao")
-    )
-  )
 )
 ```
 
-https://bastianolea.rbind.io/blog/r_introduccion/r_basico/
 
-https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/
-
-https://bastianolea.rbind.io/blog/r_introduccion/proyectos/
-
-### Tidyverse
-
-https://bastianolea.rbind.io/blog/stringr_texto/
-
-
-
-
-## Empezar a trabajar con datos {#intermedio}
-https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/
-
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/
-
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/
-
-
-https://bastianolea.rbind.io/blog/left_join/
-
-
-
-## Estadísticas
-https://bastianolea.rbind.io/blog/correlaciones/
 
 ----
 
+
+## Primeros pasos en R {#basico}
+
+```{r}
+div(
+  
+  card(
+    h4("Introducción al lenguaje R"),
+    
+    markdown("https://bastianolea.rbind.io/blog/r_introduccion/r_basico/"),
+    
+    a("RStudio",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/"),
+    
+    a("Proyectos",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/proyectos/"),
+    
+    a("Operaciones básicas",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r"),
+    
+    a("Vectores de datos",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores"),
+    
+    a("Funciones básicas",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones"),
+  ),
+  
+  card(
+    h4("Programación básica con R"),
+    
+    markdown("https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"),
+    
+    a("Crear funciones",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones"),
+    
+    a("Control de flujo",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo"),
+    
+    a("Loops",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles"),
+    
+  ),
+  
+  card(
+    h4("Trabajando con datos en R"),
+    
+    markdown("https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/"),
+    
+    a("Explorar datos",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla"),
+    
+    a("Filtrar datos",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos"),
+    
+    a("Crear variables",
+      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas"),
+  )
+)
+
+```
+
+
+----
+
+
+<!-- ### Tidyverse -->
+
+<!-- https://bastianolea.rbind.io/blog/stringr_texto/ -->
+
+
+
+
+<!-- ## Empezar a trabajar con datos {#intermedio} -->
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/ -->
+
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/ -->
+
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/ -->
+
+
+<!-- https://bastianolea.rbind.io/blog/left_join/ -->
+
+
+
+<!-- ## Estadísticas -->
+<!-- https://bastianolea.rbind.io/blog/correlaciones/ -->
+
+<!-- ---- -->
+
+## Libros recomendados
+
+Lecturas para poder profundizar en aspectos del lenguaje, o su aplicación a distintas disciplinas.
+
 ```{r}
 
-div(
+div(style = "margin-top: 12px;",
   
   layout_columns(
     
     div(class = "contenedor_libro",
         img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
           a(href = "https://es.r4ds.hadley.nz"),
-        p("R para ciencia de datos", class = "libro_titulo") |> 
-          a(href = "https://cdr-book.github.io", class = "libro_titulo")
+        p("R para ciencia de datos en español", class = "libro_titulo") |> 
+          a(href = "https://cdr-book.github.io", class = "libro_titulo"),
+        
+        p("Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.", class = "libro_texto")
     ),
     
     div(class = "contenedor_libro",
         img(alt = "Fundamentos de ciencia de datos con R", src = "img/fundamentos.jpg", class = "libro") |> 
           a(href = "https://cdr-book.github.io"),
         p("Fundamentos de ciencia de datos con R", class = "libro_titulo") |> 
-          a(href = "https://cdr-book.github.io", class = "libro_titulo")
+          a(href = "https://cdr-book.github.io", class = "libro_titulo"),
+        
+        p("Libro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.", class = "libro_texto")
     ),
     
     div(class = "contenedor_libro",
         img(alt = "Gran libro de R", src = "img/bigbookofR.png", class = "libro") |> 
           a(href = "https://www.bigbookofr.com/chapters/español"),
         p("Gran libro de R", class = "libro_titulo") |> 
-          a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo")
+          a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo"),
+        
+        p("No es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión.", class = "libro_texto")
     )
   )
 )
@@ -220,17 +319,7 @@ div(
 
 ----
 
-## Nuevas posibilidades con R {#avanzado}
-
-
-```{r}
-div(
-  div(class = "contenedor_redonda",
-      img(src = "img/awawa.png", alt = "awawa", 
-          class = "redonda")
-  )
-)
-```
+## Expandir posibilidades con R {#avanzado}
 
 
 ```{r}
@@ -271,57 +360,94 @@ card(
 ```
 
 
-### Visualización de datos
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/
+<!-- ### Visualización de datos -->
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/ -->
 
-https://bastianolea.rbind.io/tags/visualización-de-datos/
-
-
-### Mapas y análisis geoespacial
-https://bastianolea.rbind.io/blog/mapas_sf/
-
-https://bastianolea.rbind.io/blog/tutorial_mapa_chile/
-
-https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/
-
-https://bastianolea.rbind.io/tags/mapas/
+<!-- https://bastianolea.rbind.io/tags/visualización-de-datos/ -->
 
 
-### Reportes
-https://bastianolea.rbind.io/blog/quarto_reportes/
+<!-- ### Mapas y análisis geoespacial -->
+<!-- https://bastianolea.rbind.io/blog/mapas_sf/ -->
 
-https://bastianolea.rbind.io/blog/quarto_params/
+<!-- https://bastianolea.rbind.io/blog/tutorial_mapa_chile/ -->
 
-https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/
+<!-- https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/ -->
 
-https://bastianolea.rbind.io/tags/quarto/
-
-
-### Aplicaciones
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/
-
-https://bastianolea.rbind.io/tags/shiny/
+<!-- https://bastianolea.rbind.io/tags/mapas/ -->
 
 
-### Web scraping
-https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/
+<!-- ### Reportes -->
+<!-- https://bastianolea.rbind.io/blog/quarto_reportes/ -->
 
-## Publica, comparte y expándete
+<!-- https://bastianolea.rbind.io/blog/quarto_params/ -->
 
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/
+<!-- https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/ -->
 
-https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/
+<!-- https://bastianolea.rbind.io/tags/quarto/ -->
+
+
+<!-- ### Aplicaciones -->
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/ -->
+
+<!-- https://bastianolea.rbind.io/tags/shiny/ -->
+
+
+<!-- ### Web scraping -->
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/ -->
+
+<!-- ## Publica, comparte y expándete -->
+
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/ -->
+
+<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/ -->
+
+
+<!-- ---- -->
+
+<!-- ## Avanzado -->
+
+<!-- #### Shiny avanzado -->
+
+<!-- https://bastianolea.rbind.io/tags/shiny/ -->
 
 
 ----
 
-## Avanzado
-
-#### Shiny avanzado
-
-https://bastianolea.rbind.io/tags/shiny/
+## Sobre mi
 
 
-----
+```{r}
+div(
+  div(class = "contenedor_redonda",
+      img(src = "img/bastian_olea.jpg", alt = "Bastián Olea Herrera", 
+          class = "redonda")
+  )
+)
+```
 
-## Sobre
+```{r}
+div(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
+    
+    div(style = "width: 70%; min-width: 240px; margin: auto; text-align: center;",
+        
+        p("Mi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.",
+           style = "font-size: 120%; margin-bottom: 12px;"),
+        
+        p("Estudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación."),
+        
+        p("Aprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender."),
+        
+        markdown("Puedes encontrarme en [mi blog](https://bastianolea.rbind.io), 
+                 o [contactarme](https://bastianolea.rbind.io/contacto).")
+    )
+)
+```
+
+```{r cafecito}
+div(style = "padding: 24px; text-align: center; margin: auto;",
+             style = "transform:scale(.6);",
+           tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
+         )
+
+```
+

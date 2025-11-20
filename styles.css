@@ -15,6 +15,7 @@ body {
 
 p {
   line-height: 1.2;
+  margin-bottom: 0.6rem !important;
 }
 
 a {
@@ -22,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #724be7;
+  color: #8553E8;
   text-decoration: none !important; 
 }
 
@@ -90,8 +91,9 @@ h1.title, .title.h1 {
 }
 
 .contenedor_libro {
-  width: 132px !important; 
+  width: 180px !important; 
   margin: auto;
+  margin-top: 0;
 
 }
 
@@ -108,9 +110,19 @@ h1.title, .title.h1 {
   font-weight: bold; 
   color: var(--texto);
   text-decoration: none !important;
+  font-size: 98%;
+  line-height: 1;
+  margin-bottom: -12px;
+}
+
+
+.libro_texto {
+  text-align: center; 
+  color: var(--texto);
+  text-decoration: none !important;
   font-size: 85%;
   line-height: 1;
-  margin-bottom: -10px;
+  hyphens: auto;
 }
 
 
@@ -132,6 +144,7 @@ h1.title, .title.h1 {
 .redonda {
   width: 50%; max-width: 200px; border-radius: 50%;
   opacity: 90%;
+  border: 1px solid #442A55;
 }
 
 .icono {
@@ -151,7 +164,8 @@ h1.title, .title.h1 {
 .icono_texto {
   margin: auto;
   font-size: 100%;
-  padding: 8px;
+  padding: 6px;
+  padding-bottom: 0;
   display: inline-block;
   margin-right: 0px;
 }
@@ -178,23 +192,41 @@ h1.title, .title.h1 {
 
 .circulo {
   background-color: var(--texto);
+  color: var(--fondo) !important; 
+  font-weight: bold;
   width: 24px; height: 24px;
   line-height: 24px;
   padding-bottom: 2px;
-  color: var(--fondo) !important; 
   border-radius: 50%;
   text-align: center;
   display: inline-block;
   margin-right: 4px;
 }
 
-.inline {
+
+.texto_descargar {
+  font-size: 90%; 
+  line-height: 0.9;
+  margin-left: 12px;
+  text-decoration: none; 
+  margin-bottom: -8px; margin-top: -6px; 
+  text-align: center; color: #B39CCD;
+}
+
+.imagen_descargar {
+  padding: 12px; padding-top: 4px; padding-bottom: 0px; 
+  width: 80%; max-width: 200px; min-width: 128px;
+  opacity: .9;
+}
+
+.circulo_texto {
+  background-color: var(--texto);
+  color: var(--fondo) !important; 
+  width: 18px; height: 18px; line-height: 18px;
+  font-size: 10pt;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
   display: inline-block;
+  margin-left: 3px; margin-right: 3px;
 }
-
-.filtro {
-  /*filter: hue-rotate(100deg);*/
-  filter: brightness(2.5);
-  opacity: 1;*/
-}
-

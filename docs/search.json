@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Aprende R",
     "section": "",
-    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\n¿Estás pensando si aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
+    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\n¿Estás pensando en aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
   },
   {
     "objectID": "index.html#por-qué-r",
@@ -59,8 +59,8 @@
     "objectID": "index.html#avanzado",
     "href": "index.html#avanzado",
     "title": "Aprende R",
-    "section": "Nuevas posibilidades con R",
-    "text": "Nuevas posibilidades con R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualización de datos\nChao\n\n\n\n\n\n\n\nMapas y análisis geoespacial\nChao\n\n\n\n\n\n\n\nReportes\nChao\n\n\n\n\n\n\n\nAplicaciones\nChao\n\n\n\n\n\n\n\nWeb scraping\nChao\n\n\n\n\n\n\n\nPublicar y compartir\nChao\n\n\n\n\n\n\n\n\n\n\n\nVisualización de datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/\nhttps://bastianolea.rbind.io/tags/visualización-de-datos/\n\n\nMapas y análisis geoespacial\nhttps://bastianolea.rbind.io/blog/mapas_sf/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_chile/\nhttps://bastianolea.rbind.io/blog/tutorial_mapa_urbano/\nhttps://bastianolea.rbind.io/tags/mapas/\n\n\nReportes\nhttps://bastianolea.rbind.io/blog/quarto_reportes/\nhttps://bastianolea.rbind.io/blog/quarto_params/\nhttps://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/\nhttps://bastianolea.rbind.io/tags/quarto/\n\n\nAplicaciones\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/\nhttps://bastianolea.rbind.io/tags/shiny/\n\n\nWeb scraping\nhttps://bastianolea.rbind.io/blog/r_introduccion/web_scraping/"
+    "section": "Expandir posibilidades con R",
+    "text": "Expandir posibilidades con R\n\n\n\n\n\n\n\n\nVisualización de datos\nChao\n\n\n\n\n\n\n\nMapas y análisis geoespacial\nChao\n\n\n\n\n\n\n\nReportes\nChao\n\n\n\n\n\n\n\nAplicaciones\nChao\n\n\n\n\n\n\n\nWeb scraping\nChao\n\n\n\n\n\n\n\nPublicar y compartir\nChao"
   },
   {
     "objectID": "about.html",
@@ -137,14 +137,14 @@
     "href": "index.html#introduccion",
     "title": "Aprende R",
     "section": "Por qué R",
-    "text": "Por qué R\nPorque R es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!\n\n\n\n\n\n\n\nGratuito\nR es un lenguaje abierto y gratuito, parte de la comunidad del software libre, así que nunca tendrás que pagar nada!\n\n\n\n\n\n\n\n\n\nAmigable\nR fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.\n\n\n\n\n\n\n\n\n\nReproducible\nLa gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros.\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/por_que_r/\nhttps://bastianolea.rbind.io/blog/2025-11-13/"
+    "text": "Por qué R\nR es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!\n\n\n\n\n\n\n\nGratuito\nR es un lenguaje abierto y gratuito, parte de la comunidad del software libre, así que nunca tendrás que pagar nada!\n\n\n\n\n\n\n\n\n\nAmigable\nR fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.\n\n\n\n\n\n\n\n\n\nReproducible\nLa gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros."
   },
   {
     "objectID": "index.html#basico",
     "href": "index.html#basico",
     "title": "Aprende R",
-    "section": "Primeros pasos",
-    "text": "Primeros pasos\n\n\n\n\n\n\n\n\n\n\n\nChao\n\n\n\n\n\n\n\n\n\n\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/\nhttps://bastianolea.rbind.io/blog/r_introduccion/proyectos/\n\nTidyverse\nhttps://bastianolea.rbind.io/blog/stringr_texto/"
+    "section": "Primeros pasos en R",
+    "text": "Primeros pasos en R\n\n\n\n\n\nIntroducción al lenguaje R\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\n\nRStudio\nProyectos\nOperaciones básicas\nVectores de datos\nFunciones básicas\n\n\n\n\n\nProgramación básica con R\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/\n\nCrear funciones\nControl de flujo\nLoops\n\n\n\n\n\nTrabajando con datos en R\nhttps://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/\n\nExplorar datos\nFiltrar datos\nCrear variables"
   },
   {
     "objectID": "index.html#intermedio",
@@ -165,6 +165,20 @@
     "href": "index.html#obtener-r",
     "title": "Aprende R",
     "section": "Obtener R",
-    "text": "Obtener R\n\n\n\n\n\n\n\n\n1\nDescargar R\n\nPrimero hay que instalar el lenguaje, que es el motor que te permitirá analizar datos.\n\nPara más información lee esta guía\n\n\n\n\n\n\n\nDescargar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nDescargar una IDE\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\n\n\n\nPositron\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpcionalmente, puedes usar R en la nube mediante servicios como\nPosit Cloud,\nque te permite usar RStudio en un navagador gratis."
+    "text": "Obtener R\n\n\n\n\nPara empezar a analizar datos con R necesitas\n1\ninstalar R (el lenguaje) y\n2\ninstalar RStudio (el programa).\n\n\n\n\n\n\n\n\n\n\n\n\n1\nDescargar R\n\nPrimero hay que instalar el lenguaje R, que es el programa que permitirá que tu computador entienda el lenguaje R.\n\nR se descarga desde el sitio oficial del Proyecto R.\n\nPara más información lee esta guía.\n\n\n\n\n\n\n\n\n\n\n\n\nDescargar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nDescargar una IDE\n\nUna vez que tengas R instalado, necesitas un programa que te ayude a usarlo.\n\nA esto se le denomina IDE o entorno de desarrollo,\ny las 2 más populares son RStudio y Positron.\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\n\n\nDescargar\n\n\n\n\n\n\n\n\n\nPositron\n\n\n\n\n\n\nDescargar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpcionalmente, puedes usar R en la nube mediante servicios como\nPosit Cloud,\nque te permite usar RStudio en un navagador gratis."
+  },
+  {
+    "objectID": "index.html#libros-recomendados",
+    "href": "index.html#libros-recomendados",
+    "title": "Aprende R",
+    "section": "Libros recomendados",
+    "text": "Libros recomendados\nLecturas para poder profundizar en aspectos del lenguaje, o su aplicación a distintas disciplinas.\n\n\n\n\n\n\n\n\n\n\nR para ciencia de datos en español\n\nLibro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.\n\n\n\n\n\n\n\n\nFundamentos de ciencia de datos con R\n\nLibro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.\n\n\n\n\n\n\n\n\nGran libro de R\n\nNo es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión."
+  },
+  {
+    "objectID": "index.html#sobre-mi",
+    "href": "index.html#sobre-mi",
+    "title": "Aprende R",
+    "section": "Sobre mi",
+    "text": "Sobre mi\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.\nEstudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación.\nAprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender.\nPuedes encontrarme en mi blog,\no contactarme."
   }
 ]
