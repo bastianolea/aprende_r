@@ -5,7 +5,7 @@ execute:
   warning: false
 ---
 
-Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.
+Aquí encontrarás recursos paso a paso para que puedas **aprender a programar con R desde cero!**
 
 
 ```{r}
@@ -192,56 +192,65 @@ p(
 ```{r}
 div(
   
-  card(
-    h4("Introducción al lenguaje R"),
+  layout_columns(
+    card(
+      h4("Introducción al lenguaje R"),
+      
+      div(class = "parrafos_contenido",
+          markdown("Para empezar, vamos a [aprender desde cero](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/) a trabajar con datos en R, empezando con las operaciones más básicas, para prepararte a trabajar con datos reales.")
+      )
+    ),
     
-    markdown("https://bastianolea.rbind.io/blog/r_introduccion/r_basico/"),
-    
-    a("RStudio",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/"),
-    
-    a("Proyectos",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/proyectos/"),
-    
-    a("Operaciones básicas",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r"),
-    
-    a("Vectores de datos",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores"),
-    
-    a("Funciones básicas",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones"),
+    div(class = "lateral_contenido",
+        markdown("
+        - [RStudio](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/)
+        - [Proyectos](https://bastianolea.rbind.io/blog/r_introduccion/proyectos/)
+        - [Operaciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r)
+        - [Vectores de datos](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores)
+        - [Funciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones)"
+        )
+    )
   ),
   
-  card(
-    h4("Programación básica con R"),
+  
+  layout_columns(
+    card(
+      h4("Trabajando con datos en R"),
+      
+      div(class = "parrafos_contenido",
+          markdown("Ahora que tenemos conocimientos básicos sobre R y la programación, podemos lanzarnos a trabajar con tablas de datos. [Aprenderemos a usar `dplyr`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/) para explorar y transformar tablas de datos de forma sencilla." )
+      )
+    ),
     
-    markdown("https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/"),
-    
-    a("Crear funciones",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones"),
-    
-    a("Control de flujo",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo"),
-    
-    a("Loops",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles"),
-    
+    div(class = "lateral_contenido",
+        markdown("
+        - [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
+        - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
+        - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
+        - [Cruzar datos](https://bastianolea.rbind.io/blog/left_join/)
+        - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
+        - [Limpieza de textos](https://bastianolea.rbind.io/blog/stringr_texto/)"
+        )
+    )
   ),
   
-  card(
-    h4("Trabajando con datos en R"),
+  
+  layout_columns(
+    card(
+      h4("Programación básica con R"),
+      
+      div(class = "parrafos_contenido",
+          markdown("Este paso es _opcional_, pero se recomienda [conocer las funcionalidades principales](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/) de cualquier lenguaje de programación. Aprendiendo funciones, condicionales y _loops_ podrás ahorrar tiempo y automatizar trabajo.")
+      )
+    ),
     
-    markdown("https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/"),
-    
-    a("Explorar datos",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla"),
-    
-    a("Filtrar datos",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos"),
-    
-    a("Crear variables",
-      href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas"),
+    div(class = "lateral_contenido",
+        markdown("
+        - [Crear funciones](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones)
+        - [Condicionales o if](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo)
+        - [Loops o bucles](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles)"
+        )
+    )
   )
 )
 
@@ -274,6 +283,19 @@ div(
 <!-- https://bastianolea.rbind.io/blog/correlaciones/ -->
 
 <!-- ---- -->
+
+## Ayudas para aprender R
+
+Algunos recursos para facilitar tu aprendizaje:
+
+<div style="max-width: 512px;">
+- [Hojas oficiales de apuntes y trucos para R](https://posit.co/resources/cheatsheets/), que sirven como referencia de las funciones principales de cada paquete
+- [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
+- [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
+- [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
+</div>
+
+----
 
 ## Paquetes principales {#intermedio}
 
@@ -350,24 +372,24 @@ paquetes <- list(
 
 
 div(class = "scroll-horizontal",
-  
-  # generar elementos por cada paquete
-  map(paquetes, \(paquete) {
     
-    div(
-      class = "contenedor_paquete",
-      div(class = "paquete",
-          a(href = paquete$link, style = "text-decoration: none;",
-            img(src = paquete$imagen, alt = paquete$nombre, height = "100px")
-          )
-      ),
-      p(paquete$nombre, class = "paquete_titulo"),
+    # generar elementos por cada paquete
+    map(paquetes, \(paquete) {
       
-      div(style = "width: 90%;",
-          p(paquete$descr, class = "paquete_texto")
+      div(
+        class = "contenedor_paquete",
+        div(class = "paquete",
+            a(href = paquete$link, style = "text-decoration: none;",
+              img(src = paquete$imagen, alt = paquete$nombre, height = "100px")
+            )
+        ),
+        p(paquete$nombre, class = "paquete_titulo"),
+        
+        div(style = "width: 90%;",
+            p(paquete$descr, class = "paquete_texto")
+        )
       )
-    )
-  })
+    })
 )
 ```
 
@@ -418,97 +440,108 @@ div(style = "margin-top: 12px;",
 
 ----
 
-## Expandir posibilidades con R {#avanzado}
+## Explorar las posibilidades de R {#avanzado}
+
+Cuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨ Elige un objetivo o temática y especialízate:
 
 
 ```{r}
-card(
-  layout_columns(
-    card(id = "interna",
-         
-         h3("Visualización de datos"),
-         p("Chao")
-    ),
-    
-    card(id = "interna",
-         h3("Mapas y análisis geoespacial"),
-         p("Chao")
-    ),
-    
-    card(id = "interna",
-         h3("Reportes"),
-         p("Chao")
-    ),
-    
-    card(id = "interna",
-         h3("Aplicaciones"),
-         p("Chao")
-    ),
-    
-    card(id = "interna",
-         h3("Web scraping"),
-         p("Chao")
-    ),
-    
-    card(id = "interna",
-         h3("Publicar y compartir"),
-         p("Chao")
-    ),
-  )
+card(style = "margin-top: 8px;",
+     layout_columns(col_widths = c(4),
+                    card(id = "interna", 
+                         h4("Gráficos"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
+                                       - [Combinar gráficos para visualizaciones complejas](https://bastianolea.rbind.io/blog/patchwork/),
+                                       - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)"),
+                             
+                             div(class = "fondo",
+                                 p("Ver más tutoriales de", 
+                                   a("gráficos", href="https://bastianolea.rbind.io/tags/visualización-de-datos/")
+                                 )
+                             )
+                         )
+                    ),
+                    
+                    card(id = "interna", 
+                         h4("Mapas"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
+                                       - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
+                                       - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)"),
+                             
+                             div(class = "fondo",
+                                 p("Ver más tutoriales de",
+                                   a("mapas", href="https://bastianolea.rbind.io/tags/mapas/")
+                                 )
+                             )
+                         )
+                    ),
+                    
+                    card(id = "interna", 
+                         h4("Reportes"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [**Tutorial** de reportes con Quarto](https://bastianolea.rbind.io/blog/quarto_reportes/)
+                                   - [Reportes Quarto parametrizados](https://bastianolea.rbind.io/blog/quarto_params/)
+                                   - [Reportes online, blogs y sitios web con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/)"),
+                             
+                             div(class = "fondo",
+                                 p("Ver más tutoriales de",
+                                   a("reportes", href="https://bastianolea.rbind.io/tags/quarto/")
+                                 )
+                             )
+                         )
+                    ),
+                    
+                    card(id = "interna", 
+                         h4("Aplicaciones"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
+                                       - [Galería de aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)"),
+                             
+                             div(class = "fondo",
+                                 p("Ver más tutoriales de",
+                                   a("Shiny", href="https://bastianolea.rbind.io/tags/shiny/")
+                                 )
+                             )
+                         )
+                    ),
+                    
+                    card(id = "interna",
+                         h4("Web scraping"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [Introducción al web scraping con R](https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/)
+                                 - [Scraping con `rvest`](https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/)
+                                 - [Scraping con `RSelenium`](https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/)
+                                 - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)"
+                             ),
+                             
+                             div(class = "fondo",
+                                 p("Ver más tutoriales de",
+                                   a("web scraping", href="https://bastianolea.rbind.io/tags/web-scraping/")
+                                 )
+                             )
+                         )
+                    ),
+                    
+                    card(id = "interna", 
+                         h4("Publicar"),
+                         
+                         div(class = "avanzado",
+                             markdown("- [Publicar y compartir código en GitHub](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/)
+                                 - [Crea tu propio blog con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/#blogs-quarto-en-github-pages)
+                                 - [Publicar aplicaciones Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/)"
+                             )
+                         )
+                    )
+     )
 )
 ```
-
-
-<!-- ### Visualización de datos -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/ -->
-
-<!-- https://bastianolea.rbind.io/tags/visualización-de-datos/ -->
-
-
-<!-- ### Mapas y análisis geoespacial -->
-<!-- https://bastianolea.rbind.io/blog/mapas_sf/ -->
-
-<!-- https://bastianolea.rbind.io/blog/tutorial_mapa_chile/ -->
-
-<!-- https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/ -->
-
-<!-- https://bastianolea.rbind.io/tags/mapas/ -->
-
-
-<!-- ### Reportes -->
-<!-- https://bastianolea.rbind.io/blog/quarto_reportes/ -->
-
-<!-- https://bastianolea.rbind.io/blog/quarto_params/ -->
-
-<!-- https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/ -->
-
-<!-- https://bastianolea.rbind.io/tags/quarto/ -->
-
-
-<!-- ### Aplicaciones -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/ -->
-
-<!-- https://bastianolea.rbind.io/tags/shiny/ -->
-
-
-<!-- ### Web scraping -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/ -->
-
-<!-- ## Publica, comparte y expándete -->
-
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/ -->
-
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/ -->
-
-
-<!-- ---- -->
-
-<!-- ## Avanzado -->
-
-<!-- #### Shiny avanzado -->
-
-<!-- https://bastianolea.rbind.io/tags/shiny/ -->
-
 
 ----
 
@@ -537,7 +570,7 @@ div(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
         p("Aprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender."),
         
         markdown("Puedes encontrarme en [mi blog](https://bastianolea.rbind.io), 
-                 o [contactarme](https://bastianolea.rbind.io/contacto).")
+o [contactarme](https://bastianolea.rbind.io/contacto).")
     )
 )
 ```

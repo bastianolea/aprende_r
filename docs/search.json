@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Aprende R",
     "section": "",
-    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero."
+    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero!"
   },
   {
     "objectID": "index.html#por-qué-r",
@@ -59,8 +59,8 @@
     "objectID": "index.html#avanzado",
     "href": "index.html#avanzado",
     "title": "Aprende R",
-    "section": "Expandir posibilidades con R",
-    "text": "Expandir posibilidades con R\n\n\n\n\n\n\n\n\nVisualización de datos\nChao\n\n\n\n\n\n\n\nMapas y análisis geoespacial\nChao\n\n\n\n\n\n\n\nReportes\nChao\n\n\n\n\n\n\n\nAplicaciones\nChao\n\n\n\n\n\n\n\nWeb scraping\nChao\n\n\n\n\n\n\n\nPublicar y compartir\nChao"
+    "section": "Explorar las posibilidades de R",
+    "text": "Explorar las posibilidades de R\nCuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨ Elige un objetivo o temática y especialízate:\n\n\n\n\n\n\n\n\nGráficos\n\n\nTutorial de visualización de datos con ggplot2\nCombinar gráficos para visualizaciones complejas,\nGráficos interactivos con ggiraph\n\n\n\n\nVer más tutoriales de\ngráficos\n\n\n\n\n\n\n\n\n\n\nMapas\n\n\nTutorial de mapas con el paquete sf\nMapas comunales y regionales de Chile en R\nMapa urbano de la región Metropolitana de Santiago, Chile\n\n\n\n\nVer más tutoriales de\nmapas\n\n\n\n\n\n\n\n\n\n\nReportes\n\n\nTutorial de reportes con Quarto\nReportes Quarto parametrizados\nReportes online, blogs y sitios web con Quarto\n\n\n\n\nVer más tutoriales de\nreportes\n\n\n\n\n\n\n\n\n\n\nAplicaciones\n\n\nIntroducción a Shiny\nGalería de aplicaciones Shiny sobre datos sociales\n\n\n\n\nVer más tutoriales de\nShiny\n\n\n\n\n\n\n\n\n\n\nWeb scraping\n\n\nIntroducción al web scraping con R\nScraping con rvest\nScraping con RSelenium\nScraping con chromote\n\n\n\n\nVer más tutoriales de\nweb scraping\n\n\n\n\n\n\n\n\n\n\nPublicar\n\nPublicar y compartir código en GitHub\nCrea tu propio blog con Quarto\nPublicar aplicaciones Shiny"
   },
   {
     "objectID": "about.html",
@@ -144,7 +144,7 @@
     "href": "index.html#basico",
     "title": "Aprende R",
     "section": "Primeros pasos en R",
-    "text": "Primeros pasos en R\n\n\n\n\n\nIntroducción al lenguaje R\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_basico/\n\nRStudio\nProyectos\nOperaciones básicas\nVectores de datos\nFunciones básicas\n\n\n\n\n\nProgramación básica con R\nhttps://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/\n\nCrear funciones\nControl de flujo\nLoops\n\n\n\n\n\nTrabajando con datos en R\nhttps://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/\n\nExplorar datos\nFiltrar datos\nCrear variables"
+    "text": "Primeros pasos en R\n\n\n\n\n\n\n\nIntroducción al lenguaje R\nPara empezar, vamos a aprender desde cero a trabajar con datos en R, empezando con las operaciones más básicas, para prepararte a trabajar con datos reales.\n\n\n\n\n\n\n\nRStudio\nProyectos\nOperaciones básicas\nVectores de datos\nFunciones básicas\n\n\n\n\n\n\n\n\nTrabajando con datos en R\nAhora que tenemos conocimientos básicos sobre R y la programación, podemos lanzarnos a trabajar con tablas de datos. Aprenderemos a usar dplyr para explorar y transformar tablas de datos de forma sencilla.\n\n\n\n\n\n\n\nExplorar datos\nFiltrar datos\nCrear variables\nCruzar datos\nLimpieza de datos\nLimpieza de textos\n\n\n\n\n\n\n\n\nProgramación básica con R\nEste paso es opcional, pero se recomienda conocer las funcionalidades principales de cualquier lenguaje de programación. Aprendiendo funciones, condicionales y loops podrás ahorrar tiempo y automatizar trabajo.\n\n\n\n\n\n\n\nCrear funciones\nCondicionales o if\nLoops o bucles"
   },
   {
     "objectID": "index.html#intermedio",
@@ -180,5 +180,12 @@
     "title": "Aprende R",
     "section": "Sobre mi",
     "text": "Sobre mi\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.\nEstudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación.\nAprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender.\nPuedes encontrarme en mi blog,\no contactarme."
+  },
+  {
+    "objectID": "index.html#ayudas-para-aprender-r",
+    "href": "index.html#ayudas-para-aprender-r",
+    "title": "Aprende R",
+    "section": "Ayudas para aprender R",
+    "text": "Ayudas para aprender R\nAlgunos recursos para facilitar tu aprendizaje:\n\n\nHojas oficiales de apuntes y trucos para R, que sirven como referencia de las funciones principales de cada paquete\nAsistente de IA para RStudio, que puedes invocar desde tus scripts para que te escriba o corrija código\nAutocompletado de código con IA en RStudio, que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo\nSitios web y otros recursos para aprender R"
   }
 ]

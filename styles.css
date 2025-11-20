@@ -38,11 +38,27 @@ h2 {
   border-bottom-color: var(--destacado);
 }
 
+h4 {
+  border: none;
+  margin-top: 0px !important;
+  margin-bottom: -8px !important;
+  font-weight: 600;
+}
+
 hr {
   border-color: #442A54;
   opacity: 1;
   margin-top: 28px;
   margin-bottom: 28px;
+}
+
+code {
+  /*background-color: #412652 !important;*/
+  background-color: transparent !important;
+  color: var(--texto);
+  /*padding: 1px 4px !important;*/
+  border-radius: 3px;
+  font-family: var(--quarto-font-monospace);
 }
 
 .navbar-nav .nav-link.active {
@@ -242,17 +258,17 @@ h1.title, .title.h1 {
 
 
 
-ul {
+main ul {
   list-style-type: none; 
   padding-left: 6px; 
 }
 
-ul li {
+main ul li {
   position: relative; /* Needed for absolute positioning of the caret */
   padding-left: 20px; /* Space for the custom caret */
 }
 
-ul li::before {
+main ul li::before {
   content: '▶'; /* Use a character like a right-pointing triangle */
   position: absolute;
   left: 0;
@@ -335,4 +351,63 @@ ul li::before {
   font-size: 80%;
   line-height: 1;
   margin-top: -4px;
+}
+
+
+.parrafos_contenido {
+  p {
+  margin-bottom: -2px !important
+}
+}
+
+.lateral_contenido {
+  font-size: 90%;
+}
+
+/* para ventanas grandes */
+@media (min-width:570px) { 
+.lateral_contenido {
+  margin-top: 18px;
+  margin-left: -8px;
+}
+}
+
+/* para ventanas chicas */
+@media (max-width:570px) { 
+.lateral_contenido {
+  margin-left: 32px;
+}
+}
+
+
+.avanzado {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;   
+  justify-content: space-between;
+  font-size: 90%;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.avanzado {
+  li {
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  
+  ul li::before {
+   line-height: 1.7;
+   color: #A891C1;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.fondo {
+  font-size: 75% !important;
+  opacity: 100%;
+  margin-bottom: -10px;
 }
