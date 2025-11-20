@@ -12,14 +12,14 @@ website:
     collapse: true
     tools-collapse: true
     left:
-      - href: index.qmd
-        text: "Aprende R"
       - text: "Blog"
         href: https://bastianolea.rbind.io/blog/
       - text: "Apps"
         href: https://bastianolea.github.io/shiny_apps/
+      - text: "Datos"
+        href: https://bastianolea.github.io/datos_sociales/
       - text: "Sobre mi"
-        href: https://bastianolea.rbind.io/
+        href: "#sobre"
     tools:
       - icon: globe
         href: https://bastianolea.rbind.io

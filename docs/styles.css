@@ -164,7 +164,7 @@ h1.title, .title.h1 {
 .redonda {
   width: 50%; max-width: 200px; border-radius: 50%;
   opacity: 90%;
-  border: 1px solid #442A55;
+  border: 2px solid #442A54;
 }
 
 .icono {
@@ -398,11 +398,13 @@ main ul li::before {
   
   ul li::before {
    line-height: 1.7;
-   color: #A891C1;
+   /*color: #A891C1;*/
   }
 
   a {
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
+    text-decoration-color: #653680;
+    color: var(--texto);
   }
 }
 

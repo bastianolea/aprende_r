@@ -458,7 +458,7 @@ card(style = "margin-top: 8px;",
                              
                              div(class = "fondo",
                                  p("Ver más tutoriales de", 
-                                   a("gráficos", href="https://bastianolea.rbind.io/tags/visualización-de-datos/")
+                                   a("gráficos", href="https://bastianolea.rbind.io/tags/visualización-de-datos/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
                                  )
                              )
                          )
@@ -474,7 +474,7 @@ card(style = "margin-top: 8px;",
                              
                              div(class = "fondo",
                                  p("Ver más tutoriales de",
-                                   a("mapas", href="https://bastianolea.rbind.io/tags/mapas/")
+                                   a("mapas", href="https://bastianolea.rbind.io/tags/mapas/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
                                  )
                              )
                          )
@@ -490,7 +490,7 @@ card(style = "margin-top: 8px;",
                              
                              div(class = "fondo",
                                  p("Ver más tutoriales de",
-                                   a("reportes", href="https://bastianolea.rbind.io/tags/quarto/")
+                                   a("reportes", href="https://bastianolea.rbind.io/tags/quarto/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
                                  )
                              )
                          )
@@ -505,7 +505,7 @@ card(style = "margin-top: 8px;",
                              
                              div(class = "fondo",
                                  p("Ver más tutoriales de",
-                                   a("Shiny", href="https://bastianolea.rbind.io/tags/shiny/")
+                                   a("Shiny", href="https://bastianolea.rbind.io/tags/shiny/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
                                  )
                              )
                          )
@@ -523,7 +523,7 @@ card(style = "margin-top: 8px;",
                              
                              div(class = "fondo",
                                  p("Ver más tutoriales de",
-                                   a("web scraping", href="https://bastianolea.rbind.io/tags/web-scraping/")
+                                   a("web scraping", href="https://bastianolea.rbind.io/tags/web-scraping/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
                                  )
                              )
                          )
@@ -545,7 +545,7 @@ card(style = "margin-top: 8px;",
 
 ----
 
-## Sobre mi
+## Sobre mi {#sobre}
 
 
 ```{r}
