@@ -13,13 +13,12 @@ library(shiny)
 library(bslib)
 ```
 
-¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
+----
 
-¿Nunca has programado, pero [quieres empezar ya?](#basico)
-
-¿Sabes un poco de R, pero [necesitas mejorar?](#intermedio)
-
-¿Ya sabes R y [quieres ir más allá?](#avanzado)
+- ¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
+- ¿Nunca has programado, pero [quieres empezar ya?](#basico)
+- ¿Sabes un poco de R, pero [necesitas mejorar?](#intermedio)
+- ¿Ya sabes R y [quieres seguir avanzando?](#avanzado)
 
 ----
 
@@ -276,6 +275,94 @@ div(
 
 <!-- ---- -->
 
+## Paquetes principales {#intermedio}
+
+Algunos de los paquetes más usados en R para análisis de datos, principalmente parte del [Tidyverse](https://tidyverse.org), un conjunto de paquetes diseñados para la ciencia de datos.
+
+Visita la documentación de cada paquete para profundizar.
+
+```{r}
+library(dplyr)
+library(purrr)
+
+paquetes <- list(
+  dplyr = list(
+    imagen = "img/hex/dplyr.png",
+    link = "https://dplyr.tidyverse.org",
+    nombre = "dplyr",
+    descr = "Exploración, manipulación y transformación de tablas de datos"
+  ),
+  tidyr = list(
+    imagen = "img/hex/tidyr.png",
+    link = "https://tidyr.tidyverse.org",
+    nombre = "tidyr",
+    descr = "Limpieza y ordenamiento de datos, enfocado en datos 'tidy'"
+  ),
+  stringr = list(
+    imagen = "img/hex/stringr.png",
+    link = "https://stringr.tidyverse.org",
+    nombre = "stringr",
+    descr = "Trabajar con datos en formato texto, manipulación de texto, expresiones regulares"
+  ),
+  forcats = list(
+    imagen = "img/hex/forcats.png",
+    link = "https://forcats.tidyverse.org",
+    nombre = "forcats",
+    descr = "Variables categóricas u ordinales, muy comunes en datos sociales"
+  ),
+  ggplot2 = list(
+    imagen = "img/hex/ggplot2.png",
+    link = "https://ggplot2.tidyverse.org",
+    nombre = "ggplot2",
+    descr = "Visualización de datos personalizable, basado en una gramática de gráficas"
+  ),
+  tidymodels = list(
+    imagen = "img/hex/tidymodels.png",
+    link = "https://www.tidymodels.org",
+    nombre = "tidymodels",
+    descr = "Modelamiento estadístico, inferencia y machine learning"
+  ),
+  lubridate = list(
+    imagen = "img/hex/lubridate.png",
+    link = "https://lubridate.tidyverse.org",
+    nombre = "lubridate",
+    descr = "Trabajar con datos en formato fecha, incluyendo fecha y hora, zonas horarias, etc."
+  ),
+  gt = list(
+    imagen = "img/hex/gt.png",
+    link = "https://gt.rstudio.com",
+    nombre = "gt",
+    descr = "Creación de tablas atractivas y profesionales, con alta capacidad de personalización"
+  )
+)
+
+
+div(class = "scroll-horizontal",
+  
+  # generar elementos por cada paquete
+  map(paquetes, \(paquete) {
+    
+    div(
+      class = "contenedor_paquete",
+      div(class = "paquete",
+          a(href = paquete$link, style = "text-decoration: none;",
+            img(src = paquete$imagen, alt = paquete$nombre, height = "100px")
+          )
+      ),
+      p(paquete$nombre, class = "paquete_titulo"),
+      
+      div(style = "width: 90%;",
+          p(paquete$descr, class = "paquete_texto")
+      )
+    )
+  })
+)
+```
+
+
+
+----
+
 ## Libros recomendados
 
 Lecturas para poder profundizar en aspectos del lenguaje, o su aplicación a distintas disciplinas.
@@ -283,36 +370,36 @@ Lecturas para poder profundizar en aspectos del lenguaje, o su aplicación a dis
 ```{r}
 
 div(style = "margin-top: 12px;",
-  
-  layout_columns(
     
-    div(class = "contenedor_libro",
-        img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
-          a(href = "https://es.r4ds.hadley.nz"),
-        p("R para ciencia de datos en español", class = "libro_titulo") |> 
-          a(href = "https://cdr-book.github.io", class = "libro_titulo"),
-        
-        p("Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.", class = "libro_texto")
-    ),
-    
-    div(class = "contenedor_libro",
-        img(alt = "Fundamentos de ciencia de datos con R", src = "img/fundamentos.jpg", class = "libro") |> 
-          a(href = "https://cdr-book.github.io"),
-        p("Fundamentos de ciencia de datos con R", class = "libro_titulo") |> 
-          a(href = "https://cdr-book.github.io", class = "libro_titulo"),
-        
-        p("Libro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.", class = "libro_texto")
-    ),
-    
-    div(class = "contenedor_libro",
-        img(alt = "Gran libro de R", src = "img/bigbookofR.png", class = "libro") |> 
-          a(href = "https://www.bigbookofr.com/chapters/español"),
-        p("Gran libro de R", class = "libro_titulo") |> 
-          a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo"),
-        
-        p("No es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión.", class = "libro_texto")
+    layout_columns(
+      
+      div(class = "contenedor_libro",
+          img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
+            a(href = "https://es.r4ds.hadley.nz"),
+          p("R para ciencia de datos en español", class = "libro_titulo") |> 
+            a(href = "https://cdr-book.github.io", class = "libro_titulo"),
+          
+          p("Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.", class = "libro_texto")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "Fundamentos de ciencia de datos con R", src = "img/fundamentos.jpg", class = "libro") |> 
+            a(href = "https://cdr-book.github.io"),
+          p("Fundamentos de ciencia de datos con R", class = "libro_titulo") |> 
+            a(href = "https://cdr-book.github.io", class = "libro_titulo"),
+          
+          p("Libro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.", class = "libro_texto")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "Gran libro de R", src = "img/bigbookofR.png", class = "libro") |> 
+            a(href = "https://www.bigbookofr.com/chapters/español"),
+          p("Gran libro de R", class = "libro_titulo") |> 
+            a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo"),
+          
+          p("No es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión.", class = "libro_texto")
+      )
     )
-  )
 )
 ```
 
@@ -431,7 +518,7 @@ div(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
     div(style = "width: 70%; min-width: 240px; margin: auto; text-align: center;",
         
         p("Mi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.",
-           style = "font-size: 120%; margin-bottom: 12px;"),
+          style = "font-size: 120%; margin-bottom: 12px;"),
         
         p("Estudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación."),
         
@@ -445,9 +532,9 @@ div(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
 
 ```{r cafecito}
 div(style = "padding: 24px; text-align: center; margin: auto;",
-             style = "transform:scale(.6);",
-           tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
-         )
+    style = "transform:scale(.6);",
+    tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
+)
 
 ```
 

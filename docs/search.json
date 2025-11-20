@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Aprende R",
     "section": "",
-    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero.\n¿Estás pensando en aprender a programar para analizar datos?\n¿Nunca has programado, pero quieres empezar ya?\n¿Sabes un poco de R, pero necesitas mejorar?\n¿Ya sabes R y quieres ir más allá?"
+    "text": "Aquí encontrarás recursos paso a paso para que puedas aprender a programar con R desde cero."
   },
   {
     "objectID": "index.html#por-qué-r",
@@ -150,8 +150,8 @@
     "objectID": "index.html#intermedio",
     "href": "index.html#intermedio",
     "title": "Aprende R",
-    "section": "Empezar a trabajar con datos",
-    "text": "Empezar a trabajar con datos\nhttps://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/\nhttps://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/\nhttps://bastianolea.rbind.io/blog/left_join/"
+    "section": "Paquetes principales",
+    "text": "Paquetes principales\nAlgunos de los paquetes más usados en R para análisis de datos, principalmente parte del Tidyverse, un conjunto de paquetes diseñados para la ciencia de datos.\nVisita la documentación de cada paquete para profundizar.\n\n\n\n\n\n\n\n\n\ndplyr\n\nExploración, manipulación y transformación de tablas de datos\n\n\n\n\n\n\n\n\ntidyr\n\nLimpieza y ordenamiento de datos, enfocado en datos 'tidy'\n\n\n\n\n\n\n\n\nstringr\n\nTrabajar con datos en formato texto, manipulación de texto, expresiones regulares\n\n\n\n\n\n\n\n\nforcats\n\nVariables categóricas u ordinales, muy comunes en datos sociales\n\n\n\n\n\n\n\n\nggplot2\n\nVisualización de datos personalizable, basado en una gramática de gráficas\n\n\n\n\n\n\n\n\ntidymodels\n\nModelamiento estadístico, inferencia y machine learning\n\n\n\n\n\n\n\n\nlubridate\n\nTrabajar con datos en formato fecha, incluyendo fecha y hora, zonas horarias, etc.\n\n\n\n\n\n\n\n\ngt\n\nCreación de tablas atractivas y profesionales, con alta capacidad de personalización"
   },
   {
     "objectID": "index.html#avanzado-1",
