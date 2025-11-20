@@ -290,37 +290,31 @@ paquetes <- list(
     imagen = "img/hex/dplyr.png",
     link = "https://dplyr.tidyverse.org",
     nombre = "dplyr",
-    descr = "Exploración, manipulación y transformación de tablas de datos"
+    descr = "Exploración, manipulación y transformación de tablas de datos en lenguaje amigable"
   ),
   tidyr = list(
     imagen = "img/hex/tidyr.png",
     link = "https://tidyr.tidyverse.org",
     nombre = "tidyr",
-    descr = "Limpieza y ordenamiento de datos, enfocado en datos 'tidy'"
+    descr = "Limpieza y ordenamiento de datos, enfocado en producir datos ordenados (tidy data)"
   ),
   stringr = list(
     imagen = "img/hex/stringr.png",
     link = "https://stringr.tidyverse.org",
     nombre = "stringr",
-    descr = "Trabajar con datos en formato texto, manipulación de texto, expresiones regulares"
+    descr = "Trabajar con datos en formato texto, manipulación de texto, y expresiones regulares (regex)"
   ),
   forcats = list(
     imagen = "img/hex/forcats.png",
     link = "https://forcats.tidyverse.org",
     nombre = "forcats",
-    descr = "Variables categóricas u ordinales, muy comunes en datos sociales"
+    descr = "Variables categóricas u ordinales, muy comunes en datos sociales, en especial para visualizaciones"
   ),
   ggplot2 = list(
     imagen = "img/hex/ggplot2.png",
     link = "https://ggplot2.tidyverse.org",
     nombre = "ggplot2",
     descr = "Visualización de datos personalizable, basado en una gramática de gráficas"
-  ),
-  tidymodels = list(
-    imagen = "img/hex/tidymodels.png",
-    link = "https://www.tidymodels.org",
-    nombre = "tidymodels",
-    descr = "Modelamiento estadístico, inferencia y machine learning"
   ),
   lubridate = list(
     imagen = "img/hex/lubridate.png",
@@ -333,6 +327,24 @@ paquetes <- list(
     link = "https://gt.rstudio.com",
     nombre = "gt",
     descr = "Creación de tablas atractivas y profesionales, con alta capacidad de personalización"
+  ),
+  shiny = list(
+    imagen = "img/hex/shiny.png",
+    link = "https://shiny.posit.co",
+    nombre = "shiny",
+    descr = "Creación de aplicaciones web de ciencia de datos, mezclando R con HTML, CSS y JavaScript"
+  ),
+  sf = list(
+    imagen = "img/hex/sf.png",
+    link = "https://r-spatial.github.io/sf",
+    nombre = "sf",
+    descr = "Trabajar con datos espaciales y geográficos, generar mapas, operaciones geométricas y más"
+  ),
+  tidymodels = list(
+    imagen = "img/hex/tidymodels.png",
+    link = "https://www.tidymodels.org",
+    nombre = "tidymodels",
+    descr = "Modelamiento estadístico, inferencia, machine learning y más gracias a una colección de paquetes"
   )
 )
 
