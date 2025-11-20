@@ -187,5 +187,12 @@
     "title": "Aprende R",
     "section": "Ayudas para aprender R",
     "text": "Ayudas para aprender R\nAlgunos recursos para facilitar tu aprendizaje:\n\n\nHojas oficiales de apuntes y trucos para R, que sirven como referencia de las funciones principales de cada paquete\nAsistente de IA para RStudio, que puedes invocar desde tus scripts para que te escriba o corrija código\nAutocompletado de código con IA en RStudio, que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo\nSitios web y otros recursos para aprender R"
+  },
+  {
+    "objectID": "index.html#libros-avanzados",
+    "href": "index.html#libros-avanzados",
+    "title": "Aprende R",
+    "section": "Libros avanzados",
+    "text": "Libros avanzados\nLibros para profundizar mucho más en el lenguaje.\n\n\n\n\n\n\n\n\n\n\nAdvanced R\n\n\n\n\n\n\n\n\n\n\nMastering Shiny\n\n\n\n\n\n\n\n\n\n\nThe R Inferno\n\nUn libro peculiar sobre dificultades, curiosidades, y problemas de R."
   }
 ]

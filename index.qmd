@@ -411,7 +411,7 @@ div(style = "margin-top: 12px;",
           img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
             a(href = "https://es.r4ds.hadley.nz"),
           p("R para ciencia de datos en español", class = "libro_titulo") |> 
-            a(href = "https://cdr-book.github.io", class = "libro_titulo"),
+            a(href = "https://es.r4ds.hadley.nz", class = "libro_titulo"),
           
           p("Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.", class = "libro_texto")
       ),
@@ -542,6 +542,50 @@ card(style = "margin-top: 8px;",
      )
 )
 ```
+
+----
+
+## Libros avanzados
+
+Libros para profundizar mucho más en el lenguaje.
+
+```{r}
+
+div(style = "margin-top: 12px;",
+    
+    layout_columns(
+      
+      div(class = "contenedor_libro",
+          img(alt = "Advanced R", src = "img/advanced_r.png", class = "libro") |> 
+            a(href = "https://adv-r.hadley.nz"),
+          p("Advanced R", class = "libro_titulo") |> 
+            a(href = "https://adv-r.hadley.nz", class = "libro_titulo"),
+          
+          p("", class = "libro_texto")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "Mastering Shiny", src = "img/mastering_shiny.png", class = "libro") |> 
+            a(href = "https://mastering-shiny.org"),
+          p("Mastering Shiny", class = "libro_titulo") |> 
+            a(href = "https://mastering-shiny.org", class = "libro_titulo"),
+          
+          p("", class = "libro_texto")
+      ),
+      
+      div(class = "contenedor_libro",
+          img(alt = "The R Inferno", src = "img/r_inferno.jpg", class = "libro") |> 
+            a(href = "https://www.burns-stat.com/documents/books/the-r-inferno/"),
+          p("The R Inferno", class = "libro_titulo") |> 
+            a(href = "https://www.burns-stat.com/documents/books/the-r-inferno/", class = "libro_titulo"),
+          
+          p("Un libro peculiar sobre dificultades, curiosidades, y problemas de R.", class = "libro_texto")
+      )
+    )
+)
+```
+
+
 
 ----
 
