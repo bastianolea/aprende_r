@@ -208,5 +208,12 @@
     "title": "Aprende R",
     "section": "¡Atrévete!",
     "text": "¡Atrévete!\n¿Todavía no sabes cómo empezar? Busca datos sobre un tema que te interese, y atrévete a explorarlo con R! 🔥\nVisita mi blog para más ideas, consejos y tutoriales."
+  },
+  {
+    "objectID": "index.html#cursos",
+    "href": "index.html#cursos",
+    "title": "Aprende R",
+    "section": "Cursos",
+    "text": "Cursos\nClases grabadas o interactivas para aprender R de forma más estructurada.\n\n\n\n\n\n\nInstituto Nacional de Estadísticas\ngratis\n\n\nDiapositivas y videos gratuitos que parten desde lo más básico, impartidos por profesionales del INE. También tienen clases de temas más avanzados, como procesamiento de lenguaje natural y conexión a base de datos.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nedX\ngratis\n\n\nCursos gratutos en español impartidos por varias universidades, incluyendo ciencia de datos con R, análisis de datos empresariales con R, y más. Tiene fecha límite para completarlos y se puede pagar por certificación.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDataCamp\nprueba gratuita\n\n\nCurso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como estudiante en GitHub puedes obtener algunos meses gratis."
   }
 ]

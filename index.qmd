@@ -438,6 +438,78 @@ div(style = "margin-top: 18px; margin-bottom: 0;",
 )
 ```
 
+----
+
+## Cursos
+
+Clases grabadas o interactivas para aprender R de forma más estructurada.
+
+```{r}
+div(style = "margin-top: 8px;",
+    
+    card(class = "contenedor_cursos",
+         
+         div(
+           a("Instituto Nacional de Estadísticas", 
+             href = "https://www.ine.gob.cl/ine-educa/clases-r/capsulas-basicas/introduccion-al-uso-de-r",
+             class = "cursos_titulo"),
+           span("gratis", class = "pildora")
+         ),
+         
+         layout_columns(    
+           markdown("Diapositivas y videos gratuitos que parten desde lo más básico, impartidos por profesionales del INE. También tienen clases de [temas más avanzados](https://www.ine.gob.cl/ine-educa/clases-r/clases-sobre-topicos-intermedios), como procesamiento de lenguaje natural y conexión a base de datos."),
+           
+           div(class = "contenedor_curso_imagen",
+               a(href = "https://www.ine.gob.cl/ine-educa/clases-r/capsulas-basicas/introduccion-al-uso-de-r",
+                 img(src = "img/curso_ine.png", class = "curso_imagen", style = "max-height: 226px;")
+               )
+           )
+         )
+    ),
+    
+    card(class = "contenedor_cursos",
+         
+         div(
+           a("edX",
+             href = "https://www.edx.org/es/aprende/programacion-r",
+             class = "cursos_titulo"),
+           span("gratis", class = "pildora")
+         ),
+         
+         layout_columns( 
+           markdown("Cursos gratutos en español impartidos por varias universidades, incluyendo ciencia de datos con R, análisis de datos empresariales con R, y más. Tiene fecha límite para completarlos y se puede pagar por certificación."),
+           
+           div(class = "contenedor_curso_imagen",
+               a(href = "https://www.edx.org/es/aprende/programacion-r",
+                 img(src = "img/curso_edx.png", class = "curso_imagen")
+               )
+           )
+         )
+    ),
+    
+    card(class = "contenedor_cursos",
+         
+         div(
+           a("DataCamp",
+             href = "https://www.datacamp.com/courses/free-introduction-to-r",
+             class = "cursos_titulo"),
+           span("prueba gratuita", class = "pildora")
+         ),
+         
+         layout_columns( 
+           markdown("Curso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como [estudiante](https://www.datacamp.com/github-students) en GitHub puedes obtener algunos meses gratis."),
+           
+           div(class = "contenedor_curso_imagen",
+               a(href = "https://www.datacamp.com/courses/free-introduction-to-r",
+                 img(src = "img/curso_datacamp.png", class = "curso_imagen")
+               )
+           )
+         )
+    )
+)
+```
+
+
 
 ----
 
@@ -636,6 +708,5 @@ o [contactarme](https://bastianolea.rbind.io/contacto).")
 div(style = "padding: 24px; text-align: center; margin: auto; transform:scale(.6); opacity: 90%;",
     tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji="" data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
 )
-
 ```
 
