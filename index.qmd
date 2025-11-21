@@ -22,7 +22,7 @@ library(bslib)
 
 ----
 
-## Por qué R {#introduccion}
+## ¿Por qué R? {#introduccion}
 
 R es un lenguaje **diseñado para el análisis de datos**, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!
 
@@ -32,7 +32,7 @@ div(class = "centrado", style = "margin-top: 12px",
       card(
         strong("Gratuito", class = "subtitulo_panel"),
         div(class = "contenedor_panel_icono",
-            markdown("R es un lenguaje abierto y gratuito, parte de la comunidad del _software libre_, así que nunca tendrás que pagar nada!")
+            markdown("R es un lenguaje de programación abierto y gratuito, y es parte de la comunidad del _software libre_, así que nunca tendrás que pagar nada!")
         ),
         icon("cloud-arrow-down", class = "icono_mediano")
       ),
@@ -40,7 +40,7 @@ div(class = "centrado", style = "margin-top: 12px",
       card(
         strong("Amigable", class = "subtitulo_panel"),
         div(class = "contenedor_panel_icono",
-            markdown("R fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.")
+            markdown("R fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta [más intuitivo](https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/#usabilidad) que otros lenguajes.")
         ),
         icon("fa-solid fa-heart", class = "icono_mediano")
       ),
@@ -48,7 +48,7 @@ div(class = "centrado", style = "margin-top: 12px",
       card(
         strong("Reproducible", class = "subtitulo_panel"),
         div(class = "contenedor_panel_icono",
-            markdown("La gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros.")
+            markdown("La gracia de R es [guardar todos los pasos de tu análisis](https://bastianolea.rbind.io/blog/2025-11-13/), lo que facilita corregirlos, [reutilizarlos](https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/#procesos-reutilizables) para nuevos casos, y compartirlo con otros.")
         ),
         icon("repeat", class = "icono_mediano")
       )
@@ -59,7 +59,7 @@ div(class = "centrado", style = "margin-top: 12px",
 
 <!-- https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/ -->
 
-<!-- https://bastianolea.rbind.io/blog/2025-11-13/ -->
+<!--  -->
 
 ----
 
@@ -284,19 +284,6 @@ div(
 
 <!-- ---- -->
 
-## Ayudas para aprender R
-
-Algunos recursos para facilitar tu aprendizaje:
-
-<div style="max-width: 512px;">
-- [Hojas oficiales de apuntes y trucos para R](https://posit.co/resources/cheatsheets/), que sirven como referencia de las funciones principales de cada paquete
-- [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
-- [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
-- [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
-</div>
-
-----
-
 ## Paquetes principales {#intermedio}
 
 Algunos de los paquetes más usados en R para análisis de datos, principalmente parte del [Tidyverse](https://tidyverse.org), un conjunto de paquetes diseñados para la ciencia de datos.
@@ -397,13 +384,27 @@ div(class = "scroll-horizontal",
 
 ----
 
+## Ayudas para aprender R
+
+Algunos recursos para facilitar tu aprendizaje:
+
+<div style="max-width: 512px;">
+- [Hojas oficiales de apuntes y trucos para R](https://posit.co/resources/cheatsheets/), que sirven como referencia de las funciones principales de cada paquete
+- [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
+- [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
+- [El paquete `datos`](https://cienciadedatos.github.io/datos/) cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español
+- [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
+</div>
+
+----
+
 ## Libros recomendados
 
-Lecturas para poder profundizar en aspectos del lenguaje, o su aplicación a distintas disciplinas.
+Lecturas para aprender R de manera más completa, profundizando en aspectos del lenguaje o en su aplicación a distintas disciplinas.
 
 ```{r}
 
-div(style = "margin-top: 12px;",
+div(style = "margin-top: 18px; margin-bottom: 0;",
     
     layout_columns(
       
@@ -442,7 +443,9 @@ div(style = "margin-top: 12px;",
 
 ## Explorar las posibilidades de R {#avanzado}
 
-Cuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨ Elige un objetivo o temática y especialízate:
+Cuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨ 
+
+Elige un objetivo o temática y especialízate:
 
 
 ```{r}
@@ -453,7 +456,8 @@ card(style = "margin-top: 8px;",
                          
                          div(class = "avanzado",
                              markdown("- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
-                                       - [Combinar gráficos para visualizaciones complejas](https://bastianolea.rbind.io/blog/patchwork/),
+                                       - [Galería de gráficos hechos con R](https://r-graph-gallery.com)
+                                       - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/),
                                        - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)"),
                              
                              div(class = "fondo",
@@ -561,7 +565,7 @@ div(style = "margin-top: 12px;",
           p("Advanced R", class = "libro_titulo") |> 
             a(href = "https://adv-r.hadley.nz", class = "libro_titulo"),
           
-          p("", class = "libro_texto")
+          p("Profundiza en R como lenguaje de programación, más allá de los datos. Indaga en programación orientada a objetos, debugging y más.", class = "libro_texto")
       ),
       
       div(class = "contenedor_libro",
@@ -570,7 +574,7 @@ div(style = "margin-top: 12px;",
           p("Mastering Shiny", class = "libro_titulo") |> 
             a(href = "https://mastering-shiny.org", class = "libro_titulo"),
           
-          p("", class = "libro_texto")
+          p("Guía completa para empezar a desarrollar aplicaciones web con R, partiendo desde lo básico y llegando a lo más avanzado.", class = "libro_texto")
       ),
       
       div(class = "contenedor_libro",
@@ -579,12 +583,20 @@ div(style = "margin-top: 12px;",
           p("The R Inferno", class = "libro_titulo") |> 
             a(href = "https://www.burns-stat.com/documents/books/the-r-inferno/", class = "libro_titulo"),
           
-          p("Un libro peculiar sobre dificultades, curiosidades, y problemas de R.", class = "libro_texto")
+          p("Un libro peculiar sobre dificultades y curiosidades de R. Para entender R como lenguaje de programación desde sus rarezas.", class = "libro_texto")
       )
     )
 )
 ```
 
+----
+
+
+## ¡Atrévete!
+
+_¿Todavía no sabes cómo empezar?_ [Busca datos](https://bastianolea.github.io/datos_sociales/) sobre un tema que te interese, y atrévete a explorarlo con R! 🔥
+
+Visita [mi blog](https://bastianolea.rbind.io) para más ideas, consejos y tutoriales.
 
 
 ----
@@ -606,10 +618,11 @@ div(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
     
     div(style = "width: 70%; min-width: 240px; margin: auto; text-align: center;",
         
-        p("Mi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.",
-          style = "font-size: 120%; margin-bottom: 12px;"),
+        HTML("<p class='sobre_subtitulo'>Mi nombre es Bastián Olea Herrera, y soy<br>sociólogx y analista de datos.</p>"),
         
         p("Estudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación."),
+        
+        p("Creo en que cualquier persona puede aprender a programar, sin importar su disciplina o área de estudios 😌"),
         
         p("Aprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender."),
         
@@ -620,9 +633,8 @@ o [contactarme](https://bastianolea.rbind.io/contacto).")
 ```
 
 ```{r cafecito}
-div(style = "padding: 24px; text-align: center; margin: auto;",
-    style = "transform:scale(.6);",
-    tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
+div(style = "padding: 24px; text-align: center; margin: auto; transform:scale(.6); opacity: 90%;",
+    tags$body(HTML('<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji="" data-font="Bree" data-text="Regálame un cafecito" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'))
 )
 
 ```

@@ -60,7 +60,7 @@
     "href": "index.html#avanzado",
     "title": "Aprende R",
     "section": "Explorar las posibilidades de R",
-    "text": "Explorar las posibilidades de R\nCuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨ Elige un objetivo o temática y especialízate:\n\n\n\n\n\n\n\n\nGráficos\n\n\nTutorial de visualización de datos con ggplot2\nCombinar gráficos para visualizaciones complejas,\nGráficos interactivos con ggiraph\n\n\n\n\nVer más tutoriales de\ngráficos\n\n\n\n\n\n\n\n\n\n\nMapas\n\n\nTutorial de mapas con el paquete sf\nMapas comunales y regionales de Chile en R\nMapa urbano de la región Metropolitana de Santiago, Chile\n\n\n\n\nVer más tutoriales de\nmapas\n\n\n\n\n\n\n\n\n\n\nReportes\n\n\nTutorial de reportes con Quarto\nReportes Quarto parametrizados\nReportes online, blogs y sitios web con Quarto\n\n\n\n\nVer más tutoriales de\nreportes\n\n\n\n\n\n\n\n\n\n\nAplicaciones\n\n\nIntroducción a Shiny\nGalería de aplicaciones Shiny sobre datos sociales\n\n\n\n\nVer más tutoriales de\nShiny\n\n\n\n\n\n\n\n\n\n\nWeb scraping\n\n\nIntroducción al web scraping con R\nScraping con rvest\nScraping con RSelenium\nScraping con chromote\n\n\n\n\nVer más tutoriales de\nweb scraping\n\n\n\n\n\n\n\n\n\n\nPublicar\n\nPublicar y compartir código en GitHub\nCrea tu propio blog con Quarto\nPublicar aplicaciones Shiny"
+    "text": "Explorar las posibilidades de R\nCuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨\nElige un objetivo o temática y especialízate:\n\n\n\n\n\n\n\n\nGráficos\n\n\nTutorial de visualización de datos con ggplot2\nGalería de gráficos hechos con R\nCombinar gráficos ggplot2,\nGráficos interactivos con ggiraph\n\n\n\n\nVer más tutoriales de\ngráficos\n\n\n\n\n\n\n\n\n\n\nMapas\n\n\nTutorial de mapas con el paquete sf\nMapas comunales y regionales de Chile en R\nMapa urbano de la región Metropolitana de Santiago, Chile\n\n\n\n\nVer más tutoriales de\nmapas\n\n\n\n\n\n\n\n\n\n\nReportes\n\n\nTutorial de reportes con Quarto\nReportes Quarto parametrizados\nReportes online, blogs y sitios web con Quarto\n\n\n\n\nVer más tutoriales de\nreportes\n\n\n\n\n\n\n\n\n\n\nAplicaciones\n\n\nIntroducción a Shiny\nGalería de aplicaciones Shiny sobre datos sociales\n\n\n\n\nVer más tutoriales de\nShiny\n\n\n\n\n\n\n\n\n\n\nWeb scraping\n\n\nIntroducción al web scraping con R\nScraping con rvest\nScraping con RSelenium\nScraping con chromote\n\n\n\n\nVer más tutoriales de\nweb scraping\n\n\n\n\n\n\n\n\n\n\nPublicar\n\nPublicar y compartir código en GitHub\nCrea tu propio blog con Quarto\nPublicar aplicaciones Shiny"
   },
   {
     "objectID": "about.html",
@@ -116,7 +116,7 @@
     "href": "index.html#sobre",
     "title": "Aprende R",
     "section": "Sobre mi",
-    "text": "Sobre mi\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi nombre es Bastián Olea Herrera, y soy sociólogx y analista de datos.\nEstudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación.\nAprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender.\nPuedes encontrarme en mi blog,\no contactarme."
+    "text": "Sobre mi\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi nombre es Bastián Olea Herrera, y soysociólogx y analista de datos.\nEstudié sociología y luego hice un magíster, y en el camino descubrí el gusto por los datos, los gráficos y la programación.\nCreo en que cualquier persona puede aprender a programar, sin importar su disciplina o área de estudios 😌\nAprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender.\nPuedes encontrarme en mi blog,\no contactarme."
   },
   {
     "objectID": "index.html#sobre-1",
@@ -136,8 +136,8 @@
     "objectID": "index.html#introduccion",
     "href": "index.html#introduccion",
     "title": "Aprende R",
-    "section": "Por qué R",
-    "text": "Por qué R\nR es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!\n\n\n\n\n\n\n\nGratuito\nR es un lenguaje abierto y gratuito, parte de la comunidad del software libre, así que nunca tendrás que pagar nada!\n\n\n\n\n\n\n\n\n\nAmigable\nR fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.\n\n\n\n\n\n\n\n\n\nReproducible\nLa gracia de R es guardar todos los pasos de tu análisis, lo que facilita repetirlo, adaptarlo a nuevos casos, y compartirlo con otros."
+    "section": "¿Por qué R?",
+    "text": "¿Por qué R?\nR es un lenguaje diseñado para el análisis de datos, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!\n\n\n\n\n\n\n\nGratuito\nR es un lenguaje de programación abierto y gratuito, y es parte de la comunidad del software libre, así que nunca tendrás que pagar nada!\n\n\n\n\n\n\n\n\n\nAmigable\nR fue creado para personas de distintas disciplinas, y al centrarse en los datos resulta más intuitivo que otros lenguajes.\n\n\n\n\n\n\n\n\n\nReproducible\nLa gracia de R es guardar todos los pasos de tu análisis, lo que facilita corregirlos, reutilizarlos para nuevos casos, y compartirlo con otros."
   },
   {
     "objectID": "index.html#basico",
@@ -172,7 +172,7 @@
     "href": "index.html#libros-recomendados",
     "title": "Aprende R",
     "section": "Libros recomendados",
-    "text": "Libros recomendados\nLecturas para poder profundizar en aspectos del lenguaje, o su aplicación a distintas disciplinas.\n\n\n\n\n\n\n\n\n\n\nR para ciencia de datos en español\n\nLibro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.\n\n\n\n\n\n\n\n\nFundamentos de ciencia de datos con R\n\nLibro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.\n\n\n\n\n\n\n\n\nGran libro de R\n\nNo es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión."
+    "text": "Libros recomendados\nLecturas para aprender R de manera más completa, profundizando en aspectos del lenguaje o en su aplicación a distintas disciplinas.\n\n\n\n\n\n\n\n\n\n\nR para ciencia de datos en español\n\nLibro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.\n\n\n\n\n\n\n\n\nFundamentos de ciencia de datos con R\n\nLibro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.\n\n\n\n\n\n\n\n\nGran libro de R\n\nNo es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión."
   },
   {
     "objectID": "index.html#sobre-mi",
@@ -186,13 +186,27 @@
     "href": "index.html#ayudas-para-aprender-r",
     "title": "Aprende R",
     "section": "Ayudas para aprender R",
-    "text": "Ayudas para aprender R\nAlgunos recursos para facilitar tu aprendizaje:\n\n\nHojas oficiales de apuntes y trucos para R, que sirven como referencia de las funciones principales de cada paquete\nAsistente de IA para RStudio, que puedes invocar desde tus scripts para que te escriba o corrija código\nAutocompletado de código con IA en RStudio, que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo\nSitios web y otros recursos para aprender R"
+    "text": "Ayudas para aprender R\nAlgunos recursos para facilitar tu aprendizaje:\n\n\nHojas oficiales de apuntes y trucos para R, que sirven como referencia de las funciones principales de cada paquete\nAsistente de IA para RStudio, que puedes invocar desde tus scripts para que te escriba o corrija código\nAutocompletado de código con IA en RStudio, que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo\nEl paquete datos cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español\nSitios web y otros recursos para aprender R"
   },
   {
     "objectID": "index.html#libros-avanzados",
     "href": "index.html#libros-avanzados",
     "title": "Aprende R",
     "section": "Libros avanzados",
-    "text": "Libros avanzados\nLibros para profundizar mucho más en el lenguaje.\n\n\n\n\n\n\n\n\n\n\nAdvanced R\n\n\n\n\n\n\n\n\n\n\nMastering Shiny\n\n\n\n\n\n\n\n\n\n\nThe R Inferno\n\nUn libro peculiar sobre dificultades, curiosidades, y problemas de R."
+    "text": "Libros avanzados\nLibros para profundizar mucho más en el lenguaje.\n\n\n\n\n\n\n\n\n\n\nAdvanced R\n\nProfundiza en R como lenguaje de programación, más allá de los datos. Indaga en programación orientada a objetos, debugging y más.\n\n\n\n\n\n\n\n\nMastering Shiny\n\nGuía completa para empezar a desarrollar aplicaciones web con R, partiendo desde lo básico y llegando a lo más avanzado.\n\n\n\n\n\n\n\n\nThe R Inferno\n\nUn libro peculiar sobre dificultades y curiosidades de R. Para entender R como lenguaje de programación desde sus rarezas."
+  },
+  {
+    "objectID": "index.html#todavía-no-sabes-cómo-empezar",
+    "href": "index.html#todavía-no-sabes-cómo-empezar",
+    "title": "Aprende R",
+    "section": "¿Todavía no sabes cómo empezar?",
+    "text": "¿Todavía no sabes cómo empezar?\nMi consejo es: busca datos sobre un tema que te interese, y atrévete a explorarlo con R! 🔥"
+  },
+  {
+    "objectID": "index.html#atrévete",
+    "href": "index.html#atrévete",
+    "title": "Aprende R",
+    "section": "¡Atrévete!",
+    "text": "¡Atrévete!\n¿Todavía no sabes cómo empezar? Busca datos sobre un tema que te interese, y atrévete a explorarlo con R! 🔥\nVisita mi blog para más ideas, consejos y tutoriales."
   }
 ]

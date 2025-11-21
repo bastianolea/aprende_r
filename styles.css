@@ -118,6 +118,7 @@ h1.title, .title.h1 {
   margin-bottom: 12px;
   border-radius: 3px;
   opacity: 90%;
+  border: 1px solid #31193F;
 }
 
 .libro:hover {
@@ -165,6 +166,11 @@ h1.title, .title.h1 {
   width: 50%; max-width: 200px; border-radius: 50%;
   opacity: 90%;
   border: 2px solid #442A54;
+}
+
+
+.sobre_subtitulo {
+  font-size: 120%; margin-bottom: 12px;
 }
 
 .icono {
@@ -412,4 +418,6 @@ main ul li::before {
   font-size: 75% !important;
   opacity: 100%;
   margin-bottom: -10px;
+}
+
 }
