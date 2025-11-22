@@ -142,7 +142,7 @@ h1.title, .title.h1 {
   color: var(--texto);
   text-decoration: none !important;
   font-size: 85%;
-  line-height: 1;
+  line-height: 1.1;
   hyphens: auto;
 }
 
@@ -357,7 +357,7 @@ main ul li::before {
   color: var(--texto);
   text-decoration: none !important;
   font-size: 80%;
-  line-height: 1;
+  line-height: 1.1;
   margin-top: -4px;
 }
 
