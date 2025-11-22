@@ -61,6 +61,27 @@ code {
   font-family: var(--quarto-font-monospace);
 }
 
+/*estilo de listas*/
+
+main ul {
+  list-style-type: none; 
+  padding-left: 6px; 
+}
+
+main ul li {
+  position: relative; /* Needed for absolute positioning of the caret */
+  padding-left: 20px; /* Space for the custom caret */
+}
+
+main ul li::before {
+  content: '▶'; /* Use a character like a right-pointing triangle */
+  position: absolute;
+  left: 0;
+  color: #9F69CA;
+  font-size: 14px;
+  line-height: 2.1;
+}
+
 .navbar-nav .nav-link.active {
   color: var(--texto) !important; 
 }
@@ -266,24 +287,6 @@ h1.title, .title.h1 {
 
 
 
-main ul {
-  list-style-type: none; 
-  padding-left: 6px; 
-}
-
-main ul li {
-  position: relative; /* Needed for absolute positioning of the caret */
-  padding-left: 20px; /* Space for the custom caret */
-}
-
-main ul li::before {
-  content: '▶'; /* Use a character like a right-pointing triangle */
-  position: absolute;
-  left: 0;
-  color: #9F69CA;
-  font-size: 14px;
-  line-height: 2.1;
-}
 
 
 .scroll-horizontal {
@@ -393,7 +396,7 @@ main ul li::before {
   min-height: 200px;
   flex-direction: column;   
   justify-content: space-between;
-  font-size: 90%;
+  font-size: 85%;
   word-break: break-word;
   hyphens: auto;
 }
@@ -404,8 +407,13 @@ main ul li::before {
     margin-bottom: 6px;
   }
   
+  ul li {
+  padding-left: 14px;
+  }
+  
   ul li::before {
-   line-height: 1.7;
+   line-height: 1.9;
+   font-size: .6rem;
    /*color: #A891C1;*/
   }
 
@@ -471,3 +479,4 @@ main ul li::before {
 .contenedor_curso_imagen {
   margin: auto; text-align: center;
 }
+
