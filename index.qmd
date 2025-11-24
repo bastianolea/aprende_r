@@ -9,6 +9,8 @@ execute:
 ```{r}
 library(shiny)
 library(bslib)
+source("funciones.R")
+source("datos.R")
 
 tags$header(
   
@@ -19,7 +21,10 @@ tags$header(
   markdown("- ¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
 - ¿Nunca has programado, pero [quieres empezar ya?](#basico)
 - ¿Sabes un poco de R, pero [necesitas mejorar?](#intermedio)
+- ¿Buscas [cursos gratuitos de R?](#cursos)
 - ¿Ya sabes R y [quieres seguir avanzando?](#avanzado)"),
+
+p("Explora esta página para encontrar todo lo necesario para aprender R"),
 
 hr()
 
@@ -68,6 +73,9 @@ div(class = "centrado", style = "margin-top: 12px",
 
 ----
 
+<!-- <div style="display: none;"> -->
+<!-- ## Obtener R -->
+<!-- </div> -->
 
 ```{r obtener_titulo}
 h2(
@@ -296,6 +304,10 @@ div(
 <!-- ---- -->
 
 
+<!-- <div style="display: none;"> -->
+<!-- ## Paquetes -->
+<!-- </div> -->
+
 ```{r}
 h2(id = "intermedio",
    icon("cube", class = "icono_texto"), 
@@ -311,70 +323,6 @@ Visita la documentación de cada paquete para profundizar.
 ```{r paquetes}
 library(dplyr)
 library(purrr)
-
-paquetes <- list(
-  dplyr = list(
-    imagen = "img/hex/dplyr.png",
-    link = "https://dplyr.tidyverse.org",
-    nombre = "dplyr",
-    descr = "Exploración, manipulación y transformación de tablas de datos en lenguaje amigable"
-  ),
-  tidyr = list(
-    imagen = "img/hex/tidyr.png",
-    link = "https://tidyr.tidyverse.org",
-    nombre = "tidyr",
-    descr = "Limpieza y ordenamiento de datos, enfocado en producir datos ordenados (tidy data)"
-  ),
-  stringr = list(
-    imagen = "img/hex/stringr.png",
-    link = "https://stringr.tidyverse.org",
-    nombre = "stringr",
-    descr = "Trabajar con datos en formato texto, manipulación de texto, y expresiones regulares (regex)"
-  ),
-  forcats = list(
-    imagen = "img/hex/forcats.png",
-    link = "https://forcats.tidyverse.org",
-    nombre = "forcats",
-    descr = "Variables categóricas u ordinales, muy comunes en datos sociales, en especial para visualizaciones"
-  ),
-  ggplot2 = list(
-    imagen = "img/hex/ggplot2.png",
-    link = "https://ggplot2.tidyverse.org",
-    nombre = "ggplot2",
-    descr = "Visualización de datos personalizable, basado en una gramática de gráficas"
-  ),
-  lubridate = list(
-    imagen = "img/hex/lubridate.png",
-    link = "https://lubridate.tidyverse.org",
-    nombre = "lubridate",
-    descr = "Trabajar con datos en formato fecha, incluyendo fecha y hora, zonas horarias, etc."
-  ),
-  gt = list(
-    imagen = "img/hex/gt.png",
-    link = "https://gt.rstudio.com",
-    nombre = "gt",
-    descr = "Creación de tablas atractivas y profesionales, con alta capacidad de personalización"
-  ),
-  shiny = list(
-    imagen = "img/hex/shiny.png",
-    link = "https://shiny.posit.co",
-    nombre = "shiny",
-    descr = "Creación de aplicaciones web de ciencia de datos, mezclando R con HTML, CSS y JavaScript"
-  ),
-  sf = list(
-    imagen = "img/hex/sf.png",
-    link = "https://r-spatial.github.io/sf",
-    nombre = "sf",
-    descr = "Trabajar con datos espaciales y geográficos, generar mapas, operaciones geométricas y más"
-  ),
-  tidymodels = list(
-    imagen = "img/hex/tidymodels.png",
-    link = "https://www.tidymodels.org",
-    nombre = "tidymodels",
-    descr = "Modelamiento estadístico, inferencia, machine learning y más gracias a una colección de paquetes"
-  )
-)
-
 
 div(class = "scroll-horizontal",
     
@@ -403,6 +351,10 @@ div(class = "scroll-horizontal",
 ----
 
 
+<div style="display: none;">
+## Ayudas
+</div>
+
 ```{r ayuda_titulo}
 h2(
   icon("lightbulb", class = "icono_texto"), 
@@ -418,10 +370,15 @@ Algunos recursos para facilitar tu aprendizaje:
 - [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
 - [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
 - [El paquete `datos`](https://cienciadedatos.github.io/datos/) cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español
+- [StackOverflow de R], donde puedes hacer preguntas
 - [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
 </div>
 
 ----
+
+<!-- <div style="display: none;"> -->
+<!-- ## Libros recomendados -->
+<!-- </div> -->
 
 ```{r libros_titulo}
 h2(
@@ -439,31 +396,26 @@ div(style = "margin-top: 18px; margin-bottom: 0;",
     
     layout_columns(
       
-      div(class = "contenedor_libro",
-          img(alt = "R para ciencia de datos", src = "img/r4ds.jpg", class = "libro") |> 
-            a(href = "https://es.r4ds.hadley.nz"),
-          p("R para ciencia de datos en español", class = "libro_titulo") |> 
-            a(href = "https://es.r4ds.hadley.nz", class = "libro_titulo"),
-          
-          p("Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad.", class = "libro_texto")
+      
+      div_libro(
+        titulo = "R para ciencia de datos en español",
+        imagen = "img/r4ds.jpg",
+        url = "https://es.r4ds.hadley.nz",
+        texto = "Libro central para aprender a usar R, escrito por uno de los desarrolladores principales de R, y traducido al español por la comunidad."
       ),
       
-      div(class = "contenedor_libro",
-          img(alt = "Fundamentos de ciencia de datos con R", src = "img/fundamentos.jpg", class = "libro") |> 
-            a(href = "https://cdr-book.github.io"),
-          p("Fundamentos de ciencia de datos con R", class = "libro_titulo") |> 
-            a(href = "https://cdr-book.github.io", class = "libro_titulo"),
-          
-          p("Libro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales.", class = "libro_texto")
+      div_libro(
+        titulo = "Fundamentos de ciencia de datos con R",
+        imagen = "img/fundamentos.jpg",
+        url = "https://cdr-book.github.io",
+        texto = "Libro enfocado en ciencia de datos aplicada. Empieza por lo básico y avanza por temas como estadísticas, modelamiento, datos espaciales y redes neuronales."
       ),
       
-      div(class = "contenedor_libro",
-          img(alt = "Gran libro de R", src = "img/bigbookofR.png", class = "libro") |> 
-            a(href = "https://www.bigbookofr.com/chapters/español"),
-          p("Gran libro de R", class = "libro_titulo") |> 
-            a(href = "https://www.bigbookofr.com/chapters/español", class = "libro_titulo"),
-          
-          p("No es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión.", class = "libro_texto")
+      div_libro(
+        titulo = "Gran libro de R",
+        imagen = "img/bigbookofR.png",
+        url = "https://www.bigbookofr.com/chapters/español",
+        texto = "No es exactamente un libro, sino una enorme colección de libros que usan R para todos los campos de estudio y disciplinas imaginables. Se mantiene en constante expansión."
       )
     )
 )
@@ -471,9 +423,12 @@ div(style = "margin-top: 18px; margin-bottom: 0;",
 
 ----
 
+<div style="display: none;">
+## Cursos
+</div>
 
 ```{r}
-h2(
+h2(id = "cursos",
   icon("pencil", class = "icono_texto"), 
   "Cursos"
 )
@@ -524,31 +479,32 @@ div(style = "margin-top: 8px;",
          )
     ),
     
-    card(class = "contenedor_cursos",
-         
-         div(
-           a("DataCamp",
-             href = "https://www.datacamp.com/courses/free-introduction-to-r",
-             class = "cursos_titulo"),
-           span("prueba gratuita", class = "pildora")
-         ),
-         
-         layout_columns( 
-           markdown("Curso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como [estudiante](https://www.datacamp.com/github-students) en GitHub puedes obtener algunos meses gratis."),
-           
-           div(class = "contenedor_curso_imagen",
-               a(href = "https://www.datacamp.com/courses/free-introduction-to-r",
-                 img(src = "img/curso_datacamp.png", class = "curso_imagen")
-               )
-           )
-         )
-    )
+    card_cursos(
+      titulo = "Conferencias y talleres de `posit::conf(2025)`",
+      tipo = "gratis",
+      imagen = "img/curso_posit_conf.png",
+      url = "https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/",
+      texto = "Colección completa de conferencias, charlas y talleres impartidos en la conferencia anual de [Posit](https://posit.co), incluyendo 4 _keynotes_ y más de 100 charlas sobre R y ciencia de datos."
+    ),
+    
+    card_cursos(
+      titulo = "DataCamp",
+      tipo = "prueba gratuita",
+      imagen = "img/curso_datacamp.png",
+      url = "https://www.datacamp.com/courses/free-introduction-to-r",
+      texto = "Curso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como [estudiante](https://www.datacamp.com/github-students) en GitHub puedes obtener algunos meses gratis."
+    ),
+    
 )
 ```
 
 
 
 ----
+
+<!-- <div style="display: none;"> -->
+<!-- ## Posibilidades -->
+<!-- </div> -->
 
 ## Explora las posibilidades de R {#avanzado}
 
@@ -559,194 +515,110 @@ Elige un objetivo o temática y especialízate:
 
 ```{r avanzado}
 card(style = "margin-top: 8px;",
-     layout_columns(col_widths = c(4),
-                    card(id = "interna", 
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("chart-line", class = "icono_texto"), 
-                                     "Gráficos"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown(
-                                         "- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
-                                          - [Galería de tipos de gráficos con instrucciones](https://r-graph-gallery.com)
-                                          - [Ejemplos de gráficos hechos con R](https://r-graph-gallery.com/best-r-chart-examples.html)
-                                          - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/)
-                                          - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)"),
-                                       
-                                       div(class = "fondo",
-                                           p("Ver más tutoriales de", 
-                                             a("gráficos", href="https://bastianolea.rbind.io/tags/visualización-de-datos/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                           )
-                                       )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna", 
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("map", class = "icono_texto"), 
-                                     "Mapas"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown(
-                                         "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
-                                          - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
-                                          - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
-                                          - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)"),
-                                       
-                                       div(class = "fondo",
-                                           p("Ver más tutoriales de",
-                                             a("mapas", href="https://bastianolea.rbind.io/tags/mapas/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                           )
-                                       )
-                                   )
-                         )
-                    ),
-                    
-                    # 
-                    
-                    card(id = "interna",
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("table", class = "icono_texto"), 
-                                     "Tablas"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown(
-                                         "- [**Tutorial** de tablas con `gt`](https://bastianolea.rbind.io/blog/tutorial_gt/)
+     layout_columns(
+       col_widths = c(4),
+       
+       card_avanzado(
+         titulo = "Gráficos",
+         icono = "chart-line",
+         texto = "- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
+           - [Galería de tipos de gráficos con instrucciones](https://r-graph-gallery.com)
+           - [Ejemplos de gráficos hechos con R](https://r-graph-gallery.com/best-r-chart-examples.html)
+           - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/)
+           - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)",
+         footer = list(titulo = "gráficos",
+                       url = "https://bastianolea.rbind.io/tags/visualización-de-datos/")
+       ),
+       
+       card_avanzado(
+         titulo = "Mapas",
+         icono = "map",
+         texto = "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
+           - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
+           - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
+           - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
+         footer = list(titulo = "mapas",
+                       url = "https://bastianolea.rbind.io/tags/mapas/")
+       ),
+       
+       card_avanzado(
+         titulo = "Tablas",
+         icono = "table",
+         texto = "- [**Tutorial** de tablas con `gt`](https://bastianolea.rbind.io/blog/tutorial_gt/)
                                           - [Galería de tablas: competencia de tablas 2025](https://posit.co/blog/2025-table-contest-winners/)
                                           - [Libro de cocina de tablas con `gt`](https://themockup.blog/static/resources/gt-cookbook) y su versión [avanzada](https://themockup.blog/static/resources/gt-cookbook-advanced)
-                                          - [Tutoriales de tablas en R](https://r-graph-gallery.com/table.html)
-                                         "),
-                                       
-                                       div(class = "fondo",
-                                           p("Ver más tutoriales de",
-                                             a("tablas", href="https://bastianolea.rbind.io/tags/tablas/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                           )
-                                       )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna",
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("file-lines", class = "icono_texto"), 
-                                     "Reportes"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown("- [**Tutorial** de reportes con Quarto](https://bastianolea.rbind.io/blog/quarto_reportes/)
+                                          - [Tutoriales de tablas en R](https://r-graph-gallery.com/table.html)",
+         footer = list(titulo = "tablas",
+                       url = "https://bastianolea.rbind.io/tags/tablas/"
+         )
+       ),
+       
+       
+       card_avanzado(
+         titulo = "Reportes",
+         icono = "file-lines",
+         texto = "- [**Tutorial** de reportes con Quarto](https://bastianolea.rbind.io/blog/quarto_reportes/)
                                    - [Reportes Quarto parametrizados](https://bastianolea.rbind.io/blog/quarto_params/)
-                                   - [Reportes online, blogs y sitios web con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/)"),
-                                   
-                                   div(class = "fondo",
-                                       p("Ver más tutoriales de",
-                                         a("reportes", href="https://bastianolea.rbind.io/tags/quarto/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                       )
-                                   )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna", 
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("window-maximize", class = "icono_texto"), 
-                                     "Aplicaciones"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown("- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
-                                       - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
-                                       - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
-                                       - [Conferencia ShinyConf 2025 (con videos de ponencias)](https://www.shinyconf.com)"),
-                                       
-                                       div(class = "fondo",
-                                           p("Ver más tutoriales de",
-                                             a("Shiny", href="https://bastianolea.rbind.io/tags/shiny/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                           )
-                                       )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna",
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("file-code", class = "icono_texto"), 
-                                     "Web scraping"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown("- [Introducción al web scraping con R](https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/)
+                                   - [Reportes online, blogs y sitios web con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/)",
+         footer = list(titulo = "reportes",
+                       url = "https://bastianolea.rbind.io/tags/quarto/"
+         )
+       ),
+       
+       card_avanzado(
+         titulo = "Aplicaciones",
+         icono = "window-maximize",
+         texto = "- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
+                  - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
+                  - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
+                  - [Conferencia ShinyConf 2025](https://www.shinyconf.com) (con videos de ponencias)
+                  - [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), crea apps Shiny con IA",
+         footer = list(titulo = "Shiny",
+                       url = "https://bastianolea.rbind.io/tags/shiny/"
+         )
+       ),
+       
+       card_avanzado(titulo = "Web scraping",
+                     icono = "file-code",
+                     texto = "- [Introducción al web scraping con R](https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/)
                                  - [Scraping con `rvest`](https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/)
                                  - [Scraping con `RSelenium`](https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/)
-                                 - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)"
-                                       ),
-                                 
-                                 div(class = "fondo",
-                                     p("Ver más tutoriales de",
-                                       a("web scraping", href="https://bastianolea.rbind.io/tags/web-scraping/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                     )
-                                 )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna",
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("server", class = "icono_texto"), 
-                                     "Inteligencia artificial"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown("- [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
+                                 - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)",
+                     footer = list(titulo = "web scraping",
+                                   url = "https://bastianolea.rbind.io/tags/web-scraping/")
+       ),
+       
+       card_avanzado(titulo = "Inteligencia artificial",
+                     icono = "server",
+                     texto = "- [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
                                  - [Análisis de sentimiento con LLM en R](https://bastianolea.rbind.io/blog/analisis_sentimiento_llm/)
                                  - [Asistentes de IA en RStudio](https://bastianolea.rbind.io/blog/gander/)
                                  - [_Machine learning_ supervisado con R](https://cdr-book.github.io/cap-arboles.html)
-                                 - [_Machine learning_ no supervisado con R](https://cdr-book.github.io/cap-cluster.html)"
-                                       ),
-                                 
-                                 div(class = "fondo",
-                                     p("Ver más tutoriales de",
-                                       a("inteligencia artificial", href="https://bastianolea.rbind.io/tags/inteligencia-artificial/", style = "color: #9F69CB; text-decoration-color: #9F69CB;")
-                                     )
-                                 )
-                                   )
-                         )
-                    ),
-                    
-                    card(id = "interna", 
-                         card_body(padding = "10px",
-                                   
-                                   h4(
-                                     icon("share-from-square", class = "icono_texto"), 
-                                     "Publicar"),
-                                   
-                                   div(class = "avanzado",
-                                       markdown("- [Publicar y compartir código en GitHub](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/)
-                                 - [Crea tu propio blog con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/#blogs-quarto-en-github-pages)
-                                 - [Publicar aplicaciones Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/)"
-                                       )
-                                   )
-                         )
-                    )
+                                 - [_Machine learning_ no supervisado con R](https://cdr-book.github.io/cap-cluster.html)",
+                     footer = list(titulo = "inteligencia artificial",
+                                   url = "https://bastianolea.rbind.io/tags/inteligencia-artificial/")
+       ),
+       
+       card_avanzado(titulo = "Publicar",
+                     icono = "share-from-square",
+                     texto = "- [Publicar y compartir código en GitHub](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/)
+                              - [Crea tu propio blog con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/#blogs-quarto-en-github-pages)
+                              - [Publicar aplicaciones Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/)
+                              - [**Taller:** Compartir y colaborar desde el cruce entre las ciencias de datos y las ciencias sociales](https://bastianolea.rbind.io/blog/taller_datos_unam/) (grabación y diapositivas)",
+                     footer = list()
+       )
+       
      )
 )
 ```
 
 ----
 
+<!-- ## `r icon("book", class = "icono_texto")` Libros avanzados -->
+
 ```{r}
 h2(
-  icon("book", class = "icono_texto"), 
+  icon("book", class = "icono_texto"),
   "Libros avanzados"
 )
 ```
@@ -756,49 +628,110 @@ Libros para profundizar mucho más en el lenguaje.
 ```{r libros_avanzados}
 
 div(style = "margin-top: 12px;",
-    
     layout_columns(
       
-      div(class = "contenedor_libro",
-          img(alt = "Advanced R", src = "img/advanced_r.png", class = "libro") |> 
-            a(href = "https://adv-r.hadley.nz"),
-          p("Advanced R", class = "libro_titulo") |> 
-            a(href = "https://adv-r.hadley.nz", class = "libro_titulo"),
-          
-          p("Profundiza en R como lenguaje de programación, más allá de los datos. Indaga en programación orientada a objetos, debugging y más.", class = "libro_texto")
+      div_libro(
+        titulo = "Advanced R",
+        imagen = "img/advanced_r.png",
+        url = "https://adv-r.hadley.nz",
+        texto = "Profundiza en R como lenguaje de programación, más allá de los datos. Indaga en programación orientada a objetos, debugging y más."
       ),
       
-      div(class = "contenedor_libro",
-          img(alt = "Mastering Shiny", src = "img/mastering_shiny.png", class = "libro") |> 
-            a(href = "https://mastering-shiny.org"),
-          p("Mastering Shiny", class = "libro_titulo") |> 
-            a(href = "https://mastering-shiny.org", class = "libro_titulo"),
-          
-          p("Guía completa para empezar a desarrollar aplicaciones web con R, partiendo desde lo básico y llegando a lo más avanzado.", class = "libro_texto")
+      div_libro(
+        titulo = "Mastering Shiny",
+        imagen = "img/mastering_shiny.png",
+        url = "https://mastering-shiny.org",
+        texto = "Guía completa para empezar a desarrollar aplicaciones web con R, partiendo desde lo básico y llegando a lo más avanzado."
       ),
       
-      div(class = "contenedor_libro",
-          img(alt = "The R Inferno", src = "img/r_inferno.jpg", class = "libro") |> 
-            a(href = "https://www.burns-stat.com/documents/books/the-r-inferno/"),
-          p("The R Inferno", class = "libro_titulo") |> 
-            a(href = "https://www.burns-stat.com/documents/books/the-r-inferno/", class = "libro_titulo"),
-          
-          p("Un libro peculiar sobre dificultades y curiosidades de R. Para entender R como lenguaje de programación desde sus rarezas.", class = "libro_texto")
+      div_libro(
+        titulo = "The R Inferno",
+        imagen = "img/r_inferno.jpg",
+        url = "https://www.burns-stat.com/documents/books/the-r-inferno/",
+        texto = "Un libro peculiar sobre dificultades y curiosidades de R. Para entender R como lenguaje de programación desde sus rarezas."
       )
     )
 )
 ```
 
+----
 
+<!-- <div style="display: none;"> -->
+<!-- ## `r icon("newspaper", class = "icono_texto")` Manténte al día -->
+<!-- </div> -->
 
-<!-- mantener el contacto -->
+```{r}
+h2(
+  icon("newspaper", class = "icono_texto"),
+  "Manténte al día"
+)
+```
+
+Conéctate con la comunidad de R para estar al día con noticias, avances, eventos y más!
 
 <!-- listas de correo
 https://rweekly.org/#get-
+https://substack.com/@escueladedatos
 https://rstats.blaze.email
 https://estacion-r.com/newsletter
 https://rfortherestofus.com/whatsnew/
 -->
+
+
+```{r}
+layout_columns(
+  
+  div(
+    h3(
+      icon("square-rss", class = "icono_texto"), 
+      "Blogs"),
+    
+    markdown(
+      "- [R-Bloggers](https://www.r-bloggers.com/), blog que reúne cientos de posts desde blogs de usuarios y desarrolladores de R
+       - [R Weekly](https://rweekly.org), curatoría de noticias y posts sobre R
+       - [RWorks](https://rworks.dev/), blog de curatoría de funcionalidades y paquetes de R
+       - [Blog de Posit](https://posit.co/blog/), blog oficial de Posit (antes RStudio)
+       - [Blog del Tidyverse](https://www.tidyverse.org/blog/)"
+    )
+  ),
+  
+  div(
+    h3(
+      icon("people-group", class = "icono_texto"), 
+      "Comunidades"),
+    
+    markdown(
+      "- Usa el hashtag [#RStats](https://x.com/hashtag/Rstats) en tu red social favorita!
+       - [Latin R](https://latinr.org), conferencia Latinoamericana anual de R
+       - [Escuela de Datos](https://escueladedatos.online), comunidad hispanohablante
+       - [rainbowR](https://rainbowr.org) 🏳️‍🌈 comunidad de usuarixs de R LGBTIQ+
+       - [Grupo de usuarios de R de Madrid](https://madrid.r-es.org) 🇪🇸
+       - [R en Buenos Aires](https://www.meetup.com/renbaires/?_xtd=gqFyqTIxOTE0ODE0MqFwp2FuZHJvaWQ%253D&from=ref) 🇦🇷
+       - [Comunidad R Hispano](https://r-es.org) 🇪🇸"
+    )
+  ),
+  
+  div(
+    h3(
+      icon("fa-solid fa-envelope", class = "icono_texto"), 
+      "Listas de correo"),
+    
+    markdown(
+      
+      "Suscríbete para recibir noticias sobre R y no quedarte fuera de nada!
+       - [R for the Rest of Us](https://rfortherestofus.com/whatsnew/)
+       - [The R Data Scientist](https://rstats.blaze.email)
+       - [Lista de correo de Escuela de Datos](https://substack.com/@escueladedatos)
+       - [Lista de correos de Estación R](https://estacion-r.com/newsletter)
+       - [`posit::glimpse()` y otras listas de correo de Posit](https://posit.co/about/subscription-management/)"
+    )
+  )
+)
+
+
+```
+
+Conoces una comunidad, blog o lista de correo que no está aquí? [Escríbeme](https://bastianolea.rbind.io/contacto/)
 
 ----
 

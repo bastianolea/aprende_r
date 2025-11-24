@@ -143,9 +143,11 @@ ul.task-list li input[type="checkbox"] {
 <li>¿Estás pensando en <a href="#introduccion">aprender a programar para analizar datos?</a></li>
 <li>¿Nunca has programado, pero <a href="#basico">quieres empezar ya?</a></li>
 <li>¿Sabes un poco de R, pero <a href="#intermedio">necesitas mejorar?</a></li>
+<li>¿Buscas <a href="#cursos">cursos gratuitos de R?</a></li>
 <li>¿Ya sabes R y <a href="#avanzado">quieres seguir avanzando?</a></li>
 </ul>
 
+<p>Explora esta página para encontrar todo lo necesario para aprender R</p>
 <hr>
 </header>
 </div>
@@ -197,6 +199,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/ -->
 <!--  -->
 <hr>
+<!-- <div style="display: none;"> -->
+<!-- ## Obtener R -->
+<!-- </div> -->
 <div class="cell">
 <div class="cell-output-display">
 <h2 class="anchored">
@@ -417,6 +422,9 @@ que te permite usar RStudio en un navagador gratis.
 <!-- ## Estadísticas -->
 <!-- https://bastianolea.rbind.io/blog/correlaciones/ -->
 <!-- ---- -->
+<!-- <div style="display: none;"> -->
+<!-- ## Paquetes -->
+<!-- </div> -->
 <div class="cell">
 <div class="cell-output-display">
 <h2 id="intermedio" class="anchored">
@@ -544,6 +552,10 @@ Paquetes principales
 </div>
 </div>
 <hr>
+</section>
+<section id="ayudas" class="level2" style="display: none;">
+<h2 class="anchored" data-anchor-id="ayudas">Ayudas</h2>
+</section>
 <div class="cell">
 <div class="cell-output-display">
 <h2 class="anchored">
@@ -559,10 +571,14 @@ Ayudas para aprender R
 <li><a href="https://bastianolea.rbind.io/blog/gander/">Asistente de IA para RStudio</a>, que puedes invocar desde tus scripts para que te escriba o corrija código</li>
 <li><a href="https://bastianolea.rbind.io/blog/github_copilot/">Autocompletado de código con IA en RStudio</a>, que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo</li>
 <li><a href="https://cienciadedatos.github.io/datos/">El paquete <code>datos</code></a> cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español</li>
+<li>[StackOverflow de R], donde puedes hacer preguntas</li>
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender">Sitios web y otros recursos para aprender R</a></li>
 </ul>
 </div>
 <hr>
+<!-- <div style="display: none;"> -->
+<!-- ## Libros recomendados -->
+<!-- </div> -->
 <div class="cell">
 <div class="cell-output-display">
 <h2 class="anchored">
@@ -579,7 +595,7 @@ Libros recomendados
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container">
 <div class="contenedor_libro">
 <a href="https://es.r4ds.hadley.nz">
-<img alt="R para ciencia de datos" src="img/r4ds.jpg" class="libro">
+<img alt="R para ciencia de datos en español" src="img/r4ds.jpg" class="libro">
 </a>
 <a href="https://es.r4ds.hadley.nz" class="libro_titulo">
 <p class="libro_titulo">R para ciencia de datos en español</p>
@@ -614,9 +630,12 @@ Libros recomendados
 </div>
 </div>
 <hr>
+<section id="cursos" class="level2" style="display: none;">
+<h2 class="anchored" data-anchor-id="cursos">Cursos</h2>
+</section>
 <div class="cell">
 <div class="cell-output-display">
-<h2 class="anchored">
+<h2 id="cursos" class="anchored">
 <i class="fas fa-pencil icono_texto" role="presentation" aria-label="pencil icon"></i>
 Cursos
 </h2>
@@ -669,7 +688,29 @@ Cursos
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container contenedor_cursos" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
 <div>
-<a href="https://www.datacamp.com/courses/free-introduction-to-r" class="cursos_titulo">DataCamp</a>
+<a class="cursos_titulo" href="https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/"><p>Conferencias y talleres de <code>posit::conf(2025)</code></p>
+</a>
+<span class="pildora">gratis</span>
+</div>
+<bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Colección completa de conferencias, charlas y talleres impartidos en la conferencia anual de <a href="https://posit.co">Posit</a>, incluyendo 4 <em>keynotes</em> y más de 100 charlas sobre R y ciencia de datos.</p>
+</div>
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div class="contenedor_curso_imagen">
+<a href="https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/">
+<img src="img/curso_posit_conf.png" class="curso_imagen">
+</a>
+</div>
+</div>
+</bslib-layout-columns>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container contenedor_cursos" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div>
+<a class="cursos_titulo" href="https://www.datacamp.com/courses/free-introduction-to-r"><p>DataCamp</p>
+</a>
 <span class="pildora">prueba gratuita</span>
 </div>
 <bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
@@ -690,7 +731,9 @@ Cursos
 </div>
 </div>
 <hr>
-</section>
+<!-- <div style="display: none;"> -->
+<!-- ## Posibilidades -->
+<!-- </div> -->
 <section id="avanzado" class="level2">
 <h2 class="anchored" data-anchor-id="avanzado">Explora las posibilidades de R</h2>
 <p>Cuando ya hayas aprendido a trabajar con datos empieza lo bueno: ahora se abre un mundo de posibilidades! ✨</p>
@@ -707,21 +750,19 @@ Cursos
 <i class="fas fa-chart-line icono_texto" role="presentation" aria-label="chart-line icon"></i>
 Gráficos
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/"><strong>Tutorial</strong> de visualización de datos con <code>ggplot2</code></a></li>
 <li><a href="https://r-graph-gallery.com">Galería de tipos de gráficos con instrucciones</a></li>
 <li><a href="https://r-graph-gallery.com/best-r-chart-examples.html">Ejemplos de gráficos hechos con R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/patchwork/">Combinar gráficos <code>ggplot2</code></a></li>
 <li><a href="https://bastianolea.rbind.io/blog/ggiraph/">Gráficos interactivos con <code>ggiraph</code></a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/visualización-de-datos/" style="color: #9F69CB; text-decoration-color: #9F69CB;">gráficos</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -734,20 +775,18 @@ Ver más tutoriales de
 <i class="far fa-map icono_texto" role="presentation" aria-label="map icon"></i>
 Mapas
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/mapas_sf/"><strong>Tutorial</strong> de mapas con el paquete <code>sf</code></a></li>
 <li><a href="https://r-graph-gallery.com/map.html">Tutoriales de mapas con R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_mapa_chile/">Mapas comunales y regionales de Chile en R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/">Mapa urbano de la región Metropolitana de Santiago, Chile</a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/mapas/" style="color: #9F69CB; text-decoration-color: #9F69CB;">mapas</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -760,20 +799,18 @@ Ver más tutoriales de
 <i class="fas fa-table icono_texto" role="presentation" aria-label="table icon"></i>
 Tablas
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_gt/"><strong>Tutorial</strong> de tablas con <code>gt</code></a></li>
 <li><a href="https://posit.co/blog/2025-table-contest-winners/">Galería de tablas: competencia de tablas 2025</a></li>
 <li><a href="https://themockup.blog/static/resources/gt-cookbook">Libro de cocina de tablas con <code>gt</code></a> y su versión <a href="https://themockup.blog/static/resources/gt-cookbook-advanced">avanzada</a></li>
 <li><a href="https://r-graph-gallery.com/table.html">Tutoriales de tablas en R</a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/tablas/" style="color: #9F69CB; text-decoration-color: #9F69CB;">tablas</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -786,19 +823,17 @@ Ver más tutoriales de
 <i class="far fa-file-lines icono_texto" role="presentation" aria-label="file-lines icon"></i>
 Reportes
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/quarto_reportes/"><strong>Tutorial</strong> de reportes con Quarto</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/quarto_params/">Reportes Quarto parametrizados</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/">Reportes online, blogs y sitios web con Quarto</a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/quarto/" style="color: #9F69CB; text-decoration-color: #9F69CB;">reportes</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -811,20 +846,19 @@ Ver más tutoriales de
 <i class="far fa-window-maximize icono_texto" role="presentation" aria-label="window-maximize icon"></i>
 Aplicaciones
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/">Introducción a Shiny</a></li>
 <li><a href="https://bastianolea.github.io/shiny_apps/">Aplicaciones Shiny sobre datos sociales</a></li>
 <li><a href="https://posit.co/blog/winners-of-the-2024-shiny-contest/">Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024</a></li>
-<li><a href="https://www.shinyconf.com">Conferencia ShinyConf 2025 (con videos de ponencias)</a></li>
+<li><a href="https://www.shinyconf.com">Conferencia ShinyConf 2025</a> (con videos de ponencias)</li>
+<li><a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>, crea apps Shiny con IA</li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/shiny/" style="color: #9F69CB; text-decoration-color: #9F69CB;">Shiny</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -837,20 +871,18 @@ Ver más tutoriales de
 <i class="far fa-file-code icono_texto" role="presentation" aria-label="file-code icon"></i>
 Web scraping
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/">Introducción al web scraping con R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/">Scraping con <code>rvest</code></a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/">Scraping con <code>RSelenium</code></a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/">Scraping con <code>chromote</code></a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/web-scraping/" style="color: #9F69CB; text-decoration-color: #9F69CB;">web scraping</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -863,21 +895,19 @@ Ver más tutoriales de
 <i class="fas fa-server icono_texto" role="presentation" aria-label="server icon"></i>
 Inteligencia artificial
 </h4>
-<div class="avanzado">
-<ul>
+<div class="avanzado"><ul>
 <li><a href="https://luisdva.github.io/llmsr-book/es/index.es.html">Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/analisis_sentimiento_llm/">Análisis de sentimiento con LLM en R</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/gander/">Asistentes de IA en RStudio</a></li>
 <li><a href="https://cdr-book.github.io/cap-arboles.html"><em>Machine learning</em> supervisado con R</a></li>
 <li><a href="https://cdr-book.github.io/cap-cluster.html"><em>Machine learning</em> no supervisado con R</a></li>
 </ul>
-
+</div>
 <div class="fondo">
 <p>
 Ver más tutoriales de
 <a href="https://bastianolea.rbind.io/tags/inteligencia-artificial/" style="color: #9F69CB; text-decoration-color: #9F69CB;">inteligencia artificial</a>
 </p>
-</div>
 </div>
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
@@ -894,6 +924,7 @@ Publicar
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/">Publicar y compartir código en GitHub</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/#blogs-quarto-en-github-pages">Crea tu propio blog con Quarto</a></li>
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/">Publicar aplicaciones Shiny</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/taller_datos_unam/"><strong>Taller:</strong> Compartir y colaborar desde el cruce entre las ciencias de datos y las ciencias sociales</a> (grabación y diapositivas)</li>
 </ul>
 </div>
 </div>
@@ -907,6 +938,7 @@ Publicar
 </div>
 </div>
 <hr>
+<!-- ## `<i class="fas fa-book icono_texto" role="presentation" aria-label="book icon"></i>`{=html} Libros avanzados -->
 <div class="cell">
 <div class="cell-output-display">
 <h2 class="anchored">
@@ -957,13 +989,84 @@ Libros avanzados
 </div>
 </div>
 </div>
-<!-- mantener el contacto -->
+<hr>
+<!-- <div style="display: none;"> -->
+<!-- ## `<i class="far fa-newspaper icono_texto" role="presentation" aria-label="newspaper icon"></i>`{=html} Manténte al día -->
+<!-- </div> -->
+<div class="cell">
+<div class="cell-output-display">
+<h2 class="anchored">
+<i class="far fa-newspaper icono_texto" role="presentation" aria-label="newspaper icon"></i>
+Manténte al día
+</h2>
+</div>
+</div>
+<p>Conéctate con la comunidad de R para estar al día con noticias, avances, eventos y más!</p>
 <!-- listas de correo
 https://rweekly.org/#get-
+https://substack.com/@escueladedatos
 https://rstats.blaze.email
 https://estacion-r.com/newsletter
 https://rfortherestofus.com/whatsnew/
 -->
+<div class="cell">
+<div class="cell-output-display">
+<bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div>
+<h3 class="anchored">
+<i class="fas fa-square-rss icono_texto" role="presentation" aria-label="square-rss icon"></i>
+Blogs
+</h3>
+<ul>
+<li><a href="https://www.r-bloggers.com/">R-Bloggers</a>, blog que reúne cientos de posts desde blogs de usuarios y desarrolladores de R</li>
+<li><a href="https://rweekly.org">R Weekly</a>, curatoría de noticias y posts sobre R</li>
+<li><a href="https://rworks.dev/">RWorks</a>, blog de curatoría de funcionalidades y paquetes de R</li>
+<li><a href="https://posit.co/blog/">Blog de Posit</a>, blog oficial de Posit (antes RStudio)</li>
+<li><a href="https://www.tidyverse.org/blog/">Blog del Tidyverse</a></li>
+</ul>
+
+</div>
+</div>
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div>
+<h3 class="anchored">
+<i class="fas fa-people-group icono_texto" role="presentation" aria-label="people-group icon"></i>
+Comunidades
+</h3>
+<ul>
+<li>Usa el hashtag <a href="https://x.com/hashtag/Rstats">#RStats</a> en tu red social favorita!</li>
+<li><a href="https://latinr.org">Latin R</a>, conferencia Latinoamericana anual de R</li>
+<li><a href="https://escueladedatos.online">Escuela de Datos</a>, comunidad hispanohablante</li>
+<li><a href="https://rainbowr.org">rainbowR</a> 🏳️‍🌈 comunidad de usuarixs de R LGBTIQ+</li>
+<li><a href="https://madrid.r-es.org">Grupo de usuarios de R de Madrid</a> 🇪🇸</li>
+<li><a href="https://www.meetup.com/renbaires/?_xtd=gqFyqTIxOTE0ODE0MqFwp2FuZHJvaWQ%253D&amp;from=ref">R en Buenos Aires</a> 🇦🇷</li>
+<li><a href="https://r-es.org">Comunidad R Hispano</a> 🇪🇸</li>
+</ul>
+
+</div>
+</div>
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div>
+<h3 class="anchored">
+<i class="fa-solid fa-envelope icono_texto" role="presentation" aria-label="fa-solid fa-envelope icon"></i>
+Listas de correo
+</h3>
+<p>Suscríbete para recibir noticias sobre R y no quedarte fuera de nada!</p>
+<ul>
+<li><a href="https://rfortherestofus.com/whatsnew/">R for the Rest of Us</a></li>
+<li><a href="https://rstats.blaze.email">The R Data Scientist</a></li>
+<li><a href="https://substack.com/@escueladedatos">Lista de correo de Escuela de Datos</a></li>
+<li><a href="https://estacion-r.com/newsletter">Lista de correos de Estación R</a></li>
+<li><a href="https://posit.co/about/subscription-management/"><code>posit::glimpse()</code> y otras listas de correo de Posit</a></li>
+</ul>
+
+</div>
+</div>
+</bslib-layout-columns>
+</div>
+</div>
+<p>Conoces una comunidad, blog o lista de correo que no está aquí? <a href="https://bastianolea.rbind.io/contacto/">Escríbeme</a></p>
 <hr>
 </section>
 <section id="atrévete" class="level2">

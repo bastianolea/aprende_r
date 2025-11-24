@@ -38,7 +38,9 @@ format:
       - cosmo
       - brand
     css: styles.css
-    toc: false
+    # toc: true
+    # toc-title: Índice
+    # toc-location: right
     page-layout: article
     link-external-icon: false
     include-after-body: goatcounter.html
