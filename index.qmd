@@ -423,9 +423,6 @@ div(style = "margin-top: 18px; margin-bottom: 0;",
 
 ----
 
-<div style="display: none;">
-## Cursos
-</div>
 
 ```{r}
 h2(id = "cursos",
@@ -498,7 +495,9 @@ div(style = "margin-top: 8px;",
 )
 ```
 
-
+::: {style="opacity:0.5; font-size: 80%;"}
+¿Conoces algún curso gratuito y completo de R en español? [Por favor avísame](https://bastianolea.rbind.io/contacto/) para agregarlo!
+:::
 
 ----
 
@@ -731,7 +730,9 @@ layout_columns(
 
 ```
 
-Conoces una comunidad, blog o lista de correo que no está aquí? [Escríbeme](https://bastianolea.rbind.io/contacto/)
+::: {style="opacity:0.5; font-size: 80%;"}
+¿Conoces una comunidad, blog o lista de correo que no está aquí? [Escríbeme](https://bastianolea.rbind.io/contacto/)
+:::
 
 ----
 
