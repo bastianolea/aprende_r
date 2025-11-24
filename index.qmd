@@ -226,8 +226,9 @@ div(
         - [Proyectos](https://bastianolea.rbind.io/blog/r_introduccion/proyectos/)
         - [Operaciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r)
         - [Vectores de datos](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores)
-        - [Funciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones)"
-        )
+        - [Funciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones)
+        - [Conectores o _pipes_ (`|>` y `%>%`)](https://bastianolea.rbind.io/blog/r_introduccion/conectores/)
+        ")
     )
   ),
   
@@ -246,7 +247,7 @@ div(
         - [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
         - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
         - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
-        - [Cruzar datos](https://bastianolea.rbind.io/blog/left_join/)
+        - [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
         - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
         - [Limpieza de textos](https://bastianolea.rbind.io/blog/stringr_texto/)"
         )
@@ -267,7 +268,7 @@ div(
         markdown("
         - [Crear funciones](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones)
         - [Condicionales o if](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo)
-        - [Loops o bucles](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles)"
+        - [Loops (_for_) o bucles](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles)"
         )
     )
   )
