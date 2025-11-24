@@ -208,8 +208,12 @@ p(
 
 ## Primeros pasos en R {#basico}
 
+En esta sección están los contenidos básicos para aprender R, empezando desde lo más fundamental y avanzando paso a paso.
+
+Cubriendo todos estos contenidos podrás formarte de manera autodidacta en poco tiempo!
+
 ```{r primeros_pasos}
-div(
+div(style = "margin-top: 8px;",
   
   layout_columns(
     card(
@@ -221,10 +225,11 @@ div(
     ),
     
     div(class = "lateral_contenido",
+        span("Contenidos:", class = "contenidos_titulo"),
         markdown("
-        - [RStudio](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/)
-        - [Proyectos](https://bastianolea.rbind.io/blog/r_introduccion/proyectos/)
-        - [Operaciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r)
+        - [Conoce RStudio](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#rstudio)
+        - [Proyectos de R](https://bastianolea.rbind.io/blog/r_introduccion/proyectos/)
+        - [Operaciones básicas en R](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r)
         - [Vectores de datos](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores)
         - [Funciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones)
         - [Conectores o _pipes_ (`|>` y `%>%`)](https://bastianolea.rbind.io/blog/r_introduccion/conectores/)
@@ -243,13 +248,14 @@ div(
     ),
     
     div(class = "lateral_contenido",
+        span("Contenidos:", class = "contenidos_titulo"),
         markdown("
+        - [Conoce `{dplyr}`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/)
         - [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
         - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
         - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
         - [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
-        - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
-        - [Limpieza de textos](https://bastianolea.rbind.io/blog/stringr_texto/)"
+        - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)"
         )
     )
   ),
@@ -265,6 +271,7 @@ div(
     ),
     
     div(class = "lateral_contenido",
+        span("Contenidos:", class = "contenidos_titulo"),
         markdown("
         - [Crear funciones](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones)
         - [Condicionales o if](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo)

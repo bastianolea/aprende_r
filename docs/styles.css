@@ -377,6 +377,12 @@ h1.title, .title.h1 {
   font-size: 90%;
 }
 
+.contenidos_titulo {
+  margin-left: 6px;
+  font-weight: bold;
+  opacity: 90%;
+}
+
 /* para ventanas grandes */
 @media (min-width:570px) { 
 .lateral_contenido {
