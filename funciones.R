@@ -24,24 +24,30 @@ card_avanzado <- function(titulo,
        card_body(
          padding = "10px",
          
-         h4(
-           icon(icono, 
-                class = "icono_texto"), 
-           titulo),
          
-         div(class = "avanzado",
-             markdown(texto)
-         ),
          
-         if (length(footer) > 0) {
-           div(class = "fondo",
-               p("Ver más tutoriales de",
-                 a(footer$titulo, 
-                   href = footer$url, 
-                   style = "color: #9F69CB; text-decoration-color: #9F69CB;")
+         div(style = "display: flex; 
+                      flex-direction: column; 
+                      justify-content: flex-start;
+             height: 100%;",
+             
+             h4(icon(icono, class = "icono_texto"), 
+               titulo),
+             
+             div(class = "avanzado",
+                 markdown(texto)
+             ),
+             
+             if (length(footer) > 0) {
+               div(class = "fondo",
+                   p("Ver más tutoriales de",
+                     a(footer$titulo, 
+                       href = footer$url, 
+                       style = "color: #9F69CB; text-decoration-color: #9F69CB;")
+                   )
                )
-           )
-         }
+             }
+         )
        )
   )
 }

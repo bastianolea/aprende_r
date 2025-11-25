@@ -214,19 +214,19 @@ Cubriendo todos estos contenidos podrás formarte de manera autodidacta en poco 
 
 ```{r primeros_pasos}
 div(style = "margin-top: 8px;",
-  
-  layout_columns(
-    card(
-      h4("Introducción al lenguaje R"),
-      
-      div(class = "parrafos_contenido",
-          markdown("Para empezar, vamos a [aprender desde cero](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/) a trabajar con datos en R, empezando con las operaciones más básicas, para prepararte a trabajar con datos reales.")
-      )
-    ),
     
-    div(class = "lateral_contenido",
-        span("Contenidos:", class = "contenidos_titulo"),
-        markdown("
+    layout_columns(
+      card(
+        h4("Introducción al lenguaje R"),
+        
+        div(class = "parrafos_contenido",
+            markdown("Para empezar, vamos a [aprender desde cero](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/) a trabajar con datos en R, empezando con las operaciones más básicas, para prepararte a trabajar con datos reales.")
+        )
+      ),
+      
+      div(class = "lateral_contenido",
+          span("Contenidos:", class = "contenidos_titulo"),
+          markdown("
         - [Conoce RStudio](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#rstudio)
         - [Proyectos de R](https://bastianolea.rbind.io/blog/r_introduccion/proyectos/)
         - [Operaciones básicas en R](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r)
@@ -234,51 +234,51 @@ div(style = "margin-top: 8px;",
         - [Funciones básicas](https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones)
         - [Conectores o _pipes_ (`|>` y `%>%`)](https://bastianolea.rbind.io/blog/r_introduccion/conectores/)
         ")
-    )
-  ),
-  
-  
-  layout_columns(
-    card(
-      h4("Trabajando con datos en R"),
-      
-      div(class = "parrafos_contenido",
-          markdown("Ahora que tenemos conocimientos básicos sobre R y la programación, podemos lanzarnos a trabajar con tablas de datos. [Aprenderemos a usar `dplyr`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/) para explorar y transformar tablas de datos de forma sencilla." )
       )
     ),
     
-    div(class = "lateral_contenido",
-        span("Contenidos:", class = "contenidos_titulo"),
-        markdown("
+    
+    layout_columns(
+      card(
+        h4("Trabajando con datos en R"),
+        
+        div(class = "parrafos_contenido",
+            markdown("Ahora que tenemos conocimientos básicos sobre R y la programación, podemos lanzarnos a trabajar con tablas de datos. [Aprenderemos a usar `dplyr`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/) para explorar y transformar tablas de datos de forma sencilla." )
+        )
+      ),
+      
+      div(class = "lateral_contenido",
+          span("Contenidos:", class = "contenidos_titulo"),
+          markdown("
         - [Conoce `{dplyr}`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/)
         - [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
         - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
         - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
         - [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
         - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)"
-        )
-    )
-  ),
-  
-  
-  layout_columns(
-    card(
-      h4("Programación básica con R"),
-      
-      div(class = "parrafos_contenido",
-          markdown("Este paso es _opcional_, pero se recomienda [conocer las funcionalidades principales](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/) de cualquier lenguaje de programación. Aprendiendo funciones, condicionales y _loops_ podrás ahorrar tiempo y automatizar trabajo.")
+          )
       )
     ),
     
-    div(class = "lateral_contenido",
-        span("Contenidos:", class = "contenidos_titulo"),
-        markdown("
+    
+    layout_columns(
+      card(
+        h4("Programación básica con R"),
+        
+        div(class = "parrafos_contenido",
+            markdown("Este paso es _opcional_, pero se recomienda [conocer las funcionalidades principales](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/) de cualquier lenguaje de programación. Aprendiendo funciones, condicionales y _loops_ podrás ahorrar tiempo y automatizar trabajo.")
+        )
+      ),
+      
+      div(class = "lateral_contenido",
+          span("Contenidos:", class = "contenidos_titulo"),
+          markdown("
         - [Crear funciones](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#crear-funciones)
         - [Condicionales o if](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#control-de-flujo)
         - [Loops (_for_) o bucles](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles)"
-        )
+          )
+      )
     )
-  )
 )
 
 ```
@@ -434,8 +434,8 @@ div(style = "margin-top: 18px; margin-bottom: 0;",
 
 ```{r}
 h2(id = "cursos",
-  icon("pencil", class = "icono_texto"), 
-  "Cursos"
+   icon("pencil", class = "icono_texto"), 
+   "Cursos"
 )
 ```
 
@@ -561,36 +561,34 @@ card(style = "margin-top: 8px;",
        ),
        
        
-       card_avanzado(
-         titulo = "Reportes",
-         icono = "file-lines",
-         texto = "- [**Tutorial** de reportes con Quarto](https://bastianolea.rbind.io/blog/quarto_reportes/)
-                                   - [Reportes Quarto parametrizados](https://bastianolea.rbind.io/blog/quarto_params/)
-                                   - [Reportes online, blogs y sitios web con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/)",
-         footer = list(titulo = "reportes",
-                       url = "https://bastianolea.rbind.io/tags/quarto/"
-         )
+       card_avanzado(titulo = "Reportes",
+                     icono = "file-lines",
+                     texto = "- [**Tutorial** de reportes con Quarto](https://bastianolea.rbind.io/blog/quarto_reportes/)
+                              - [Reportes Quarto parametrizados](https://bastianolea.rbind.io/blog/quarto_params/)
+                              - [Reportes online, blogs y sitios web con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/)",
+                     footer = list(titulo = "reportes",
+                                   url = "https://bastianolea.rbind.io/tags/quarto/"
+                     )
        ),
        
-       card_avanzado(
-         titulo = "Aplicaciones",
-         icono = "window-maximize",
-         texto = "- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
-                  - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
-                  - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
-                  - [Conferencia ShinyConf 2025](https://www.shinyconf.com) (con videos de ponencias)
-                  - [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), crea apps Shiny con IA",
-         footer = list(titulo = "Shiny",
-                       url = "https://bastianolea.rbind.io/tags/shiny/"
-         )
+       card_avanzado(titulo = "Aplicaciones",
+                     icono = "window-maximize",
+                     texto = "- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
+                              - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
+                              - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
+                              - [Conferencia ShinyConf 2025](https://www.shinyconf.com) (con videos de ponencias)
+                              - [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), crea apps Shiny con IA",
+                     footer = list(titulo = "Shiny",
+                                   url = "https://bastianolea.rbind.io/tags/shiny/"
+                     )
        ),
        
        card_avanzado(titulo = "Web scraping",
                      icono = "file-code",
                      texto = "- [Introducción al web scraping con R](https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/)
-                                 - [Scraping con `rvest`](https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/)
-                                 - [Scraping con `RSelenium`](https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/)
-                                 - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)",
+                              - [Scraping con `rvest`](https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/)
+                              - [Scraping con `RSelenium`](https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/)
+                              - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)",
                      footer = list(titulo = "web scraping",
                                    url = "https://bastianolea.rbind.io/tags/web-scraping/")
        ),
@@ -598,12 +596,22 @@ card(style = "margin-top: 8px;",
        card_avanzado(titulo = "Inteligencia artificial",
                      icono = "server",
                      texto = "- [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
-                                 - [Análisis de sentimiento con LLM en R](https://bastianolea.rbind.io/blog/analisis_sentimiento_llm/)
-                                 - [Asistentes de IA en RStudio](https://bastianolea.rbind.io/blog/gander/)
-                                 - [_Machine learning_ supervisado con R](https://cdr-book.github.io/cap-arboles.html)
-                                 - [_Machine learning_ no supervisado con R](https://cdr-book.github.io/cap-cluster.html)",
+                              - [Análisis de sentimiento con LLM en R](https://bastianolea.rbind.io/blog/analisis_sentimiento_llm/)
+                              - [Asistentes de IA en RStudio](https://bastianolea.rbind.io/blog/gander/)
+                              - [_Machine learning_ supervisado con R](https://cdr-book.github.io/cap-arboles.html)
+                              - [_Machine learning_ no supervisado con R](https://cdr-book.github.io/cap-cluster.html)",
                      footer = list(titulo = "inteligencia artificial",
                                    url = "https://bastianolea.rbind.io/tags/inteligencia-artificial/")
+       ),
+       
+       card_avanzado(titulo = "Procesamiento de datos",
+                     icono = "database",
+                     texto = "- [Validación de datos con `{pointblank}`](https://bastianolea.rbind.io/blog/validacion_avanzada/)
+                              - [Crear y conectarse a bases de datos](https://bastianolea.rbind.io/blog/db_supabase/)
+                              - [Procesamiento de datos multiprocesador (_multicore_)](https://bastianolea.rbind.io/blog/furrr_multiprocesador/)
+                              - [Procesamiento de datos de encuesta con factor de expansión](https://bastianolea.rbind.io/blog/casen_introduccion/)",
+                     footer = list(titulo = "procesamiento de datos",
+                                   url = "https://bastianolea.rbind.io/tags/procesamiento-de-datos/")
        ),
        
        card_avanzado(titulo = "Publicar",

@@ -400,10 +400,12 @@ h1.title, .title.h1 {
 
 
 .avanzado {
-  display: flex;
-  min-height: 200px;
+  margin-top: 16px;
+  /*display: flex;
   flex-direction: column;   
-  justify-content: space-between;
+  justify-content: space-between;*/
+  min-height: 100px;
+  /*justify-content: flex-start;*/
   font-size: 85%;
   word-break: break-word;
   hyphens: auto;
@@ -434,8 +436,12 @@ h1.title, .title.h1 {
 
 .fondo {
   font-size: 75% !important;
-  opacity: 100%;
+  opacity: 75%;
   margin-bottom: -10px;
+  /*justify-content: flex-end;*/
+  margin-top: auto;
+  text-align: right;
+  vertical-align: bottom;
 }
 
 .imgen_curso {
