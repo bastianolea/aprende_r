@@ -521,43 +521,41 @@ Elige un objetivo o temática y especialízate:
 
 
 ```{r avanzado}
+
 card(style = "margin-top: 8px;",
      layout_columns(
        col_widths = c(4),
        
-       card_avanzado(
-         titulo = "Gráficos",
-         icono = "chart-line",
-         texto = "- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
-           - [Galería de tipos de gráficos con instrucciones](https://r-graph-gallery.com)
-           - [Ejemplos de gráficos hechos con R](https://r-graph-gallery.com/best-r-chart-examples.html)
-           - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/)
-           - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)",
-         footer = list(titulo = "gráficos",
-                       url = "https://bastianolea.rbind.io/tags/visualización-de-datos/")
+       card_avanzado(titulo = "Gráficos",
+                     icono = "chart-line",
+                     texto = "- [**Tutorial** de visualización de datos con `ggplot2`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
+                              - [Galería de tipos de gráficos con instrucciones](https://r-graph-gallery.com)
+                              - [Ejemplos de gráficos hechos con R](https://r-graph-gallery.com/best-r-chart-examples.html)
+                              - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/)
+                              - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)",
+                     footer = list(titulo = "gráficos",
+                                   url = "https://bastianolea.rbind.io/tags/visualización-de-datos/")
        ),
        
-       card_avanzado(
-         titulo = "Mapas",
-         icono = "map",
-         texto = "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
-           - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
-           - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
-           - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
-         footer = list(titulo = "mapas",
-                       url = "https://bastianolea.rbind.io/tags/mapas/")
+       card_avanzado(titulo = "Mapas",
+                     icono = "map",
+                     texto = "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
+                              - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
+                              - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
+                              - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
+           footer = list(titulo = "mapas",
+                         url = "https://bastianolea.rbind.io/tags/mapas/")
        ),
        
-       card_avanzado(
-         titulo = "Tablas",
-         icono = "table",
-         texto = "- [**Tutorial** de tablas con `gt`](https://bastianolea.rbind.io/blog/tutorial_gt/)
-                                          - [Galería de tablas: competencia de tablas 2025](https://posit.co/blog/2025-table-contest-winners/)
-                                          - [Libro de cocina de tablas con `gt`](https://themockup.blog/static/resources/gt-cookbook) y su versión [avanzada](https://themockup.blog/static/resources/gt-cookbook-advanced)
-                                          - [Tutoriales de tablas en R](https://r-graph-gallery.com/table.html)",
-         footer = list(titulo = "tablas",
-                       url = "https://bastianolea.rbind.io/tags/tablas/"
-         )
+       card_avanzado(titulo = "Tablas",
+                     icono = "table",
+                     texto = "- [**Tutorial** de tablas con `gt`](https://bastianolea.rbind.io/blog/tutorial_gt/)
+                              - [Galería de tablas: competencia de tablas 2025](https://posit.co/blog/2025-table-contest-winners/)
+                              - [Libro de cocina de tablas con `gt`](https://themockup.blog/static/resources/gt-cookbook) y su versión [avanzada](https://themockup.blog/static/resources/gt-cookbook-advanced)
+                              - [Tutoriales de tablas en R](https://r-graph-gallery.com/table.html)",
+                     footer = list(titulo = "tablas",
+                                   url = "https://bastianolea.rbind.io/tags/tablas/"
+                     )
        ),
        
        
