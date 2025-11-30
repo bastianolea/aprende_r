@@ -255,7 +255,8 @@ div(style = "margin-top: 8px;",
         - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
         - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
         - [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
-        - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)"
+        - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
+        - [Pivotar datos a formatos largo y ancho](https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/)"
           )
       )
     ),
