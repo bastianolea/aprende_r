@@ -244,7 +244,8 @@ div(class = "contenedor_pasos",
     
     card(class = "pasos",
          img(src = "img/icono_1.png"),
-         p("RStudio", class = "pasos_titulo"),
+         
+         p("RStudio", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#rstudio"),
          p("conoce el programa donde analizarás tus datos con R", class = "pasos_texto"),
     ),
     
@@ -254,14 +255,14 @@ div(class = "contenedor_pasos",
                    
                    card(class = "pasos",
                         img(src = "img/icono_2.png"),
-                        p("Operaciones", class = "pasos_titulo"),
+                        p("Operaciones", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#primeras-operaciones-en-r"),
                         p("aprende las operaciones básicas y los tipos de datos", class = "pasos_texto"),
                    ),
                    
                    card(class = "pasos",
                         img(src = "img/icono_3.png",
                             style = "padding-top: 16px; padding-bottom: 16px;"),
-                        p("Asignación", class = "pasos_titulo"),
+                        p("Asignación", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#asignaciones"),
                         p("aprende a crear objetos, una de las acciones principales en R", class = "pasos_texto"),
                    )
     ),
@@ -270,7 +271,7 @@ div(class = "contenedor_pasos",
     
     card(class = "pasos",
          img(src = "img/icono_4.png"),
-         p("Vectores", class = "pasos_titulo"),
+         p("Vectores", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#vectores"),
          p("conoce uno de los objetos más importantes de R: las secuencias de datos", class = "pasos_texto"),
     ),
     
@@ -280,15 +281,15 @@ div(class = "contenedor_pasos",
                    
                    card(class = "pasos",
                         img(src = "img/icono_5.png"),
-                        p("Funciones", class = "pasos_titulo"),
-                        p("crea pequeños programas que harán tu código más compacto, útil y legible", class = "pasos_texto"),
+                        p("Funciones", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/r_basico/#funciones"),
+                        p("las funciones reciben datos y entregan resultados, y son las piezas con las que se contruye todo análisis", class = "pasos_texto"),
                    ),
                    
                    card(class = "pasos",
                         img(src = "img/icono_6.png",
                             style = "padding-top: 8px; padding-bottom: 4px;"),
-                        p("Conectores", class = "pasos_titulo"),
-                        p("procesa datos creando pasos consecutivos que van encadenando operaciones", class = "pasos_texto"),
+                        p("Conectores", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/conectores/"),
+                        p("procesa datos creando pasos consecutivos que van encadenando operaciones de forma lógica y legible", class = "pasos_texto"),
                    )
     ),
     
