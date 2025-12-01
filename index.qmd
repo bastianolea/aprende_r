@@ -445,7 +445,7 @@ Algunos recursos para facilitar tu aprendizaje:
 - [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
 - [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
 - [El paquete `datos`](https://cienciadedatos.github.io/datos/) cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español
-- [StackOverflow de R], donde puedes hacer preguntas
+- [StackOverflow de R](https://stackoverflow.com/collectives/r-language), donde puedes hacer preguntas
 - [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
 </div>
 

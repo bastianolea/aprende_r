@@ -512,7 +512,7 @@ h1.title, .title.h1 {
 .pasos_titulo {
   text-align: center; 
   font-weight: bold; 
-  color: var(--texto);
+  color: var(--enlaces);
   text-decoration: none !important;
   font-size: 98%;
   line-height: 1;
@@ -538,3 +538,4 @@ h1.title, .title.h1 {
   margin-bottom:4px;
   margin: auto;
 }
+
