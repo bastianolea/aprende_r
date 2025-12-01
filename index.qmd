@@ -212,9 +212,8 @@ En esta sección están los contenidos básicos para aprender R, empezando desde
 
 Cubriendo todos estos contenidos podrás formarte de manera autodidacta en poco tiempo!
 
-```{r primeros_pasos}
+```{r}
 div(style = "margin-top: 8px;",
-    
     layout_columns(
       card(
         h4("Introducción al lenguaje R"),
@@ -235,8 +234,71 @@ div(style = "margin-top: 8px;",
         - [Conectores o _pipes_ (`|>` y `%>%`)](https://bastianolea.rbind.io/blog/r_introduccion/conectores/)
         ")
       )
+    )
+)
+```
+
+```{r ruta}
+
+div(class = "contenedor_pasos",
+    
+    card(class = "pasos",
+         img(src = "img/icono_1.png"),
+         p("RStudio", class = "pasos_titulo"),
+         p("conoce el programa donde analizarás tus datos con R", class = "pasos_texto"),
     ),
     
+    img(src = "img/flechita.png", class = "flechita"),
+    
+    layout_columns(style = "margin: auto;", gap = 0,
+                   
+                   card(class = "pasos",
+                        img(src = "img/icono_2.png"),
+                        p("Operaciones", class = "pasos_titulo"),
+                        p("aprende las operaciones básicas y los tipos de datos", class = "pasos_texto"),
+                   ),
+                   
+                   card(class = "pasos",
+                        img(src = "img/icono_3.png",
+                            style = "padding-top: 16px; padding-bottom: 16px;"),
+                        p("Asignación", class = "pasos_titulo"),
+                        p("aprende a crear objetos, una de las acciones principales en R", class = "pasos_texto"),
+                   )
+    ),
+    
+    img(src = "img/flechita.png", class = "flechita"),
+    
+    card(class = "pasos",
+         img(src = "img/icono_4.png"),
+         p("Vectores", class = "pasos_titulo"),
+         p("conoce uno de los objetos más importantes de R: las secuencias de datos", class = "pasos_texto"),
+    ),
+    
+    img(src = "img/flechita.png", class = "flechita"),
+    
+    layout_columns(style = "margin: auto;", gap = 0,
+                   
+                   card(class = "pasos",
+                        img(src = "img/icono_5.png"),
+                        p("Funciones", class = "pasos_titulo"),
+                        p("crea pequeños programas que harán tu código más compacto, útil y legible", class = "pasos_texto"),
+                   ),
+                   
+                   card(class = "pasos",
+                        img(src = "img/icono_6.png",
+                            style = "padding-top: 8px; padding-bottom: 4px;"),
+                        p("Conectores", class = "pasos_titulo"),
+                        p("procesa datos creando pasos consecutivos que van encadenando operaciones", class = "pasos_texto"),
+                   )
+    ),
+    
+    img(src = "img/flechita.png", class = "flechita")
+    
+)
+```
+
+```{r primeros_pasos}
+div(style = "margin-top: 16px;",
     
     layout_columns(
       card(
@@ -261,6 +323,9 @@ div(style = "margin-top: 8px;",
       )
     ),
     
+     div(style = "margin: auto; margin-bottom: 16px;",
+            img(src = "img/flechita.png", class = "flechita")
+    ),
     
     layout_columns(
       card(
@@ -544,8 +609,8 @@ card(style = "margin-top: 8px;",
                               - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
                               - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
                               - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
-           footer = list(titulo = "mapas",
-                         url = "https://bastianolea.rbind.io/tags/mapas/")
+                     footer = list(titulo = "mapas",
+                                   url = "https://bastianolea.rbind.io/tags/mapas/")
        ),
        
        card_avanzado(titulo = "Tablas",
@@ -795,7 +860,7 @@ o [contactarme](https://bastianolea.rbind.io/contacto).")
 
 div(style = "margin-left: -28px; padding-top: 24px; text-align: center; margin: auto; transform:scale(.5); opacity: 90%;",
     HTML('<script type="text/javascript" 
-         src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+         src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
          data-name="bmc-button" data-slug="bastimapache" data-color="#FFDD00" data-emoji="" data-font="Bree" 
          data-text="Regálame un cafecito" 
          data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>')

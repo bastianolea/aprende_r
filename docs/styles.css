@@ -494,3 +494,47 @@ h1.title, .title.h1 {
   margin: auto; text-align: center;
 }
 
+
+.contenedor_pasos {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks items vertically, making the main axis vertical */
+  justify-content: center; /* Centers content along the main (vertical) axis */
+  align-items: center; /* Centers content along the cross (horizontal) axis */
+}
+
+.pasos {
+  width: 220px;
+  padding: 12px 12px; 
+  margin-bottom: 0px !important;
+  min-height: 64px;
+}
+
+.pasos_titulo {
+  text-align: center; 
+  font-weight: bold; 
+  color: var(--texto);
+  text-decoration: none !important;
+  font-size: 98%;
+  line-height: 1;
+  margin-top: -8px !important;
+  margin-bottom: -8px !important;
+}
+
+
+.pasos_texto {
+  display: block;
+  text-align: center; 
+  color: var(--texto);
+  text-decoration: none !important;
+  font-size: 80%;
+  line-height: 1.1;
+  margin-bottom: 0 !important;
+}
+
+.flechita {
+  display: block;
+  width: 70px;
+  margin: auto;
+  margin-bottom:4px;
+  margin: auto;
+}
