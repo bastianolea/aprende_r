@@ -9,8 +9,8 @@ div_libro <- function(titulo, imagen, url, texto) {
         a(href = url, 
           class = "libro_titulo"),
       
-      p(class = "libro_texto",
-        texto)
+      div(class = "libro_texto",
+        markdown(texto))
   )
 }
 

@@ -703,7 +703,7 @@ h2(
 )
 ```
 
-Libros para profundizar mucho más en el lenguaje.
+Libros para **profundizar** mucho más en el lenguaje:
 
 ```{r libros_avanzados}
 
@@ -729,6 +729,37 @@ div(style = "margin-top: 12px;",
         imagen = "img/r_inferno.jpg",
         url = "https://www.burns-stat.com/documents/books/the-r-inferno/",
         texto = "Un libro peculiar sobre dificultades y curiosidades de R. Para entender R como lenguaje de programación desde sus rarezas."
+      )
+    )
+)
+```
+
+<br>
+Libros sobre **visualización** de datos:
+
+```{r}
+div(style = "margin-top: 12px;",
+    layout_columns(
+      
+      div_libro(
+        titulo = "El arte de la visualización de datos",
+        imagen = "img/tidytuesday_cookbook.jpg",
+        url = "https://nrennie.rbind.io/art-of-viz/",
+        texto = "Libro que explica el proceso tras aproximadamente 150 visualizaciones de datos hechas por [Nicola Rennie](https://nrennie.rbind.io) para el [TidyTuesday](https://github.com/rfordatascience/tidytuesday)."
+      ),
+      
+      div_libro(
+        titulo = "ggplot2: Elegant Graphics for Data Analysis",
+        imagen = "img/ggplot2_book.jpg",
+        url = "https://ggplot2-book.org",
+        texto = "Libro que busca explicar la teoría tras este sistema de visualización de datos, en específico la idea de _gramática de gráficas._"
+      ),
+      
+      div_libro(
+        titulo = "R Graphics Cookbook",
+        imagen = "img/r_graphics.jpg",
+        url = "https://r-graphics.org",
+        texto = "Más de 150 _recetas_ para crear gráficos con R, ordenadas claramente según la necesidad de visualización."
       )
     )
 )
