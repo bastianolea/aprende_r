@@ -328,6 +328,8 @@ div(style = "margin-top: 16px;",
             img(src = "img/flechita.png", class = "flechita")
     ),
     
+    
+    
     layout_columns(
       card(
         h4("Programación básica con R"),
@@ -345,6 +347,37 @@ div(style = "margin-top: 16px;",
         - [Loops (_for_) o bucles](https://bastianolea.rbind.io/blog/r_introduccion/r_intermedio/#bucles)"
           )
       )
+    ),
+    
+       div(style = "margin: auto; margin-bottom: 16px;",
+            img(src = "img/flechita.png", class = "flechita")
+    ),
+    
+    
+    
+    layout_columns(
+      card(
+        h4("Visualización de datos con R"),
+        
+        div(class = "parrafos_contenido",
+            markdown("La visualización de datos es una habilidad fundamental, tanto para las fases de exploración y el análisis, como para la presentación y difusión de resultados. [Aprende a usar `{ggplot2}`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/), la librería de visualización más flexible y completa.")
+        )
+      ),
+      
+      div(class = "lateral_contenido",
+          span("Contenidos:", class = "contenidos_titulo"),
+          markdown("
+        - [Tutorial inicial de `{ggplot2}`](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/)
+        - [Aplicar temas básicos de colores](https://bastianolea.rbind.io/blog/ggplot_temas/)
+        - [Tipografías personalizadas](https://bastianolea.rbind.io/blog/ggplot_tipografias/)
+        - [Unir y combinar gráficos](https://bastianolea.rbind.io/blog/patchwork/)
+        - [Gráficos interactivos](https://bastianolea.rbind.io/blog/ggiraph/)
+        - [Creación de temas personalizados](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/)
+        - [Automatizar gráficos en serie](https://bastianolea.rbind.io/blog/ggplot_purrr/)
+        - [Nubes de palabras](https://bastianolea.rbind.io/blog/nubes_de_palabras/)
+        - [Visualización de mapas y datos espaciales](https://bastianolea.rbind.io/blog/mapas_sf/)"
+          )
+      )
     )
 )
 
@@ -354,29 +387,25 @@ div(style = "margin-top: 16px;",
 ----
 
 
-<!-- ### Tidyverse -->
+```{r}
+#| eval: false
+# trabajando con datos
 
-<!-- https://bastianolea.rbind.io/blog/stringr_texto/ -->
+# [Conoce `{dplyr}`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/)
+# [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
+# [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
+# [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
+# [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
+# [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
+# [Pivotar datos a formatos largo y ancho](https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/)"
+```
+
+```{r}
+#| eval: false
+# visualización
 
 
-
-
-<!-- ## Empezar a trabajar con datos {#intermedio} -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/ -->
-
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/ -->
-
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/ -->
-
-
-<!-- https://bastianolea.rbind.io/blog/left_join/ -->
-
-
-
-<!-- ## Estadísticas -->
-<!-- https://bastianolea.rbind.io/blog/correlaciones/ -->
-
-<!-- ---- -->
+```
 
 
 <!-- <div style="display: none;"> -->
@@ -448,6 +477,50 @@ Algunos recursos para facilitar tu aprendizaje:
 - [StackOverflow de R](https://stackoverflow.com/collectives/r-language), donde puedes hacer preguntas
 - [Sitios web y otros recursos para aprender R](https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender)
 </div>
+
+
+
+
+----
+
+```{r apuntes_titulo}
+h2(
+  icon("rectangle-list", class = "icono_texto"), 
+  "Apuntes"
+)
+```
+
+Hojas que resumen todo lo que necesitas, por si olvidas algo o necesitas refrescar tu memoria. Sirven para recordar rápido algo sin tener que entrar a la documentación completa.
+
+
+```{r}
+div(class = "cuadricula", style = "margin-top: 16px; margin-bottom: 6px;",
+    
+    # generar elementos por cada paquete
+    map(apuntes, \(apunte) {
+      
+      div(
+        class = "contenedor_apunte",
+        div(class = "apunte",
+            a(href = apunte$link, style = "text-decoration: none;",
+              img(src = apunte$imagen, alt = apunte$nombre, height = "70px", style = "border-radius: 3px;")
+            )
+        ),
+        p(apunte$nombre, class = "apunte_titulo"),
+        
+        div(style = "width: 90%;",
+            div(markdown(apunte$descr), class = "apunte_texto")
+        )
+      )
+    })
+)
+```
+
+
+Revísalas todas en el [sitio oficial de Posit](https://posit.co/resources/cheatsheets/)!
+
+
+
 
 ----
 

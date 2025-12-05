@@ -69,19 +69,19 @@ main ul {
 }
 
 main ul li {
-  position: relative; /* Needed for absolute positioning of the caret */
-  padding-left: 20px; /* Space for the custom caret */
+  position: relative; 
+  padding-left: 20px; 
   line-height: 1.2;
   margin-bottom: 6px;
 }
 
 main ul li::before {
-  content: '▶'; /* Use a character like a right-pointing triangle */
+  content: '▶'; 
   position: absolute;
   left: 0;
   color: #9F69CA;
   font-size: 14px;
-  line-height: 2.1;
+  line-height: 1.7;
 }
 
 .navbar-nav .nav-link.active {
@@ -386,7 +386,7 @@ h1.title, .title.h1 {
 /* para ventanas grandes */
 @media (min-width:570px) { 
 .lateral_contenido {
-  margin-top: 18px;
+  margin-top: 16px;
   margin-left: -8px;
 }
 }
@@ -539,3 +539,53 @@ h1.title, .title.h1 {
   margin: auto;
 }
 
+
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px); 
+  grid-gap: 12px; 
+  width: 95%;
+  justify-content: space-between;
+  white-space: wrap;
+}
+
+.contenedor_apunte {
+  align-items: flex-start;
+  width: 130px !important;
+  margin: auto;
+  margin-top: 0;
+}
+
+.apunte {
+  margin-left: auto; margin-right: auto;
+  text-align: center;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  opacity: 90%;
+}
+
+.apunte:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s;
+}
+
+.apunte_titulo {
+  margin-left: 18px;
+  margin-right: 12px;
+  font-weight: bold; 
+  color: var(--texto);
+  text-decoration: none !important;
+  font-size: 90%;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.apunte_texto {
+  margin-left: 18px;
+  color: var(--texto);
+  text-decoration: none !important;
+  font-size: 80%;
+  line-height: 1.1;
+  margin-top: -6px;
+}

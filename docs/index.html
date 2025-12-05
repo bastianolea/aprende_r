@@ -511,20 +511,42 @@ que te permite usar RStudio en un navagador gratis.
 </div>
 </div>
 </bslib-layout-columns>
+<div style="margin: auto; margin-bottom: 16px;">
+<img src="img/flechita.png" class="flechita">
+</div>
+<bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<h4 class="anchored">Visualización de datos con R</h4>
+<div class="parrafos_contenido"><p>La visualización de datos es una habilidad fundamental, tanto para las fases de exploración y el análisis, como para la presentación y difusión de resultados. <a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/">Aprende a usar <code>{ggplot2}</code></a>, la librería de visualización más flexible y completa.</p>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
+<div class="lateral_contenido">
+<span class="contenidos_titulo">Contenidos:</span>
+<ul>
+<li><a href="https://bastianolea.rbind.io/blog/r_introduccion/tutorial_visualizacion_ggplot/">Tutorial inicial de <code>{ggplot2}</code></a></li>
+<li><a href="https://bastianolea.rbind.io/blog/ggplot_temas/">Aplicar temas básicos de colores</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/ggplot_tipografias/">Tipografías personalizadas</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/patchwork/">Unir y combinar gráficos</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/ggiraph/">Gráficos interactivos</a></li>
+<li><a href="https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/">Creación de temas personalizados</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/ggplot_purrr/">Automatizar gráficos en serie</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/nubes_de_palabras/">Nubes de palabras</a></li>
+<li><a href="https://bastianolea.rbind.io/blog/mapas_sf/">Visualización de mapas y datos espaciales</a></li>
+</ul>
+
+</div>
+</div>
+</bslib-layout-columns>
 </div>
 </div>
 </div>
 <hr>
-<!-- ### Tidyverse -->
-<!-- https://bastianolea.rbind.io/blog/stringr_texto/ -->
-<!-- ## Empezar a trabajar con datos {#intermedio} -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/ -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_censo/ -->
-<!-- https://bastianolea.rbind.io/blog/r_introduccion/tutorial_dplyr_campamentos/ -->
-<!-- https://bastianolea.rbind.io/blog/left_join/ -->
-<!-- ## Estadísticas -->
-<!-- https://bastianolea.rbind.io/blog/correlaciones/ -->
-<!-- ---- -->
 <!-- <div style="display: none;"> -->
 <!-- ## Paquetes -->
 <!-- </div> -->
@@ -678,6 +700,167 @@ Ayudas para aprender R
 <li><a href="https://bastianolea.rbind.io/blog/r_introduccion/recursos_r/#aprender">Sitios web y otros recursos para aprender R</a></li>
 </ul>
 </div>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<h2 class="anchored">
+<i class="far fa-rectangle-list icono_texto" role="presentation" aria-label="rectangle-list icon"></i>
+Apuntes
+</h2>
+</div>
+</div>
+<p>Hojas que resumen todo lo que necesitas, por si olvidas algo o necesitas refrescar tu memoria. Sirven para recordar rápido algo sin tener que entrar a la documentación completa.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="cuadricula" style="margin-top: 16px; margin-bottom: 6px;">
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/introduccion-a-r.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/introduccion-a-r.jpg" alt="Introducción a R" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Introducción a R</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Recordatorios básicos de conceptos principales</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/base-r_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/base-r_es.jpg" alt="Base R" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Base R</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Conceptos básicos para usar R en la práctica</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/rstudio-ide_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/rstudio-ide_es.jpg" alt="RStudio" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">RStudio</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Aspectos principales del entorno de desarrollo RStudio</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/data-transformation_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/data-transformation_es.jpg" alt="Dplyr" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Dplyr</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Transformación y manipulación de datos con <code>dplyr</code></p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/data-import_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/data-import_es.jpg" alt="Importar datos" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Importar datos</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Carga datos desde CSV, Excel y Google Drive</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/estadistica-descriptiva-con-R.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/estadistica-descriptiva-con-R.jpg" alt="Estadísticas descriptivas" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Estadísticas descriptivas</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Estadísticas descriptivas básicas</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/data-visualization_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/data-visualization_es.jpg" alt="Visualización" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Visualización</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Visualización de datos con <code>ggplot2</code></p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/syntax_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/syntax_es.jpg" alt="Sintaxis de R" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Sintaxis de R</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Compara distintas formas de hacer lo mismo</p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/factors_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/factors_es.jpg" alt="Factores" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Factores</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Trabaja con datos en formato factor con <code>forcats</code></p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/strings_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/strings_es.jpg" alt="Texto" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Texto</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Trabaja con datos en formato de texto con <code>stringr</code></p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/lubridate_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/lubridate_es.jpg" alt="Fechas" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Fechas</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Trabaja con datos en formato fecha y hora con <code>lubridate</code></p>
+</div>
+</div>
+</div>
+<div class="contenedor_apunte">
+<div class="apunte">
+<a href="pdf/shiny_es.pdf" style="text-decoration: none;">
+<img src="img/cheatsheets/shiny_es.jpg" alt="Shiny" height="70px" style="border-radius: 3px;">
+</a>
+</div>
+<p class="apunte_titulo">Shiny</p>
+<div style="width: 90%;">
+<div class="apunte_texto"><p>Desarrollo de aplicaciones web interactivas centradas en datos</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Revísalas todas en el <a href="https://posit.co/resources/cheatsheets/">sitio oficial de Posit</a>!</p>
 <hr>
 <!-- <div style="display: none;"> -->
 <!-- ## Libros recomendados -->
