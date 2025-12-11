@@ -316,7 +316,7 @@ div(style = "margin-top: 16px;",
         - [Conoce `{dplyr}`](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/)
         - [Explorar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#explorar-una-tabla)
         - [Filtrar datos](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos)
-        - [Crear variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#crear-columnas)
+        - [Crear y modificar variables](https://bastianolea.rbind.io/blog/r_introduccion/dplyr_mutate)
         - [Cruzar datos (_left join_)](https://bastianolea.rbind.io/blog/left_join/)
         - [Limpieza de datos](https://bastianolea.rbind.io/blog/limpieza_tips/)
         - [Pivotar datos a formatos largo y ancho](https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/)"
@@ -471,7 +471,8 @@ Algunos recursos para facilitar tu aprendizaje:
 
 <div style="max-width: 512px;">
 - [Hojas oficiales de apuntes y trucos para R](https://posit.co/resources/cheatsheets/), que sirven como referencia de las funciones principales de cada paquete
-- [Asistente de IA para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código
+- [Asistente de IA `{gander}` para RStudio](https://bastianolea.rbind.io/blog/gander/), que puedes invocar desde tus scripts para que te escriba o corrija código en casos puntuales
+- [Chat interactivo de IA `{btw}` para RStudio](https://bastianolea.rbind.io/blog/btw/), que tiene conocimientos sobre tus datos, la documentación oficial de los paquetes, y más, para obtener mejores respuestas
 - [Autocompletado de código con IA en RStudio](https://bastianolea.rbind.io/blog/github_copilot/), que te ayuda y te ahorra tiempo al intentar completar lo que estás escribiendo
 - [El paquete `datos`](https://cienciadedatos.github.io/datos/) cuenta con muchos conjuntos de datos orientados al aprendizaje traducidos al español
 - [StackOverflow de R](https://stackoverflow.com/collectives/r-language), donde puedes hacer preguntas
