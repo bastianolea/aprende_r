@@ -906,8 +906,9 @@ layout_columns(
       "Suscríbete para recibir noticias sobre R y no quedarte fuera de nada!
        - [R for the Rest of Us](https://rfortherestofus.com/whatsnew/)
        - [The R Data Scientist](https://rstats.blaze.email)
-       - [Lista de correo de Escuela de Datos](https://substack.com/@escueladedatos)
-       - [Lista de correos de Estación R](https://estacion-r.com/newsletter)
+       - [Escuela de Datos](https://substack.com/@escueladedatos)
+       - [Estación R](https://estacion-r.com/newsletter)
+       - [Statistics Globe](https://statisticsglobe.us18.list-manage.com/subscribe?u=e21bd5d10aa2be474db535a7b&id=841e4c86f0)
        - [`posit::glimpse()` y otras listas de correo de Posit](https://posit.co/about/subscription-management/)"
     )
   )
