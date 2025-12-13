@@ -64,7 +64,8 @@ card_cursos <- function(titulo,
        
        div(
          a(class = "cursos_titulo",
-           markdown(titulo),
+           # markdown(titulo),
+           titulo,
            href = url),
          span(tipo, class = "pildora")
        ),
@@ -79,4 +80,9 @@ card_cursos <- function(titulo,
          )
        )
   )
+}
+
+
+flechita <- function() {
+  img(src = "img/flechita.png", class = "flechita")
 }
