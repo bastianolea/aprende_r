@@ -333,7 +333,7 @@ div(style = "margin-top: 16px;",
         
         card(class = "pasos",
              img(src = "img/icono_filter.png", style = "opacity:0.9;"),
-             p("Filtrar", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos"),
+             p("Filtrar datos", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos"),
              p("extrae subconjuntos de las filas de tus datos, una de las operaciones más recurrentes para limpiar datos o enfocar tu análisis", class = "pasos_texto"),
         ),
         
@@ -345,13 +345,14 @@ div(style = "margin-top: 16px;",
              p("calcula nuevas columnas a partir de variables existentes o usando funciones, y también realiza cálculos por grupos de filas", class = "pasos_texto"),
         ),
         
-        # flechita(),
-        # 
-        # card(class = "pasos",
-        #      img(src = "img/icono_summarize.png"),
-        #      p("Resumir datos", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_mutate"),
-        #      p("realiza cálculos u operaciones sobre varias observaciones que den como resultado una sola fila, o una fila por grupo", class = "pasos_texto"),
-        # ),
+        flechita(),
+
+        card(class = "pasos",
+             img(src = "img/icono_summarize.png", 
+                 style = "padding-left: 18px; padding-right: 18px;",),
+             p("Resumir filas", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_summarize"),
+             p("realiza operaciones sobre varias filas que den como resultado un resumen de una sola fila, o una fila por grupo", class = "pasos_texto"),
+        ),
         
         flechita(),
         
@@ -366,7 +367,7 @@ div(style = "margin-top: 16px;",
                        
                        card(class = "pasos",
                             img(src = "img/icono_pivotlonger.png", style = "opacity:0.9;"),
-                            p("Pivotar", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/"),
+                            p("Pivotar tablas", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/"),
                             p("transforma la estructura de tus tablas de datos al llevarlas desde un formato ancho (variables en columnas) a un formato largo (variables en filas), o viceversa", class = "pasos_texto"),
                        )
         ),
