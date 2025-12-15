@@ -1,6 +1,7 @@
 :root {
   --fondo: #23102A;
   --texto: #B39CCD;
+  --texto_claro: #C8B2E2;
   --enlaces: #9F69C8;
   --destacado: #31193f;
   --destacado-2: #47215E;
@@ -16,6 +17,7 @@ body {
 p {
   line-height: 1.2;
   margin-bottom: 0.6rem !important;
+  color: var(--texto_claro);
 }
 
 a {
@@ -468,7 +470,6 @@ h1.title, .title.h1 {
   font-size: 120%;
   font-weight: bold;
   line-height: 1.2;
-  color: var(--texto) !important;
   margin-bottom: -6px;
 }
 

@@ -249,7 +249,7 @@ div(class = "contenedor_pasos",
          p("conoce el programa donde analizarás tus datos con R", class = "pasos_texto"),
     ),
     
-    img(src = "img/flechita.png", class = "flechita"),
+    flechita(),
     
     layout_columns(style = "margin: auto;", gap = 0,
                    
@@ -267,7 +267,7 @@ div(class = "contenedor_pasos",
                    )
     ),
     
-    img(src = "img/flechita.png", class = "flechita"),
+    flechita(),
     
     card(class = "pasos",
          img(src = "img/icono_4.png"),
@@ -275,7 +275,7 @@ div(class = "contenedor_pasos",
          p("conoce uno de los objetos más importantes de R: las secuencias de datos", class = "pasos_texto"),
     ),
     
-    img(src = "img/flechita.png", class = "flechita"),
+    flechita(),
     
     layout_columns(style = "margin: auto;", gap = 0,
                    
@@ -293,12 +293,12 @@ div(class = "contenedor_pasos",
                    )
     ),
     
-    img(src = "img/flechita.png", class = "flechita")
+    flechita()
     
 )
 ```
 
-```{r primeros_pasos}
+```{r pasos_dplyr}
 div(style = "margin-top: 16px;",
     
     layout_columns(
@@ -324,12 +324,67 @@ div(style = "margin-top: 16px;",
       )
     ),
     
-     div(style = "margin: auto; margin-bottom: 16px;",
-            img(src = "img/flechita.png", class = "flechita")
+    div(style = "margin: auto; margin-bottom: 16px;",
+        flechita()
     ),
     
     
-    
+    div(class = "contenedor_pasos",
+        
+        card(class = "pasos",
+             img(src = "img/icono_filter.png", style = "opacity:0.9;"),
+             p("Filtrar datos", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_intro/#filtrar-datos"),
+             p("extrae subconjuntos de las filas de tus datos, una de las operaciones más recurrentes para limpiar datos o enfocar tu análisis", class = "pasos_texto"),
+        ),
+        
+        flechita(),
+        
+        card(class = "pasos",
+             img(src = "img/icono_mutate.png", style = "opacity:0.9;"),
+             p("Crear variables", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_mutate"),
+             p("calcula nuevas columnas a partir de variables existentes o usando funciones, y también realiza cálculos por grupos de filas", class = "pasos_texto"),
+        ),
+        
+        flechita(),
+
+        card(class = "pasos",
+             img(src = "img/icono_summarize.png", 
+                 style = "padding-left: 18px; padding-right: 18px;",),
+             p("Resumir filas", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/dplyr_summarize"),
+             p("realiza operaciones sobre varias filas que den como resultado un resumen de una sola fila, o una fila por grupo", class = "pasos_texto"),
+        ),
+        
+        flechita(),
+        
+        layout_columns(style = "margin: auto;", gap = 0,
+                       
+                       
+                       card(class = "pasos",
+                            img(src = "img/icono_leftjoin.png", style = "opacity:0.9;"),
+                            p("Cruzar tablas", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/left_join/"),
+                            p("agrega columnas a una tabla desde una segunda tabla cruzándolas por medio de una llave, una columna en común entre ambas tablas que permite la unión", class = "pasos_texto"),
+                       ),
+                       
+                       card(class = "pasos",
+                            img(src = "img/icono_pivotlonger.png", style = "opacity:0.9;"),
+                            p("Pivotar tablas", class = "pasos_titulo") |> a(href = "https://bastianolea.rbind.io/blog/r_introduccion/tidyr_pivotar/"),
+                            p("transforma la estructura de tus tablas de datos al llevarlas desde un formato ancho (variables en columnas) a un formato largo (variables en filas), o viceversa", class = "pasos_texto"),
+                       )
+        ),
+        
+        flechita(),
+        
+        
+    )
+)
+```
+
+
+
+
+```{r pasos_programacion}
+
+div(style = "margin-top: 16px;",
     layout_columns(
       card(
         h4("Programación básica con R"),
@@ -349,8 +404,8 @@ div(style = "margin-top: 16px;",
       )
     ),
     
-       div(style = "margin: auto; margin-bottom: 16px;",
-            img(src = "img/flechita.png", class = "flechita")
+    div(style = "margin: auto; margin-bottom: 16px;",
+        img(src = "img/flechita.png", class = "flechita")
     ),
     
     
@@ -626,7 +681,7 @@ div(style = "margin-top: 8px;",
     ),
     
     card_cursos(
-      titulo = "Conferencias y talleres de `posit::conf(2025)`",
+      titulo = "Conferencias y talleres de posit::conf(2025)",
       tipo = "gratis",
       imagen = "img/curso_posit_conf.png",
       url = "https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/",
