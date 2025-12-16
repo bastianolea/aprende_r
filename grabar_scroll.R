@@ -18,19 +18,18 @@ library(RSelenium)
 scrollear_elemento <- function(elemento = "#introduccion", 
                                scroll = 90) {
   remote$executeScript(paste("
-const element = document.querySelector('", elemento, "');
-  const y = element.getBoundingClientRect().top + window.scrollY - ", scroll, ";
-  window.scrollTo({ top: y, behavior: 'smooth' });
-"))
+      const element = document.querySelector('", elemento, "');
+      const y = element.getBoundingClientRect().top + window.scrollY - ", scroll, ";
+        window.scrollTo({ top: y, behavior: 'smooth' });")
+                       )
 }
 
+# scroll por pixeles exactos
 scrollear_manual <- function(scroll = 90) {
   remote$executeScript(paste("
-window.scrollBy({
-  top:", scroll, ",
-  left: 0,
-  behavior:  'smooth'
-});")) 
+      window.scrollBy({
+      top:", scroll, ", left: 0,
+      behavior: 'smooth' });")) 
 }
 
 # función de espera entre scrolls
@@ -52,12 +51,22 @@ remote <- driver$client
 # navegar al sitio
 remote$navigate(url = "https://bastianolea.github.io/aprende_r/")
 
-# remote$executeScript(paste("window.scrollBy(0, ", -50000, ");"))
-# 
-# # remote$executeScript(paste("window.scrollBy(0, ", 380, ",
-remote$executeScript(paste("window.scroll(top: ", 80, ", behavior: 'smooth');"))
-# 
-# remote$executeScript(paste("window.scrollBy(0, ", 450, ");"))
+# scroll normal
+remote$executeScript("window.scrollBy(0, 300);")
+
+# scroll suave
+remote$executeScript("window.scrollBy({
+                      top: 300, left: 0,
+                      behavior: 'smooth'});")
+
+# scroll a elemento
+remote$executeScript("document.querySelector('#obtener-r').scrollIntoView({behavior: 'smooth'});")
+
+# scroll a elemento con pixeles extra
+remote$executeScript("
+      const element = document.querySelector('#obtener-r');
+      const y = element.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top: y, behavior: 'smooth' });")
 
 
 
