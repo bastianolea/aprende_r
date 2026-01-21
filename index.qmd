@@ -67,6 +67,9 @@ div(class = "centrado", style = "margin-top: 12px",
 ```
 
 
+- Leer más sobre la [reproducibilidad](https://atelierdecodigo.com/posts/reproducibilidad.html)
+- Leer más sobre [por qué programar en R](https://atelierdecodigo.com/posts/r-humanidades-aprender.html)
+
 <!-- https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/ -->
 
 <!--  -->
@@ -89,7 +92,7 @@ div(style = "margin-bottom: 12px;",
     p(style = "display: inline-block;",
       "Para empezar a analizar datos con R necesitas", 
       span("1", class = "circulo_texto"), "instalar R (el lenguaje) y", 
-      span("2", class = "circulo_texto"), "instalar RStudio (el programa).")
+      span("2", class = "circulo_texto"), "instalar RStudio (el programa que usarás) u otra IDE.")
 )
 ```
 
@@ -145,7 +148,7 @@ card(
                    
                    # texto lateral
                    markdown("Una vez que tengas R instalado, necesitas un programa que te ayude a usarlo."),
-                   markdown("A esto se le denomina IDE o _entorno de desarrollo_, 
+                   markdown("A esto se le denomina [IDE o _entorno de desarrollo_](https://atelierdecodigo.com/posts/entorno-desarrollo-integrado-ide.html), 
                             y las 2 más populares son [RStudio](https://posit.co/download/rstudio-desktop/) y [Positron](https://posit.co/products/ide/positron/).")
                    
                  ),
@@ -197,7 +200,7 @@ p(
   icon("cloud", class = "icono_texto"),
   "Opcionalmente, puedes usar R en la nube mediante servicios como", 
   a(href = "https://posit.cloud", "Posit Cloud,"),
-  "que te permite usar RStudio en un navagador gratis."
+  "que te permite usar RStudio en un navegador gratis."
 )
 ```
 
@@ -475,15 +478,16 @@ h2(id = "intermedio",
 ```
 
 
-Algunos de los paquetes más usados en R para análisis de datos, principalmente parte del [Tidyverse](https://tidyverse.org), un conjunto de paquetes diseñados para la ciencia de datos.
+Los [paquetes](https://atelierdecodigo.com/posts/r-base-tidyverse.html) son conjuntos de funciones, datos y documentación que te permiten extender R. Sirven para hacer cosas nuevas o facilitar tu trabajo.
 
-Visita la documentación de cada paquete para profundizar.
+Aquí destacamos algunos de los paquetes más usados en R para análisis de datos, principalmente parte del [Tidyverse](https://tidyverse.org) (un conjunto de paquetes diseñados para la ciencia de datos).
 
 ```{r paquetes}
 library(dplyr)
 library(purrr)
 
 div(class = "scroll-horizontal",
+    style = "padding-bottom: -8px; margin-bottom: 6px;",
     
     # generar elementos por cada paquete
     map(paquetes, \(paquete) {
@@ -505,7 +509,7 @@ div(class = "scroll-horizontal",
 )
 ```
 
-
+Visita la documentación de cada paquete para aprender a usarlos y profundizar.
 
 ----
 

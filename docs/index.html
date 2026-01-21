@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,14 +31,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fca4c7acc8b8bab46f59536b87600495.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-69822ac7bb3502619ac9157c69271c71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,6 +86,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Aprende R</span>
     </a>
@@ -196,6 +199,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<ul>
+<li>Leer más sobre la <a href="https://atelierdecodigo.com/posts/reproducibilidad.html">reproducibilidad</a></li>
+<li>Leer más sobre <a href="https://atelierdecodigo.com/posts/r-humanidades-aprender.html">por qué programar en R</a></li>
+</ul>
 <!-- https://bastianolea.rbind.io/blog/r_introduccion/por_que_r/ -->
 <!--  -->
 <hr>
@@ -218,7 +225,7 @@ Para empezar a analizar datos con R necesitas
 <span class="circulo_texto">1</span>
 instalar R (el lenguaje) y
 <span class="circulo_texto">2</span>
-instalar RStudio (el programa).
+instalar RStudio (el programa que usarás) u otra IDE.
 </p>
 </div>
 </div>
@@ -277,7 +284,7 @@ instalar RStudio (el programa).
 </div>
 <p>Una vez que tengas R instalado, necesitas un programa que te ayude a usarlo.</p>
 
-<p>A esto se le denomina IDE o <em>entorno de desarrollo</em>,
+<p>A esto se le denomina <a href="https://atelierdecodigo.com/posts/entorno-desarrollo-integrado-ide.html">IDE o <em>entorno de desarrollo</em></a>,
 y las 2 más populares son <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> y <a href="https://posit.co/products/ide/positron/">Positron</a>.</p>
 
 </div>
@@ -332,7 +339,7 @@ y las 2 más populares son <a href="https://posit.co/download/rstudio-desktop/">
 <i class="fas fa-cloud icono_texto" role="presentation" aria-label="cloud icon"></i>
 Opcionalmente, puedes usar R en la nube mediante servicios como
 <a href="https://posit.cloud">Posit Cloud,</a>
-que te permite usar RStudio en un navagador gratis.
+que te permite usar RStudio en un navegador gratis.
 </p>
 </div>
 </div>
@@ -627,11 +634,11 @@ Paquetes principales
 </h2>
 </div>
 </div>
-<p>Algunos de los paquetes más usados en R para análisis de datos, principalmente parte del <a href="https://tidyverse.org">Tidyverse</a>, un conjunto de paquetes diseñados para la ciencia de datos.</p>
-<p>Visita la documentación de cada paquete para profundizar.</p>
+<p>Los <a href="https://atelierdecodigo.com/posts/r-base-tidyverse.html">paquetes</a> son conjuntos de funciones, datos y documentación que te permiten extender R. Sirven para hacer cosas nuevas o facilitar tu trabajo.</p>
+<p>Aquí destacamos algunos de los paquetes más usados en R para análisis de datos, principalmente parte del <a href="https://tidyverse.org">Tidyverse</a> (un conjunto de paquetes diseñados para la ciencia de datos).</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="scroll-horizontal">
+<div class="scroll-horizontal" style="padding-bottom: -8px; margin-bottom: 6px;">
 <div class="contenedor_paquete">
 <div class="paquete">
 <a href="https://dplyr.tidyverse.org" style="text-decoration: none;">
@@ -745,6 +752,7 @@ Paquetes principales
 </div>
 </div>
 </div>
+<p>Visita la documentación de cada paquete para aprender a usarlos y profundizar.</p>
 <hr>
 </section>
 <section id="ayudas" class="level2" style="display: none;">
@@ -1637,13 +1645,14 @@ o <a href="https://bastianolea.rbind.io/contacto">contactarme</a>.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
