@@ -691,14 +691,14 @@ div(style = "margin-top: 8px;",
       url = "https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/",
       texto = "Colección completa de conferencias, charlas y talleres impartidos en la conferencia anual de [Posit](https://posit.co), incluyendo 4 _keynotes_ y más de 100 charlas sobre R y ciencia de datos."
     ),
-    
-    card_cursos(
-      titulo = "DataCamp",
-      tipo = "prueba gratuita",
-      imagen = "img/curso_datacamp.png",
-      url = "https://www.datacamp.com/courses/free-introduction-to-r",
-      texto = "Curso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como [estudiante](https://www.datacamp.com/github-students) en GitHub puedes obtener algunos meses gratis."
-    ),
+    # 
+    # card_cursos(
+    #   titulo = "DataCamp",
+    #   tipo = "prueba gratuita",
+    #   imagen = "img/curso_datacamp.png",
+    #   url = "https://www.datacamp.com/courses/free-introduction-to-r",
+    #   texto = "Curso en inglés interactivo, donde vas avanzando paso a paso mientras practicas. Sólo las primeras clases son gratuitas, pero si te resigtras como [estudiante](https://www.datacamp.com/github-students) en GitHub puedes obtener algunos meses gratis."
+    # ),
     
 )
 ```
