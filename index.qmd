@@ -749,6 +749,7 @@ card(style = "margin-top: 8px;",
        card_avanzado(titulo = "Mapas",
                      icono = "map",
                      texto = "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
+                              - [R como SIG: Shapefiles, GeoPackages y mapas coropléticos de México](https://alejandroromerog.github.io/blog/RComoSIG-Mapa/)
                               - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
                               - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
                               - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
