@@ -590,3 +590,19 @@ h1.title, .title.h1 {
   line-height: 1.1;
   margin-top: -6px;
 }
+
+
+.banner {
+  width: 80%;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.icono_lateral {
+  float: left;
+  font-size: 34px;
+  padding: 8px;
+  padding-top: 0;
+  color: #9F69C9;
+}

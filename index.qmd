@@ -11,28 +11,37 @@ library(shiny)
 library(bslib)
 source("funciones.R")
 source("datos.R")
+```
 
-tags$header(
-  
-  markdown("Aquí encontrarás recursos paso a paso para que puedas **aprender a programar con R desde cero!**"),
-  
-  hr(),
-  
-  markdown("- ¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
+Aquí encontrarás recursos paso a paso para que puedas **aprender a programar con R desde cero!**
+
+- ¿Estás pensando en [aprender a programar para analizar datos?](#introduccion)
 - ¿Nunca has programado, pero [quieres empezar ya?](#basico)
 - ¿Sabes un poco de R, pero [necesitas mejorar?](#intermedio)
 - ¿Buscas [cursos gratuitos de R?](#cursos)
-- ¿Ya sabes R y [quieres seguir avanzando?](#avanzado)"),
+- ¿Ya sabes R y [quieres seguir avanzando?](#avanzado)
+- ¿Quieres [conectar con otros/as usuarios/as de R y crear comunidad?](#conecta)
 
-p("Explora esta página para encontrar todo lo necesario para aprender R"),
 
-hr()
-
+```{r}
+card(class = "banner",
+  card_body(
+    tags$a(href = "https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q",
+    strong("Únete al grupo de", em("Aprende R!"), class = "subtitulo_panel")
+    ),
+    # Contenedor flex para ícono + texto
+    div(
+      style = "display: flex; align-items: flex-start; gap: 10px;",
+      tags$i(class = "fab fa-slack icono_lateral", role = "presentation", `aria-label` = "slack icon"),
+      markdown("Sigue [este enlace](https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q) para sumarte a un **chat grupal** dirigido a aprender R en comunidad! Puedes hacer todas tus consultas ahí, compartir tus dudas, y avanzar por este camino en compañía!")
+    )
+  )
 )
 ```
 
 
-## ¿Por qué R? {#introduccion}
+
+## ¿Por qué aprender R? {#introduccion}
 
 R es un lenguaje **diseñado para el análisis de datos**, hecho para personas sin mucha experiencia en programación, y con una gran comunidad!
 
@@ -349,7 +358,7 @@ div(style = "margin-top: 16px;",
         ),
         
         flechita(),
-
+        
         card(class = "pasos",
              img(src = "img/icono_summarize.png", 
                  style = "padding-left: 18px; padding-right: 18px;",),
@@ -951,22 +960,6 @@ layout_columns(
   
   div(
     h3(
-      icon("people-group", class = "icono_texto"), 
-      "Comunidades"),
-    
-    markdown(
-      "- Usa el hashtag [#RStats](https://x.com/hashtag/Rstats) en tu red social favorita!
-       - [Latin R](https://latinr.org), conferencia Latinoamericana anual de R
-       - [Escuela de Datos](https://escueladedatos.online), comunidad hispanohablante
-       - [rainbowR](https://rainbowr.org) 🏳️‍🌈 comunidad de usuarixs de R LGBTIQ+
-       - [Grupo de usuarios de R de Madrid](https://madrid.r-es.org) 🇪🇸
-       - [R en Buenos Aires](https://www.meetup.com/renbaires/?_xtd=gqFyqTIxOTE0ODE0MqFwp2FuZHJvaWQ%253D&from=ref) 🇦🇷
-       - [Comunidad R Hispano](https://r-es.org) 🇪🇸"
-    )
-  ),
-  
-  div(
-    h3(
       icon("fa-solid fa-envelope", class = "icono_texto"), 
       "Listas de correo"),
     
@@ -992,6 +985,26 @@ layout_columns(
 
 ----
 
+```{r}
+h2(id = "conecta",
+   icon("people-group", class = "icono_texto"),
+   "Conéctate con otr@s usuari@s de R"
+)
+```
+
+`r icon("slack", class = "icono_texto")` Únete al [Slack de **Aprende R**!](https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q) Sigue [este enlace](https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q) para sumarte a un chat grupal dirigido a aprender R en comunidad! Puedes hacer todas tus consultas ahí, compartir tus dudas, y avanzar acompañadx en este camino!
+
+Si eres de Chile 🇨🇱 únete al **nuevo [grupo de usuari@s de R de Santiago!](https://santiagorusers.github.io)** También puede sumarte al [grupo de Slack](https://join.slack.com/t/santiagorusers/shared_invite/zt-3tzmsdyat-gNAUz5mjPij0xFgNLtXeKA) `r icon("slack", class = "icono_texto")` para chatear y conversar!
+
+- [Latin R](https://latinr.org), conferencia Latinoamericana anual de R
+- [rainbowR](https://rainbowr.org) 🏳️‍🌈 comunidad de usuarixs de R LGBTIQ+
+- [Escuela de Datos](https://escueladedatos.online), comunidad hispanohablante
+- [Grupo de usuarios de R de Madrid](https://madrid.r-es.org) 🇪🇸
+- [R en Buenos Aires](https://www.meetup.com/renbaires/?_xtd=gqFyqTIxOTE0ODE0MqFwp2FuZHJvaWQ%253D&from=ref) 🇦🇷
+- [Comunidad R Hispano](https://r-es.org) 🇪🇸
+- Usa el hashtag [#RStats](https://x.com/hashtag/Rstats) en tu red social favorita!
+
+----
 
 ## ¡Atrévete!
 
