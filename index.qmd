@@ -24,19 +24,19 @@ Aquí encontrarás recursos paso a paso para que puedas **aprender a programar c
 
 
 ```{r}
-card(class = "banner",
-  card_body(
-    tags$a(href = "https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q",
-    strong("Únete al grupo de", em("Aprende R!"), class = "subtitulo_panel")
-    ),
-    # Contenedor flex para ícono + texto
-    div(
-      style = "display: flex; align-items: flex-start; gap: 10px;",
-      tags$i(class = "fab fa-slack icono_lateral", role = "presentation", `aria-label` = "slack icon"),
-      markdown("Sigue [este enlace](https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q) para sumarte a un **chat grupal** dirigido a aprender R en comunidad! Puedes hacer todas tus consultas ahí, compartir tus dudas, y avanzar por este camino en compañía!")
-    )
-  )
-)
+# card(class = "banner",
+#   card_body(
+#     tags$a(href = "https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q",
+#     strong("Únete al grupo de", em("Aprende R!"), class = "subtitulo_panel")
+#     ),
+#     # Contenedor flex para ícono + texto
+#     div(
+#       style = "display: flex; align-items: flex-start; gap: 10px;",
+#       tags$i(class = "fab fa-slack icono_lateral", role = "presentation", `aria-label` = "slack icon"),
+#       markdown("Sigue [este enlace](https://join.slack.com/t/aprende-r/shared_invite/zt-3u1bvfzf6-IenbDD_FfXqK6HnbxZdM2Q) para sumarte a un **chat grupal** dirigido a aprender R en comunidad! Para hacer consultas, dudas, y aprender en compañía!")
+#     )
+#   )
+# )
 ```
 
 
