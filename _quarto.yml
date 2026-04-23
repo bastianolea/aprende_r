@@ -4,6 +4,11 @@ project:
 
 website:
   title: "Aprende R"
+  twitter-card:
+    creator: "@bastimapache"
+    image: "img/preview.png"
+  favicon: logo.png
+  site-url: https://bastianolea.github.io/aprende_r/
   navbar:
     background: "#23102A"
     foreground: "#9F69C8"

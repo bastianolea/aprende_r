@@ -3,6 +3,7 @@ execute:
   echo: false
   message: false
   warning: false
+description: "En esta página encontrarás recursos paso a paso para que puedas aprender análisis de datos con R desde cero."
 ---
 
 
@@ -39,6 +40,7 @@ Aquí encontrarás recursos paso a paso para que puedas **aprender a programar c
 # )
 ```
 
+----
 
 
 ## ¿Por qué aprender R? {#introduccion}
@@ -1032,8 +1034,11 @@ Visita [mi blog](https://bastianolea.rbind.io) para más ideas, consejos y tutor
 ```{r}
 div(
   div(class = "contenedor_redonda",
-      img(src = "img/bastian_olea.jpg", alt = "Bastián Olea Herrera", 
+      a(href = "https://bastimapache.cl",
+      img(src = "img/bastian_olea.jpg", 
+          alt = "Bastián Olea Herrera", 
           class = "redonda")
+      )
   )
 )
 ```
@@ -1051,7 +1056,7 @@ tags$footer(style = "padding-left: 24px; padding-right: 24px; width: 100%;",
                 
                 p("Aprendí R de forma autodidacta, siguiendo tutoriales y cursos gratuitos, y por lo mismo me gusta enseñar y ayudar a otrxs a aprender."),
                 
-                markdown("Puedes encontrarme en [mi blog](https://bastianolea.rbind.io), 
+                markdown("Puedes encontrarme en [mi blog](https://bastianolea.rbind.io), en mi [sitio web personal](https://bastimapache.cl),
 o [contactarme](https://bastianolea.rbind.io/contacto).")
             ),
 
