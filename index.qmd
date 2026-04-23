@@ -654,11 +654,19 @@ Clases grabadas o interactivas para aprender R de forma más estructurada.
 div(style = "margin-top: 8px;",
     
     card_cursos(
+      titulo = "Introducción al análisis de datos con R para ciencias sociales, 2ª versión",
+      tipo = "gratis",
+      imagen = "img/curso_r_gratis_2.png",
+      url = "https://bastianolea.rbind.io/clases/curso_gratis_r_intro_2/",
+      texto = "Curso grabado de programación para estudiantes o profesionales de ciencias sociales, con poca experiencia o sin experiencia con la programación. En 4 clases aprendemos a usar R desde cero directamente con datos reales, pasando por las operaciones principales del análisis de datos, y terminando con una introducción a la visualización de datos con R."
+    ),
+    
+    card_cursos(
       titulo = "Introducción al análisis de datos con R para ciencias sociales y humanidades",
       tipo = "gratis",
       imagen = "img/curso_r_gratis.png",
       url = "https://bastianolea.rbind.io/clases/curso_gratis_r_intro_1/",
-      texto = "Curso grabado de programación dirigido a estudiantes o profesionales de ciencias sociales y humanidades, sin experiencia previa. En 3 clases revisamos los conceptos clave de R, practicando con datos reales las operaciones principales del análisis de datos."
+      texto = "Curso grabado de programación dirigido a estudiantes o profesionales de ciencias sociales y humanidades, sin experiencia previa. En 3 clases revisamos los conceptos clave de R, practicando con datos reales las operaciones principales del análisis de datos. Este curso pasa por los contenidos iniciales de forma más pausada, recomendado para principiantes."
     ),
     
     
