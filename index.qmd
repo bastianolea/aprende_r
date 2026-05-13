@@ -980,8 +980,10 @@ layout_columns(
        - [The R Data Scientist](https://rstats.blaze.email)
        - [Escuela de Datos](https://substack.com/@escueladedatos)
        - [Estación R](https://estacion-r.com/newsletter)
-       - [Statistics Globe](https://statisticsglobe.us18.list-manage.com/subscribe?u=e21bd5d10aa2be474db535a7b&id=841e4c86f0)
-       - [`posit::glimpse()` y otras listas de correo de Posit](https://posit.co/about/subscription-management/)"
+       - [Statistics Globe](https://statisticsglobe.com/newsletter)
+       - [`posit::glimpse()` y otras listas de correo de Posit](https://posit.co/about/subscription-management/)
+       - [RDM Weekly](https://rdmweekly.substack.com/)
+       - [Atelier de código](https://atelierdecodigo.com/#newsletter)"
     )
   )
 )
