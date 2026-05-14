@@ -800,7 +800,7 @@ card(style = "margin-top: 8px;",
        
        card_avanzado(titulo = "Aplicaciones",
                      icono = "window-maximize",
-                     texto = "- [Introducción a Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shiny_1/)
+                     texto = "- [Tutorial completo para crear apps con Shiny](https://bastianolea.rbind.io/blog/shiny/)
                               - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
                               - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
                               - [Conferencia ShinyConf 2025](https://www.shinyconf.com) (con videos de ponencias)
