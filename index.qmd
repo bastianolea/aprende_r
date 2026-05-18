@@ -815,7 +815,8 @@ card(style = "margin-top: 8px;",
                      texto = "- [Introducción al web scraping con R](https://bastianolea.rbind.io/blog/r_introduccion/web_scraping/)
                               - [Scraping con `rvest`](https://bastianolea.rbind.io/blog/tutorial_scraping_rvest/)
                               - [Scraping con `RSelenium`](https://bastianolea.rbind.io/blog/tutorial_scraping_selenium/)
-                              - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)",
+                              - [Scraping con `chromote`](https://bastianolea.rbind.io/blog/tutorial_scraping_chromote/)
+                              - [Web scraping con R](https://franciscahernandezcanas.github.io/materiales/web-scraping/webscraping-en-r.html), por Francisca Hernández C.",
                      footer = list(titulo = "web scraping",
                                    url = "https://bastianolea.rbind.io/tags/web-scraping/")
        ),
