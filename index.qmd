@@ -760,7 +760,8 @@ card(style = "margin-top: 8px;",
                               - [Galería de tipos de gráficos con instrucciones](https://r-graph-gallery.com)
                               - [Ejemplos de gráficos hechos con R](https://r-graph-gallery.com/best-r-chart-examples.html)
                               - [Combinar gráficos `ggplot2`](https://bastianolea.rbind.io/blog/patchwork/)
-                              - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)",
+                              - [Gráficos interactivos con `ggiraph`](https://bastianolea.rbind.io/blog/ggiraph/)
+                              - [Extensiones útiles para `ggplot2`](https://bastianolea.rbind.io/blog/ggplot_extensiones/)",
                      footer = list(titulo = "gráficos",
                                    url = "https://bastianolea.rbind.io/tags/visualización-de-datos/")
        ),
@@ -771,7 +772,8 @@ card(style = "margin-top: 8px;",
                               - [R como SIG: Shapefiles, GeoPackages y mapas coropléticos de México](https://alejandroromerog.github.io/blog/RComoSIG-Mapa/)
                               - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
                               - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
-                              - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)",
+                              - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)
+                              - [Mapas hexagonales o cuadriculados con R](https://bastianolea.rbind.io/blog/mapas_hexagonales/)",
                      footer = list(titulo = "mapas",
                                    url = "https://bastianolea.rbind.io/tags/mapas/")
        ),
@@ -823,9 +825,12 @@ card(style = "margin-top: 8px;",
        
        card_avanzado(titulo = "Inteligencia artificial",
                      icono = "server",
-                     texto = "- [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
-                              - [Análisis de sentimiento con LLM en R](https://bastianolea.rbind.io/blog/analisis_sentimiento_llm/)
-                              - [Asistentes de IA en RStudio](https://bastianolea.rbind.io/blog/gander/)
+                     texto = "- [Tutorial introductorio al uso de IA en R](https://bastianolea.rbind.io/blog/ellmer/)
+                              - [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
+                              - [Análisis de texto con IA en R: resumir, análisis de sentimiento, clasificación](https://bastianolea.rbind.io/blog/introduccion_llm_mall/)
+                              - [Crear un chatbot de IA con R con capacidades de análisis de datos](https://bastianolea.rbind.io/blog/shinychat/)
+                              - [Modelos de IA que pueden usar herramientas desarrolladas en R](https://bastianolea.rbind.io/blog/herramientas_llm/)
+                              - [IA con capacidad de consulta de documentos (RAG) en R](https://bastianolea.rbind.io/blog/rag_ragnar/)
                               - [_Machine learning_ supervisado con R](https://cdr-book.github.io/cap-arboles.html)
                               - [_Machine learning_ no supervisado con R](https://cdr-book.github.io/cap-cluster.html)",
                      footer = list(titulo = "inteligencia artificial",
@@ -846,7 +851,7 @@ card(style = "margin-top: 8px;",
                      icono = "share-from-square",
                      texto = "- [Publicar y compartir código en GitHub](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_github/)
                               - [Crea tu propio blog con Quarto](https://bastianolea.rbind.io/blog/tutorial_quarto_github_pages/#blogs-quarto-en-github-pages)
-                              - [Publicar aplicaciones Shiny](https://bastianolea.rbind.io/blog/r_introduccion/tutorial_shinyapps/)
+                              - [Publicar aplicaciones Shiny en internet](https://bastianolea.rbind.io/blog/shiny/#publicar-la-aplicación-en-internet)
                               - [**Taller:** Compartir y colaborar desde el cruce entre las ciencias de datos y las ciencias sociales](https://bastianolea.rbind.io/blog/taller_datos_unam/) (grabación y diapositivas)",
                      footer = list()
        )
