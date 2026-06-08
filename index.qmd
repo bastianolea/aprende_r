@@ -773,7 +773,8 @@ card(style = "margin-top: 8px;",
                               - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
                               - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
                               - [Mapa urbano de la región Metropolitana de Santiago, Chile](https://bastianolea.rbind.io/blog/tutorial_mapa_urbano/)
-                              - [Mapas hexagonales o cuadriculados con R](https://bastianolea.rbind.io/blog/mapas_hexagonales/)",
+                              - [Mapas hexagonales o cuadriculados con R](https://bastianolea.rbind.io/blog/mapas_hexagonales/)
+                              - [Guía práctica de proyecciones de mapas](https://dominicroye.github.io/blog/map-projections/)",
                      footer = list(titulo = "mapas",
                                    url = "https://bastianolea.rbind.io/tags/mapas/")
        ),
