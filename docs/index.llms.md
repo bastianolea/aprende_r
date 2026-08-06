@@ -489,7 +489,7 @@ Ver más tutoriales de [reportes](https://bastianolea.rbind.io/tags/quarto/)
 
 ####  Aplicaciones
 
-- [Tutorial completo para crear apps con Shiny](https://bastianolea.rbind.io/blog/shiny/)
+- [**Tutorial** para crear apps con Shiny desde cero](https://bastianolea.rbind.io/blog/shiny/)
 - [Aplicaciones Shiny sobre datos sociales](https://bastianolea.github.io/shiny_apps/)
 - [Galería de aplicaciones Shiny: ganadores del concurso de Shiny 2024](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
 - [Conferencia ShinyConf 2025](https://www.shinyconf.com) (con videos de ponencias)
@@ -510,9 +510,9 @@ Ver más tutoriales de [web scraping](https://bastianolea.rbind.io/tags/web-scra
 ####  Inteligencia artificial
 
 - [Tutorial introductorio al uso de IA en R](https://bastianolea.rbind.io/blog/ellmer/)
+- [Crea un chatbot de IA con R con capacidades de análisis de datos](https://bastianolea.rbind.io/blog/shinychat/)
 - [Herramientas para usar modelos de lenguaje de gran escala (LLM) en R](https://luisdva.github.io/llmsr-book/es/index.es.html)
 - [Análisis de texto con IA en R: resumir, análisis de sentimiento, clasificación](https://bastianolea.rbind.io/blog/introduccion_llm_mall/)
-- [Crear un chatbot de IA con R con capacidades de análisis de datos](https://bastianolea.rbind.io/blog/shinychat/)
 - [Modelos de IA que pueden usar herramientas desarrolladas en R](https://bastianolea.rbind.io/blog/herramientas_llm/)
 - [IA con capacidad de consulta de documentos (RAG) en R](https://bastianolea.rbind.io/blog/rag_ragnar/)
 - [*Machine learning* supervisado con R](https://cdr-book.github.io/cap-arboles.html)
