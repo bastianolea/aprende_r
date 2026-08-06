@@ -606,3 +606,15 @@ h1.title, .title.h1 {
   padding-top: 0;
   color: #9F69C9;
 }
+
+.nav-footer {
+  padding-top: 1em;
+}
+
+.nav-footer p {
+  color: #6c4e8f !important;
+}
+
+.nav-footer a {
+  color: #9D79C8 !important;
+}

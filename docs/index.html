@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="En esta página encontrarás recursos paso a paso para que puedas aprender análisis de datos con R desde cero.">
+<meta name="description" content="Recursos para aprender análisis de datos con R desde cero.">
 
 <title>Aprende R</title>
 <style>
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a725b6195fddb86a0d8f57219c2519c9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-770b148b3f2f969ce3200582fa3db004.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,31 +58,38 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
-<script src="site_libs/bslib-component-js-0.9.0/components.min.js"></script>
-<script src="site_libs/bslib-component-js-0.9.0/web-components.min.js" type="module"></script>
-<link href="site_libs/bslib-component-css-0.9.0/components.css" rel="stylesheet">
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/bslib-component-js-0.12.0/components.min.js"></script>
+<script src="site_libs/bslib-component-js-0.12.0/web-components.min.js" type="module"></script>
+<link href="site_libs/bslib-component-css-0.12.0/components.css" rel="stylesheet">
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="site_libs/bslib-tag-require-0.9.0/tag-require.js"></script>
+<script src="site_libs/bslib-tag-require-0.12.0/tag-require.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Aprende R">
+<meta property="og:description" content="Recursos para aprender análisis de datos con R desde cero.">
+<meta property="og:image" content="https://bastianolea.github.io/aprende_r/img/logo_r.png">
+<meta property="og:site_name" content="Aprende R">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image:height" content="697">
+<meta property="og:image:width" content="900">
 <meta name="twitter:title" content="Aprende R">
-<meta name="twitter:description" content="En esta página encontrarás recursos paso a paso para que puedas aprender análisis de datos con R desde cero.">
+<meta name="twitter:description" content="Recursos para aprender análisis de datos con R desde cero.">
 <meta name="twitter:image" content="https://bastianolea.github.io/aprende_r/img/preview.png">
 <meta name="twitter:creator" content="@bastimapache">
 <meta name="twitter:image-height" content="1325">
@@ -101,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Aprende R</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -1012,36 +1019,16 @@ Cursos
 <div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container contenedor_cursos" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
 <div>
-<a class="cursos_titulo" href="https://bastianolea.rbind.io/clases/curso_gratis_r_intro_2/">Introducción al análisis de datos con R para ciencias sociales, 2ª versión</a>
-<span class="pildora">gratis</span>
+<a class="cursos_titulo" href="https://bastianolea.rbind.io/clases/curso_r_intro_3/">Introducción al análisis de datos con R para ciencias sociales, 3ª versión</a>
+<span class="pildora">grabación</span>
 </div>
 <bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Curso grabado de programación para estudiantes o profesionales de ciencias sociales, con poca experiencia o sin experiencia con la programación. En 4 clases aprendemos a usar R desde cero directamente con datos reales, pasando por las operaciones principales del análisis de datos, y terminando con una introducción a la visualización de datos con R.</p>
+<div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Curso grabado de programación para estudiantes o profesionales de ciencias sociales sin experiencia en programación. En 4 clases aprendemos a usar R desde cero con datos reales, pasando por las operaciones principales del análisis de datos, y terminando con una introducción a la visualización de datos con R.</p>
 </div>
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container">
 <div class="contenedor_curso_imagen">
-<a href="https://bastianolea.rbind.io/clases/curso_gratis_r_intro_2/">
-<img src="img/curso_r_gratis_2.png" class="curso_imagen">
-</a>
-</div>
-</div>
-</bslib-layout-columns>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
-</div>
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container contenedor_cursos" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<div>
-<a class="cursos_titulo" href="https://bastianolea.rbind.io/clases/curso_gratis_r_intro_1/">Introducción al análisis de datos con R para ciencias sociales y humanidades</a>
-<span class="pildora">gratis</span>
-</div>
-<bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Curso grabado de programación dirigido a estudiantes o profesionales de ciencias sociales y humanidades, sin experiencia previa. En 3 clases revisamos los conceptos clave de R, practicando con datos reales las operaciones principales del análisis de datos. Este curso pasa por los contenidos iniciales de forma más pausada, recomendado para principiantes.</p>
-</div>
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="contenedor_curso_imagen">
-<a href="https://bastianolea.rbind.io/clases/curso_gratis_r_intro_1/">
-<img src="img/curso_r_gratis.png" class="curso_imagen">
+<a href="https://bastianolea.rbind.io/clases/curso_r_intro_3/">
+<img src="img/curso_r_gratis_3.jpeg" class="curso_imagen">
 </a>
 </div>
 </div>
@@ -1053,7 +1040,7 @@ Cursos
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
 <div>
 <a href="https://www.ine.gob.cl/ine-educa/clases-r/capsulas-basicas/introduccion-al-uso-de-r" class="cursos_titulo">Instituto Nacional de Estadísticas</a>
-<span class="pildora">gratis</span>
+<span class="pildora">grabación</span>
 </div>
 <bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Diapositivas y videos gratuitos que parten desde lo más básico, impartidos por profesionales del INE. También tienen clases de <a href="https://www.ine.gob.cl/ine-educa/clases-r/clases-sobre-topicos-intermedios">temas más avanzados</a>, como procesamiento de lenguaje natural y conexión a base de datos.</p>
@@ -1093,7 +1080,7 @@ Cursos
 <div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
 <div>
 <a class="cursos_titulo" href="https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/">Conferencias y talleres de posit::conf(2025)</a>
-<span class="pildora">gratis</span>
+<span class="pildora">grabación</span>
 </div>
 <bslib-layout-columns class="bslib-grid grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_columns()" data-require-bs-version="5">
 <div class="bslib-grid-item bslib-gap-spacing html-fill-container"><p>Colección completa de conferencias, charlas y talleres impartidos en la conferencia anual de <a href="https://posit.co">Posit</a>, incluyendo 4 <em>keynotes</em> y más de 100 charlas sobre R y ciencia de datos.</p>
@@ -1653,12 +1640,12 @@ o <a href="https://bastianolea.rbind.io/contacto">contactarme</a>.</p>
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -1715,6 +1702,11 @@ o <a href="https://bastianolea.rbind.io/contacto">contactarme</a>.</p>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -2029,6 +2021,19 @@ o <a href="https://bastianolea.rbind.io/contacto">contactarme</a>.</p>
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Bastián Olea Herrera · <a href="https://x.com/bastimapache"><span class="citation" data-cites="bastimapache">@bastimapache</span></a></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://bastianolea.rbind.io/contacto/">Contacto</a> · <a href="https://bastimapache.cl">Blog personal</a> · <a href="https://bastianolea.rbind.io">Blog profesional</a></p>
+</div>
+    <div class="nav-footer-right">
+<p>Hecho con <a href="https://quarto.org">Quarto</a>, <a href="https://bastianolea.github.io/aprende_r/">R</a> y <a href="https://posit.co/downloads">RStudio</a>.</p>
+</div>
+  </div>
+</footer>
 
 
 

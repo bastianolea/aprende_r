@@ -1,9 +1,13 @@
 ---
+lang: es
+format:
+  html:
+    link-external-newwindow: true
 execute:
   echo: false
   message: false
   warning: false
-description: "En esta página encontrarás recursos paso a paso para que puedas aprender análisis de datos con R desde cero."
+description: "Recursos para aprender análisis de datos con R desde cero."
 ---
 
 
@@ -656,20 +660,20 @@ Clases grabadas o interactivas para aprender R de forma más estructurada.
 div(style = "margin-top: 8px;",
     
     card_cursos(
-      titulo = "Introducción al análisis de datos con R para ciencias sociales, 2ª versión",
-      tipo = "gratis",
-      imagen = "img/curso_r_gratis_2.png",
-      url = "https://bastianolea.rbind.io/clases/curso_gratis_r_intro_2/",
-      texto = "Curso grabado de programación para estudiantes o profesionales de ciencias sociales, con poca experiencia o sin experiencia con la programación. En 4 clases aprendemos a usar R desde cero directamente con datos reales, pasando por las operaciones principales del análisis de datos, y terminando con una introducción a la visualización de datos con R."
+      titulo = "Introducción al análisis de datos con R para ciencias sociales, 3ª versión",
+      tipo = "grabación",
+      imagen = "img/curso_r_gratis_3.jpeg",
+      url = "https://bastianolea.rbind.io/clases/curso_r_intro_3/",
+      texto = "Curso grabado de programación para estudiantes o profesionales de ciencias sociales sin experiencia en programación. En 4 clases aprendemos a usar R desde cero con datos reales, pasando por las operaciones principales del análisis de datos, y terminando con una introducción a la visualización de datos con R."
     ),
     
-    card_cursos(
-      titulo = "Introducción al análisis de datos con R para ciencias sociales y humanidades",
-      tipo = "gratis",
-      imagen = "img/curso_r_gratis.png",
-      url = "https://bastianolea.rbind.io/clases/curso_gratis_r_intro_1/",
-      texto = "Curso grabado de programación dirigido a estudiantes o profesionales de ciencias sociales y humanidades, sin experiencia previa. En 3 clases revisamos los conceptos clave de R, practicando con datos reales las operaciones principales del análisis de datos. Este curso pasa por los contenidos iniciales de forma más pausada, recomendado para principiantes."
-    ),
+    # card_cursos(
+    #   titulo = "Introducción al análisis de datos con R para ciencias sociales y humanidades",
+    #   tipo = "gratis",
+    #   imagen = "img/curso_r_gratis.png",
+    #   url = "https://bastianolea.rbind.io/clases/curso_gratis_r_intro_1/",
+    #   texto = "Curso grabado de programación dirigido a estudiantes o profesionales de ciencias sociales y humanidades, sin experiencia previa. En 3 clases revisamos los conceptos clave de R, practicando con datos reales las operaciones principales del análisis de datos. Este curso pasa por los contenidos iniciales de forma más pausada, recomendado para principiantes."
+    # ),
     
     
     card(class = "contenedor_cursos",
@@ -678,7 +682,7 @@ div(style = "margin-top: 8px;",
            a("Instituto Nacional de Estadísticas", 
              href = "https://www.ine.gob.cl/ine-educa/clases-r/capsulas-basicas/introduccion-al-uso-de-r",
              class = "cursos_titulo"),
-           span("gratis", class = "pildora")
+           span("grabación", class = "pildora")
          ),
          
          layout_columns(    
@@ -714,7 +718,7 @@ div(style = "margin-top: 8px;",
     
     card_cursos(
       titulo = "Conferencias y talleres de posit::conf(2025)",
-      tipo = "gratis",
+      tipo = "grabación",
       imagen = "img/curso_posit_conf.png",
       url = "https://posit.co/blog/talks-and-workshops-from-posit-conf-2025/",
       texto = "Colección completa de conferencias, charlas y talleres impartidos en la conferencia anual de [Posit](https://posit.co), incluyendo 4 _keynotes_ y más de 100 charlas sobre R y ciencia de datos."
