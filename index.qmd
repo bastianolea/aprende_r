@@ -773,6 +773,7 @@ card(style = "margin-top: 8px;",
        card_avanzado(titulo = "Mapas",
                      icono = "map",
                      texto = "- [**Tutorial** de mapas con el paquete `sf`](https://bastianolea.rbind.io/blog/mapas_sf/)
+                              - [**Tutorial** de mapas interactivos con el paquete `mapgl`](https://bastianolea.rbind.io/blog/mapas_mapgl/)
                               - [R como SIG: Shapefiles, GeoPackages y mapas coropléticos de México](https://alejandroromerog.github.io/blog/RComoSIG-Mapa/)
                               - [Tutoriales de mapas con R](https://r-graph-gallery.com/map.html)
                               - [Mapas comunales y regionales de Chile en R](https://bastianolea.rbind.io/blog/tutorial_mapa_chile/)
@@ -785,7 +786,7 @@ card(style = "margin-top: 8px;",
        
        card_avanzado(titulo = "Tablas",
                      icono = "table",
-                     texto = "- [**Tutorial** de tablas con `gt`](https://bastianolea.rbind.io/blog/tutorial_gt/)
+                     texto = "- [**Tutorial** de tablas con el paquete `gt`](https://bastianolea.rbind.io/blog/tablas_gt/)
                               - [Galería de tablas: competencia de tablas 2025](https://posit.co/blog/2025-table-contest-winners/)
                               - [Libro de cocina de tablas con `gt`](https://themockup.blog/static/resources/gt-cookbook) y su versión [avanzada](https://themockup.blog/static/resources/gt-cookbook-advanced)
                               - [Tutoriales de tablas en R](https://r-graph-gallery.com/table.html)",
